@@ -9,7 +9,6 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="../font-awesome/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
   </head>
 <!-- Head -->
@@ -24,10 +23,10 @@
         <li class="" onclick="changeLanguage()"><img id="lang-flag" draggable="false" src="img/cz_flag.png"></li>
         <li><a id="hamburger-menu" href="javascript:void(0);" class="hamburger-menu" draggable="false" onclick="hamburgerMenu()"><i id="hamburger-menu-icon" class="fas fa-bars"></i></a></li>
         <span id="nav-menu" onclick="hamburgerMenu()" style="float: right;" class="unselectable full-menu">
-          <li><a id="nav-projects" href="#spacer-projects" draggable="false">Projekty</a></li>
-          <li><a id="nav-studium" href="#spacer-studium" draggable="false">Studium</a></li>
-          <li><a id="nav-contact" href="#spacer-contact" draggable="false">Kontakt</a></li>
-          <li><a id="nav-about" href="#spacer-about" draggable="false">O mně</a></li>
+          <li><a id="nav-projects" href="#section-projects" draggable="false">Projekty</a></li>
+          <li><a id="nav-studium" href="#section-education" draggable="false">Studium</a></li>
+          <li><a id="nav-contact" href="#section-contact" draggable="false">Kontakt</a></li>
+          <li><a id="nav-about" href="#section-about" draggable="false">O mně</a></li>
       </span>
       </ul>
     </nav>
@@ -46,50 +45,42 @@
 <!-- Site Body-->
 
 <!-- Footer -->
-<footer class="unselectable">
-  <br>
-  <p>- Mé profily -</p>
-  <div class="prof-btns">
+  <footer class="unselectable">
+    <br>
+    <p id="footer-my-profiles">- Mé profily -</p>
+    <div class="prof-btns">
 
-    <span class="tooltip">
-      <span class="tooltiptext">GitHub</span>
-      <a href="https://github.com/lukas-urbann">
-        <i class="fab fa-github prof-btn"></i>
-      </a>
-    </span>
+      <span class="tooltip">
+        <span class="tooltiptext">GitHub</span>
+        <a href="https://github.com/lukas-urbann">
+          <i class="fab fa-github prof-btn"></i>
+        </a>
+      </span>
 
-    <span class="tooltip">
-      <span class="tooltiptext">LinkedIn</span>
-      <i class="fab fa-linkedin prof-btn"></i>
-    </span>
+      <span class="tooltip">
+        <span class="tooltiptext">LinkedIn</span>
+        <i class="fab fa-linkedin prof-btn"></i>
+      </span>
 
-    <span class="tooltip">
-      <span class="tooltiptext">Stack Overflow</span>
-      <i class="fab fa-stack-overflow prof-btn"></i>
-    </span>
+      <span class="tooltip">
+        <span class="tooltiptext">Stack Overflow</span>
+        <i class="fab fa-stack-overflow prof-btn"></i>
+      </span>
 
-    <span class="tooltip">
-      <span class="tooltiptext">E-Mail</span>
-      <i onclick="show_notification()" class="fas fa-envelope-open-text prof-btn"></i>
-    </span>
+      <span class="tooltip">
+        <span class="tooltiptext">E-Mail</span>
+        <i class="fas fa-envelope-open-text prof-btn"></i>
+      </span>
 
-  </div>
-  <h2 class="float-center">- Lukáš Urban 2021 -</h2>
-  <br>
-  <br>
-</footer>
+    </div>
+    <h2>- Lukáš Urban 2021 -</h2>
+    <br>
+    <br>
+  </footer>
 <!-- Footer -->
-
-
-
-
 <!-- Additional JavaScript for proper functioning -->
-    <script type="text/javascript" src="js/popup.js"></script>
-    <script type="text/javascript" src="js/notification.js"></script>
-    <script type="text/javascript" src="js/copy.js"></script>
-    <script type="text/javascript" src="js/language.js"></script>
-    <script type="text/javascript" src="js/navmenu.js"></script>
-    <script type="text/javascript" src="font-awesome/attribution.js"></script>
+  <script src="javascript/hamburger-menu.js"></script>
+  <script src="javascript/interface-language.js"></script>
 <!-- Additional JavaScript for proper functioning -->
   </body>
 </html>

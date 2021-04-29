@@ -28,15 +28,9 @@ function changeLanguage(currLang)
                 break;
         }
 
-        setFlag(lang);
+        setLang(lang);
     }
 }
-
-window.onload = function()
-{
-    console.log("Hello!");
-    changeLanguage(getLang());
-};
 
 function getLang()
 {
@@ -54,7 +48,7 @@ function getLang()
     }
 }
 
-function setFlag(lang)
+function setLang(lang)
 {
     switch(lang)
     {
@@ -64,27 +58,17 @@ function setFlag(lang)
             writeLang("nav-studium").innerHTML = "Studium";
             writeLang("nav-contact").innerHTML = "Kontakt";
             writeLang("nav-about").innerHTML = "O mně";
-            writeLang("notification-text").innerHTML = "Text zkopírován";
-            writeLang("notification-close").innerHTML = "Zavřít";
-            writeLang("header-portfolio").innerHTML = "Vývojářské portfólio";
-            writeLang("section-projects").innerHTML = "Projekty";
-            writeLang("section-studium").innerHTML = "Studium";
-            writeLang("section-contact").innerHTML = "Kontakt";
-            writeLang("section-about").innerHTML = "O mně";
+
+            writeLang("footer-my-profiles").innerHTML = "- Mé profily -";
             break;
         default:
             writeLang("lang-flag").src = "img/en_flag.png";
             writeLang("nav-projects").innerHTML = "Projects";
-            writeLang("nav-studium").innerHTML = "Studium";
+            writeLang("nav-studium").innerHTML = "Education";
             writeLang("nav-contact").innerHTML = "Contact";
             writeLang("nav-about").innerHTML = "About me";
-            writeLang("notification-text").innerHTML = "Text copied";
-            writeLang("notification-close").innerHTML = "Close";
-            writeLang("header-portfolio").innerHTML = "Developer portfolio";
-            writeLang("section-projects").innerHTML = "Projects";
-            writeLang("section-studium").innerHTML = "Studium";
-            writeLang("section-contact").innerHTML = "Contact";
-            writeLang("section-about").innerHTML = "About me";
+
+            writeLang("footer-my-profiles").innerHTML = "- My profiles -";
             break;
     }
 }
@@ -93,3 +77,8 @@ function writeLang(id)
 {
     return document.getElementById(id);
 }
+
+window.onload = function()
+{
+    changeLanguage(getLang());
+};
