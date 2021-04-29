@@ -12,7 +12,6 @@ html
   /* FIREFOX SCROLLBAR */
   overflow-x: hidden;
   box-sizing: border-box;
-  color: blue;
 }
 
 html, body
@@ -168,6 +167,7 @@ footer h1, h2, h3, h4, p
   opacity: 0;
   transition: .075s;
   transform: scale(0.75);
+  /* Center the tooltip */
 }
 
 .tooltip .tooltiptext::after
@@ -336,6 +336,7 @@ footer h1, h2, h3, h4, p
     font-size: 0;
     display: none;
     visibility: hidden;
+    /*Footer breaks the site otherwise*/
   }
 
   .prof-btn
