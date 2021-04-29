@@ -35,6 +35,10 @@ body
   min-height: 100%;
 }
 
+a
+{
+  transition: 0.1s;
+}
 /* MAIN */
 
 /* NAV */
@@ -73,6 +77,7 @@ nav li img
   border: 2px solid var(--site-white-color);
   height:0.935em;
   border-radius: 100%;
+  transition: 0.1s;
 }
 
 nav li img:hover
@@ -328,6 +333,11 @@ footer h1, h2, h3, h4, p
 
 @media screen and (max-width: 374px)
 {
+  footer h2
+  {
+    font-size: 1em;
+  }
+
   .tooltiptext
   {
     width: 0em;
@@ -356,6 +366,11 @@ footer h1, h2, h3, h4, p
 @media screen and (max-width: 180px)
 {
   nav
+  {
+    display: none;
+  }
+
+  footer
   {
     display: none;
   }
