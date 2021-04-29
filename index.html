@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+  <head>
+    <title>Lukáš Urban</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="preset/favicon.png"  type="image/icon type">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../font-awesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+<!-- Head -->
+  <body>
+<!-- Nav -->
+    <nav class="unselectable">
+      <ul>
+        <li>
+          <a href="#" draggable="false">Lukáš Urban</a>
+        </li>
+        <li class="spacer">&nbsp;</li>
+        <li class="" onclick="changeLanguage()"><img id="lang-flag" draggable="false" src="img/cz_flag.png"></li>
+        <li><a id="hamburger-menu" href="javascript:void(0);" class="hamburger-menu" draggable="false" onclick="hamburgerMenu()"><i id="hamburger-menu-icon" class="fas fa-bars"></i></a></li>
+        <span id="nav-menu" onclick="hamburgerMenu()" style="float: right;" class="unselectable full-menu">
+          <li><a id="nav-projects" href="#spacer-projects" draggable="false">Projekty</a></li>
+          <li><a id="nav-studium" href="#spacer-studium" draggable="false">Studium</a></li>
+          <li><a id="nav-contact" href="#spacer-contact" draggable="false">Kontakt</a></li>
+          <li><a id="nav-about" href="#spacer-about" draggable="false">O mně</a></li>
+      </span>
+      </ul>
+    </nav>
+<!-- Nav  -->
+
+<!-- Notification -->
+    <div id="notification" class="notification unselectable">
+      <div class="notification-content">
+        <p id="notification-text"></p><br>
+        <div style="float: center;" id="notification-close" class="btn"></div>
+      </div>
+    </div>
+<!-- Notification -->
+
+<!-- Site Body-->
+<!-- Site Body-->
+
+<!-- Footer -->
+<footer class="unselectable">
+  <br>
+  <p>- Mé profily -</p>
+  <div class="prof-btns">
+
+    <span class="tooltip">
+      <span class="tooltiptext">GitHub</span>
+      <a href="https://github.com/lukas-urbann">
+        <i class="fab fa-github prof-btn"></i>
+      </a>
+    </span>
+
+    <span class="tooltip">
+      <span class="tooltiptext">LinkedIn</span>
+      <i class="fab fa-linkedin prof-btn"></i>
+    </span>
+
+    <span class="tooltip">
+      <span class="tooltiptext">Stack Overflow</span>
+      <i class="fab fa-stack-overflow prof-btn"></i>
+    </span>
+
+    <span class="tooltip">
+      <span class="tooltiptext">E-Mail</span>
+      <i onclick="show_notification()" class="fas fa-envelope-open-text prof-btn"></i>
+    </span>
+
+  </div>
+  <h2 class="float-center">- Lukáš Urban 2021 -</h2>
+  <br>
+  <br>
+</footer>
+<!-- Footer -->
+
+
+
+
+<!-- Additional JavaScript for proper functioning -->
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/notification.js"></script>
+    <script type="text/javascript" src="js/copy.js"></script>
+    <script type="text/javascript" src="js/language.js"></script>
+    <script type="text/javascript" src="js/navmenu.js"></script>
+    <script type="text/javascript" src="font-awesome/attribution.js"></script>
+<!-- Additional JavaScript for proper functioning -->
+  </body>
+</html>
