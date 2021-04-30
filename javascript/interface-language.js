@@ -58,7 +58,7 @@ function setLang(lang)
             writeLang("nav-studium").innerHTML = "Studium";
             writeLang("nav-contact").innerHTML = "Kontakt";
             writeLang("nav-about").innerHTML = "O mně";
-
+            writeLang("notification-close").innerHTML = "Zavřít";
             writeLang("footer-my-profiles").innerHTML = "- Mé profily -";
             break;
         default:
@@ -67,7 +67,7 @@ function setLang(lang)
             writeLang("nav-studium").innerHTML = "Education";
             writeLang("nav-contact").innerHTML = "Contact";
             writeLang("nav-about").innerHTML = "About me";
-
+            writeLang("notification-close").innerHTML = "Close";
             writeLang("footer-my-profiles").innerHTML = "- My profiles -";
             break;
     }

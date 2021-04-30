@@ -35,13 +35,14 @@
 <!-- Notification -->
     <div id="notification" class="notification unselectable">
       <div class="notification-content">
-        <p id="notification-text"></p><br>
+        <p id="notification-text">Text</p><br>
         <div style="float: center;" id="notification-close" class="btn"></div>
       </div>
     </div>
 <!-- Notification -->
 
 <!-- Site Body-->
+
 <!-- Site Body-->
 
 <!-- Footer -->
@@ -52,7 +53,7 @@
 
       <span class="tooltip">
         <span class="tooltiptext">GitHub</span>
-        <a href="https://github.com/lukas-urbann">
+        <a draggable="false" href="https://github.com/lukas-urbann">
           <i class="fab fa-github prof-btn"></i>
         </a>
       </span>
@@ -69,7 +70,7 @@
 
       <span class="tooltip">
         <span class="tooltiptext">E-Mail</span>
-        <i class="fas fa-envelope-open-text prof-btn"></i>
+        <i onclick="show_notification()" class="fas fa-envelope-open-text prof-btn"></i>
       </span>
 
     </div>
@@ -81,6 +82,7 @@
 <!-- Additional JavaScript for proper functioning -->
   <script src="javascript/hamburger-menu.js"></script>
   <script src="javascript/interface-language.js"></script>
+  <script src="javascript/overlay.js"></script>
 <!-- Additional JavaScript for proper functioning -->
   </body>
 </html>
