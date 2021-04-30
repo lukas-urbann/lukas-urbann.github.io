@@ -436,6 +436,16 @@ footer h1, h2, h3, h4, p
   {
     display: none;
   }
+
+  .notification-content
+  {
+    font-size: 0.5em;
+  }
+
+  .btn
+  {
+    font-size: 0.5em;
+  }
 } 
 
 @media screen and (max-height: 257px) and (max-width: 504px)
