@@ -1,6 +1,5 @@
 /* MAIN */
-html
-{
+html {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth;
@@ -10,112 +9,97 @@ html
   scrollbar-color: var(--site-red-color) var(--site-transparent-black-color);
   scrollbar-width: thin;
   /* FIREFOX SCROLLBAR */
-  overflow: hidden;
   box-sizing: border-box;
 }
 
-html, body
-{
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-:root
-{
+:root {
   --site-red-color: #f73d3d;
   --site-white-color: #ccc;
   --site-transparent-black-color: #0f1119;
   --site-black-color: #1d1f2b;
 }
 
-body
-{
+body {
   position: relative;
   margin: 0;
   min-height: 100%;
 }
 
-a
-{
+a {
   transition: 0.1s;
+  color: var(--site-red-color);
 }
 /* MAIN */
 
 /* NAV */
-nav
-{
+nav {
   overflow: hidden;
   color: var(--site-white-color);
   background-color: var(--site-transparent-black-color);
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  top: 0;
   z-index: 99;
   width: 100%;
   max-height: 35px;
   border-bottom: 1px solid var(--site-white-color);
 }
 
-nav ul
-{
-  padding: 0px;
-  margin: 0px;
+nav ul {
+  padding: 0;
+  margin: 0;
   overflow: hidden;
 }
 
-nav li
-{
+nav li {
   display: inline-block;
-  margin:0.5em;
-  font-size:1em;
+  margin: 0.5em;
+  font-size: 1em;
 }
 
-nav li img
-{
+nav li img {
   position: absolute;
-  top: 0em;
+  top: 0;
   margin-top: 0.5em;
   background-color: var(--site-white-color);
   border: 2px solid var(--site-white-color);
-  height:0.935em;
+  height: 0.935em;
   border-radius: 100%;
   transition: 0.15s;
 }
-
-nav li img:hover
-{
-border: 2px solid var(--site-red-color);
-cursor: pointer;
+nav li img:hover {
+  border: 2px solid var(--site-red-color);
+  cursor: pointer;
 }
 
-nav li a
-{
+nav li a {
   color: var(--site-white-color);
   text-decoration: none;
 }
-
-nav li a:hover
-{
+nav li a:hover {
   color: var(--site-red-color);
   cursor: pointer;
 }
 
-nav .spacer
-{
+nav .spacer {
   background-color: var(--site-white-color);
   border-radius: 8px;
   opacity: 0.5;
 }
 
-nav .hamburger-menu
-{
+nav .hamburger-menu {
   display: none;
 }
 /* NAV */
 
 /* FOOTER */
-footer
-{
+footer {
   display: block;
   position: absolute;
   right: 0;
@@ -124,41 +108,39 @@ footer
   min-width: 100%;
   color: var(--site-white-color);
   background-color: var(--site-transparent-black-color);
-  border-top: 1px solid var(--site-white-color);  
+  border-top: 1px solid var(--site-white-color);
 }
 
-footer h1, h2, h3, h4, p
-{
-    text-align: center;
+footer h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+  font-weight: 300;
 }
 
-.prof-btns
-{
+.prof-btns {
   font-size: 2em;
   text-align: center;
 }
 
-.prof-btn
-{
+.prof-btn {
   color: gray;
   padding: 0.5em;
   transition: 0.15s;
 }
-
-.prof-btn:hover
-{
+.prof-btn:hover {
   color: var(--site-red-color);
   cursor: pointer;
 }
 
-.tooltip
-{
+.tooltip {
   position: relative;
   display: inline-block;
 }
 
-.tooltip .tooltiptext
-{
+.tooltip .tooltiptext {
   visibility: hidden;
   width: 7.5em;
   background-color: var(--site-white-color);
@@ -174,25 +156,23 @@ footer h1, h2, h3, h4, p
   left: 50%;
   margin-left: -60px;
   opacity: 0;
-  transition: .075s;
+  transition: 0.075s;
   transform: scale(0.75);
   /* Center the tooltip */
 }
 
-.tooltip .tooltiptext::after
-{
+.tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  top: 100%;
+  /* At the bottom of the tooltip */
   left: 50%;
   margin-left: -0.75em;
   border-width: 0.75em;
   border-style: solid;
   border-color: var(--site-white-color) transparent transparent;
 }
-
-.tooltip:hover .tooltiptext
-{
+.tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
   transform: scaleY(1);
@@ -200,8 +180,7 @@ footer h1, h2, h3, h4, p
 /* FOOTER */
 
 /* NOTIFICATION */
-.notification
-{
+.notification {
   display: none;
   position: fixed;
   padding-top: 20vh;
@@ -214,28 +193,31 @@ footer h1, h2, h3, h4, p
   background-color: rgba(0,0,0,0.6);
 }
 
-.notification-content
-{
-  background-color: #e3e3e3;
+.notification-content {
+  background-color: var(--site-white-color);
   color: black;
   margin: auto;
   padding: 1.5em;
   width: 30%;
   border-radius: 4px;
 }
+
+.notification-content a {
+  color: var(--site-red-color);
+}
 /* NOTIFICATION */
 
 /* BODY-GRID */
-.content-container
-{
+.content-container {
   margin-right: auto;
   margin-left: auto;
   width: 70%;
+  display: block;
+  color: var(--site-white-color);
 }
 
-.section-line
-{
-  background-color: white;
+.section-line {
+  background-color: var(--site-white-color);
   width: 75%;
   height: 4px;
   margin-top: 16px;
@@ -246,56 +228,138 @@ footer h1, h2, h3, h4, p
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  background-color: #2196F3;
-  margin: auto;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 0;
+  grid-row-gap: 5vh;
 }
+
 .grid-item {
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: auto;
+  width: 90%;
+  position: relative;
   text-align: center;
-  margin: 0.25em;
-  aspect-ratio: 5/3;
+}
+
+.grid-item img {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--site-white-color);
+  transition: 0.15s;
+}
+.grid-item img:hover {
+  border: 2px solid var(--site-red-color);
+}
+
+.overlay {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  height: 0;
+  width: 90%;
+  max-width: 384px;
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+  background-color: var(--site-transparent-black-color);
+  border-radius: 8px;
+  border: 2px solid var(--site-white-color);
+  color: var(--site-transparent-black-color);
+  overflow: hidden;
+}
+.grid-item img:hover + .overlay {
+  opacity: 1;
+  height: calc(100% - 4px);
+  color: var(--site-white-color);
+  border: 2px solid var(--site-red-color);
+}
+.overlay a:hover + .overlay {
+  opacity: 1;
+  height: 75%;
+}
+
+.content-container h1 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+.content-container h2 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.25em;
+}
+
+.flex-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container p {
+  text-align: left;
+}
+
+.flex-container > div {
+  margin: 1em;
+  text-align: center;
+  font-size: 1.25em;
+  width: 50%;
+}
+
+.flex-container > div > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 /* BODY-GRID */
 
 /* CHROME SCROLLBAR */
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track
-{
+::-webkit-scrollbar-track {
   background-color: var(--site-transparent-black-color);
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background: var(--site-red-color);
   border-radius: 4px;
+  border: 1px solid var(--site-transparent-black-color);
 }
-
-::-webkit-scrollbar-thumb:hover
-{
+::-webkit-scrollbar-thumb:hover {
   background: #ec8c8c;
 }
 /* CHROME SCROLLBAR */
 
 /* GLOBAL VARS */
-.unselectable
-{
+.unselectable {
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select:none;
-  user-select:none;
-  -o-user-select:none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
 }
 
-.btn
-{
+.selectable {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.btn {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--site-red-color);
@@ -307,152 +371,166 @@ footer h1, h2, h3, h4, p
   cursor: pointer;
   border-radius: 4px;
 }
-
-.btn:hover
-{
+.btn:hover {
   background-color: #ffa6a6;
   color: var(--site-black-color);
 }
 /* GLOBAL VARS */
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 850px)
-{
-  .notification-content
-  {
-    width: 70%;
-    padding: 0.5em;
+@media screen and (max-width: 850px) {
+  .notification-content {
+      width: 70%;
+      padding: 0.5em;
+  }
+
+  .content-container {
+      width: 85%;
+  }
+  .grid-item img:hover {
+      transform: scale(1);
   }
 }
+@media screen and (max-width: 700px) {
+  .flex-container > div {
+      font-size: 1em;
+  }
 
-@media screen and (max-width: 700px)
-{
-  .content-container
-  {
-    width:100%;
+  .content-container {
+      width: 100%;
+  }
+
+  .grid-container {
+      grid-template-columns: auto auto;
   }
 }
-
-@media screen and (max-width: 504px)
-{
-  nav
-  {
-    overflow: visible;
+@media screen and (max-width: 504px) {
+  .flex-container p {
+      text-align: center;
   }
 
-  nav ul
-  {
-    display: block;
-  }
-  
-  .full-menu
-  {
-    font-weight: 300;
-    position: absolute;
-    font-size: 1.5em;
-    display: none;
-    right: 0;
-    background-color: var(--site-transparent-black-color);
-    border-radius: 0px 0px 0px 8px;
-    text-align: center;
-    z-index: -2;
-    border-left: 1px solid var(--site-white-color);
-    border-bottom: 1px solid var(--site-white-color);
-    overflow: hidden;
+  .flex-container {
+      flex-direction: column;
   }
 
-  .full-menu li
-  {
-    display: block;
-    padding: 0.25em;
+  .flex-container > div {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      font-size: 1em;
   }
 
-  nav .hamburger-menu
-  {
-    position: absolute;
-    display: block;
-    top: 0.525em;
-    right: 1em;
+  .flex-container > div > img {
+      max-width: 75%;
   }
 
-  .responsive-show
-  {
-    display: block;
-    animation-name: dropdownShow;
-    animation-duration: 0.15s;
-    transform-origin: top;
-    animation-timing-function:ease-in-out;
+  .overlay {
+      transition: 0.1s;
   }
 
-  .responsive-hide
-  {
-    animation-name: dropdownHide;
-    animation-duration: 0.15s;
-    transform-origin: top;
-    animation-timing-function:ease-in-out;
-  }
-}
-
-@media screen and (max-width: 374px)
-{
-    footer h2
-  {
-    font-size: 1em;
+  .overlay p {
+      display: none;
+      visibility: hidden;
   }
 
-  .tooltiptext
-  {
-    width: 0em;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    display: none;
-    visibility: hidden;
-    /*Footer breaks the site otherwise*/
+  .overlay h3 {
+      font-size: 1em;
   }
 
-  .prof-btn
-  {
-    font-size: 0.75em;
+  nav {
+      overflow: visible;
   }
-} 
 
-@media screen and (max-width: 200px)
-{
-  nav .spacer
-  {
-    display: none;
+  nav ul {
+      display: block;
+  }
+
+  .full-menu {
+      font-weight: 300;
+      position: absolute;
+      font-size: 1.5em;
+      display: none;
+      right: 0;
+      background-color: var(--site-transparent-black-color);
+      border-radius: 0 0 0 8px;
+      text-align: center;
+      z-index: -2;
+      border-left: 1px solid var(--site-white-color);
+      border-bottom: 1px solid var(--site-white-color);
+      overflow: hidden;
+  }
+
+  .full-menu li {
+      display: block;
+      padding: 0.25em;
+  }
+
+  nav .hamburger-menu {
+      position: absolute;
+      display: block;
+      top: 0.525em;
+      right: 1em;
+  }
+
+  .responsive-show {
+      display: block;
+      animation-name: dropdownShow;
+      animation-duration: 0.15s;
+      transform-origin: top;
+      animation-timing-function: ease-in-out;
+  }
+
+  .responsive-hide {
+      animation-name: dropdownHide;
+      animation-duration: 0.15s;
+      transform-origin: top;
+      animation-timing-function: ease-in-out;
   }
 }
-
-@media screen and (max-width: 180px)
-{
-  nav
-  {
-    display: none;
+@media screen and (max-width: 374px) {
+  footer h2 {
+      font-size: 1em;
   }
 
-  footer
-  {
-    display: none;
+  .tooltiptext {
+      width: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      display: none;
+      visibility: hidden;
+      /*Footer breaks the site otherwise*/
   }
 
-  .notification-content
-  {
-    font-size: 0.5em;
+  .prof-btn {
+      font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 200px) {
+  nav .spacer {
+      display: none;
+  }
+}
+@media screen and (max-width: 180px) {
+  nav {
+      display: none;
   }
 
-  .btn
-  {
-    font-size: 0.5em;
+  footer {
+      display: none;
   }
-} 
 
-@media screen and (max-height: 257px) and (max-width: 504px)
-{
-  .full-menu li
-  {
-    font-size: 0.65em;
+  .notification-content {
+      font-size: 0.5em;
+  }
+
+  .btn {
+      font-size: 0.5em;
+  }
+}
+@media screen and (max-height: 257px) and (max-width: 504px) {
+  .full-menu li {
+      font-size: 0.65em;
   }
 }
 /* RESPONSIVE DESIGN */
@@ -460,23 +538,22 @@ footer h1, h2, h3, h4, p
 /* ANIMATIONS */
 @keyframes dropdownShow {
   0% {
-    opacity: 0;
-    right: -20px;
+      opacity: 0;
+      right: -20px;
   }
   100% {
-    opacity: 1;
-    right: 0;
+      opacity: 1;
+      right: 0;
   }
 }
-
 @keyframes dropdownHide {
   0% {
-    opacity: 1;
-    right: 0px;
+      opacity: 1;
+      right: 0;
   }
   100% {
-    opacity: 0;
-    right: -20px;
+      opacity: 0;
+      right: -20px;
   }
 }
 /* ANIMATIONS */
