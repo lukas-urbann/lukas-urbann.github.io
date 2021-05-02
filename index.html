@@ -23,10 +23,10 @@
         <li class="" onclick="changeLanguage()"><img id="lang-flag" draggable="false" src="img/cz_flag.png"></li>
         <li><a id="hamburger-menu" href="javascript:void(0);" class="hamburger-menu" draggable="false" onclick="hamburgerMenu()"><i id="hamburger-menu-icon" class="fas fa-bars"></i></a></li>
         <span id="nav-menu" onclick="hamburgerMenu()" style="float: right;" class="unselectable full-menu">
-          <li><a id="nav-projects" href="#section-projects" draggable="false">Projekty</a></li>
-          <li><a id="nav-studium" href="#section-education" draggable="false">Studium</a></li>
-          <li><a id="nav-contact" href="#section-contact" draggable="false">Kontakt</a></li>
-          <li><a id="nav-about" href="#section-about" draggable="false">O mně</a></li>
+          <li><a id="nav-projects" href="#card-projects" draggable="false">Projekty</a></li>
+          <li><a id="nav-studium" href="#card-education" draggable="false">Studium</a></li>
+          <li><a id="nav-contact" href="#card-contact" draggable="false">Kontakt</a></li>
+          <li><a id="nav-about" href="#card-about" draggable="false">O mně</a></li>
       </span>
       </ul>
     </nav>
@@ -35,13 +35,89 @@
 <!-- Notification -->
     <div id="notification" class="notification unselectable">
       <div class="notification-content">
-        <p id="notification-text"></p><br>
-        <div style="float: center;" id="notification-close" class="btn"></div>
+        <p id="notification-text">Text</p><br>
+        <div style="float: center;" id="notification-close" class="btn">Zavřít</div>
       </div>
     </div>
 <!-- Notification -->
 
 <!-- Site Body-->
+<div class="content-container unselectable" style="margin-top: 4em; margin-bottom: 16em;">
+
+  <h1 style="font-size:2.75em;font-weight: 400;">Lukáš Urban</h1>
+  <h2 style="margin-top:-0.75em;" id="body-portfolio">Portfólio vývojáře</h2>
+  <div style="visibility: hidden;" class="section-line"></div>
+  <h2 id="card-projects" style="margin-top:-1em;"><i class="fas fa-caret-down"></i></h2>
+  <h1 id="category-projects">Projekty</h1>
+  <div class="section-line"></div>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://github.com/lukas-urbann/space-invaders-clone">
+      <img draggable="false" src="img/projects_space-invaders.png">
+        <div class="overlay">
+          <h3>Space Invaders Clone</h3>
+          <div style="height:2px;" class="section-line"></div>
+          <p id="desc-spaceinvaders">Projekt vytvořen jako zadání pro klauzurní práce. Snaha zreplikovat a modernizovat klasickou hru Space Invaders.</p>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://github.com/lukas-urbann/matHack">
+        <img draggable="false" src="img/projects_mathack.png">
+        <div class="overlay">
+          <h3>matHack</h3>
+          <div style="height:2px;" class="section-line"></div>
+          <p id="desc-mathack">Jednoduchý program - slouží jako vzdělávací pomůcka matematiky. Program cílen pro širokou veřejnost.</p>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://github.com/lukas-urbann/morality-abyss">
+        <img draggable="false" src="img/projects_morality-abyss.png">
+        <div class="overlay">
+          <h3>Morality Abyss</h3>
+          <div style="height:2px;" class="section-line"></div>
+          <p id="desc-moralityabyss">Hra vytvořena pro školní projekt, v projektu byla použita grafika podobná starým hrám z dob PS1.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <h2 id="card-education"><i class="fas fa-caret-down"></i></h2>
+  <h1 id="category-education">Studium</h1>
+  <div class="section-line"></div>
+  <div class="flex-container">
+    <div>
+      <img draggable="false" src="img/studium_left_img.png">
+    </div>
+    <div>
+      <p id="studium-text" class="selectable" style="text-align: center;">Již třetím rokem studuji na střední škole ve Zlíně obor vývoj počítačových her a multimediálních aplikací. Jsem zaměřen převážně na tvorbu desktopových aplikací a vývoj indie video her. Pracuji primárně v jazycích jako Java, Python nebo C++.  </p>
+    </div>
+    <div>
+      <img draggable="false" src="img/studium_right_img.png">
+    </div>
+  </div>
+  <h2 id="card-contact"><i class="fas fa-caret-down"></i></h2>
+  <h1 id="category-contact">Kontakt</h1>
+  <div class="section-line"></div>
+  <div class="flex-container">
+    <div>
+      <p class="selectable" id="contact-text" style="text-align: center;">Nejrychlejší forma kontaktu je zkrze email nebo discord. Po domluvě jsem ochoten přistoupit i na další formy komunikace.</p>
+      <p style="text-align: center;">E-Mail: <a draggable="false" href="mailto:lukas.urbann@seznam.cz">lukas.urbann@seznam.cz</a></p>
+    </div>
+  </div>
+  <h2 id="card-about"><i class="fas fa-caret-down"></i></h2>
+  <h1 id="category-about">O mně</h1>
+  <div class="section-line"></div>
+  <div class="flex-container">
+    <div>
+      <img draggable="false" src="img/projects_unknown.png">
+    </div>
+    <div>
+      <p class="selectable" id="about-text">Jmenuji se Lukáš Urban a profesně se zabývám programováním a výpočetní technologií. Je to mou vášní již od dětství, kdy jsem tvořil své první prototypy her v GameMakeru. Tvořím moderní, robustní, ale hlavně srozumitelné a snadno použivatelné aplikace.</p>
+    </div>
+  </div>
+</div>
 <!-- Site Body-->
 
 <!-- Footer -->
@@ -52,24 +128,30 @@
 
       <span class="tooltip">
         <span class="tooltiptext">GitHub</span>
-        <a href="https://github.com/lukas-urbann">
+        <a draggable="false" href="https://github.com/lukas-urbann">
           <i class="fab fa-github prof-btn"></i>
         </a>
       </span>
 
       <span class="tooltip">
-        <span class="tooltiptext">LinkedIn</span>
-        <i class="fab fa-linkedin prof-btn"></i>
-      </span>
-
-      <span class="tooltip">
         <span class="tooltiptext">Stack Overflow</span>
-        <i class="fab fa-stack-overflow prof-btn"></i>
+        <a draggable="false" href="https://stackoverflow.com/users/15803883/luk%c3%a1%c5%a1-urban">
+          <i class="fab fa-stack-overflow prof-btn"></i>
+        </a>
       </span>
 
       <span class="tooltip">
         <span class="tooltiptext">E-Mail</span>
-        <i class="fas fa-envelope-open-text prof-btn"></i>
+        <a draggable="false" href="javascript:void(0);">
+          <i onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')" class="fas fa-envelope-open-text prof-btn"></i>
+        </a>
+      </span>
+
+      <span class="tooltip">
+        <span class="tooltiptext">Discord</span>
+        <a draggable="false" href="javascript:void(0);">
+          <i onclick="show_notification('- Discord not ready -')" class="fab fa-discord prof-btn"></i>
+        </a>
       </span>
 
     </div>
@@ -81,6 +163,7 @@
 <!-- Additional JavaScript for proper functioning -->
   <script src="javascript/hamburger-menu.js"></script>
   <script src="javascript/interface-language.js"></script>
+  <script src="javascript/overlay.js"></script>
 <!-- Additional JavaScript for proper functioning -->
   </body>
 </html>
