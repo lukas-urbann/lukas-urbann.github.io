@@ -45,14 +45,22 @@ a {
 
 /* NAV */
 nav {
-  overflow: hidden;
+  overflow: visible;
   color: var(--site-white-color);
   background-color: var(--site-transparent-black-color);
   position: fixed;
   z-index: 99;
   width: 100%;
   max-height: 35px;
-  border-bottom: 1px solid var(--site-white-color);
+  border-bottom: 1px solid ;
+}
+
+.nav-background {
+  background-image: url('../img/navigation.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 16px;
 }
 
 nav ul {
@@ -114,14 +122,19 @@ footer {
   min-width: 100%;
   color: var(--site-white-color);
   background-color: var(--site-transparent-black-color);
-  border-top: 1px solid var(--site-white-color);
+  /* border-top: 1px solid var(--site-white-color); */
 }
 
 .footer-background {
   background-image: url('../img/footer.png');
+  background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 32px;
+  position: absolute;
+  width: 100%;
+  bottom: 236px;
 }
 
 footer h1,
@@ -243,6 +256,7 @@ p {
 .section-separator {
   padding-bottom: 256px;
   padding-top: 256px;
+  font-size: 2em;
 }
 
 .grid-container {
@@ -397,6 +411,10 @@ p {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 850px) {
+  .flex-container > div {
+    font-size: 1em;
+  }
+
   .notification-content {
       width: 70%;
       padding: 0.5em;
@@ -423,6 +441,10 @@ p {
   }
 }
 @media screen and (max-width: 504px) {
+  body {
+    background-image: url('../img/background_phone.png');
+  }
+
   .flex-container p {
       text-align: center;
   }

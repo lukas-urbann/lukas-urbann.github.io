@@ -23,10 +23,10 @@
         <li class="" onclick="changeLanguage()"><img id="lang-flag" draggable="false" src="img/cz_flag.png"></li>
         <li><a id="hamburger-menu" href="javascript:void(0);" class="hamburger-menu" draggable="false" onclick="hamburgerMenu()"><i id="hamburger-menu-icon" class="fas fa-bars"></i></a></li>
         <span id="nav-menu" onclick="hamburgerMenu()" style="float: right;" class="unselectable full-menu">
-          <li><a id="nav-projects" href="#card-projects" draggable="false">Projekty</a></li>
-          <li><a id="nav-studium" href="#card-education" draggable="false">Studium</a></li>
-          <li><a id="nav-contact" href="#card-contact" draggable="false">Kontakt</a></li>
-          <li><a id="nav-about" href="#card-about" draggable="false">O mně</a></li>
+          <li><a id="nav-projects" href="#category-projects" draggable="false">Projekty</a></li>
+          <li><a id="nav-studium" href="#category-education" draggable="false">Studium</a></li>
+          <li><a id="nav-contact" href="#category-contact" draggable="false">Kontakt</a></li>
+          <li><a id="nav-about" href="#category-about" draggable="false">O mně</a></li>
       </span>
       </ul>
     </nav>
@@ -43,11 +43,10 @@
 
 <!-- Site Body-->
 <div class="content-container unselectable" style="margin-top: 4em; margin-bottom: 16em;">
-
   <h1 style="font-size:2.75em;font-weight: 400;">Lukáš Urban</h1>
   <h2 style="margin-top:-0.75em;" id="body-portfolio">Portfólio vývojáře</h2>
   <div style="visibility: hidden;" class="section-line"></div>
-  <h2 id="card-projects" style="margin-top:-1em;"><i class="section-separator fas fa-caret-down"></i></h2>
+  <h2 style="margin-top:-1em;"><i class="section-separator fas fa-caret-down"></i></h2>
   <h1 id="category-projects">Projekty</h1>
   <div class="section-line"></div>
 
@@ -103,7 +102,7 @@
       </a>
     </div>
   </div>
-  <h2 id="card-education"><i class="section-separator fas fa-caret-down"></i></h2>
+  <h2><i class="section-separator fas fa-caret-down"></i></h2>
   <h1 id="category-education">Studium</h1>
   <div class="section-line"></div>
   <div class="flex-container">
@@ -117,7 +116,7 @@
       <img draggable="false" src="img/studium_right_img.png">
     </div>
   </div>
-  <h2 id="card-contact"><i class="section-separator fas fa-caret-down"></i></h2>
+  <h2><i class="section-separator fas fa-caret-down"></i></h2>
   <h1 id="category-contact">Kontakt</h1>
   <div class="section-line"></div>
   <div class="flex-container">
@@ -126,7 +125,7 @@
       <p style="text-align: center;">E-Mail: <a draggable="false" href="mailto:lukas.urbann@seznam.cz">lukas.urbann@seznam.cz</a></p>
     </div>
   </div>
-  <h2 id="card-about"><i class="section-separator fas fa-caret-down"></i></h2>
+  <h2><i class="section-separator fas fa-caret-down"></i></h2>
   <h1 id="category-about">O mně</h1>
   <div class="section-line"></div>
   <div class="flex-container">
@@ -143,6 +142,7 @@
 <div class="section-separator"></div>
 
 <!-- Footer -->
+  <div class="footer-background"></div>
   <footer class="unselectable">
     <br>
     <p id="footer-my-profiles">- Mé profily -</p>
