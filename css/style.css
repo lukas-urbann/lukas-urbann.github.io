@@ -31,7 +31,6 @@ body {
   margin: 0;
   min-height: 100%;
   background-image: url('../img/background.png');
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,31 +261,40 @@ p {
 .grid-container {
   width: 100%;
   display: inline-grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33.3% 33.4% 33.3%;
   grid-column-gap: 0;
   grid-row-gap: 5vh;
 }
 
 .grid-item {
   margin: auto;
-  width: 90%;
   position: relative;
   text-align: center;
+  width: 85%;
+  background-color: #ccc;
+  border-radius: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.grid-item .description {
+  color: var(--site-black-color);
+  font-size: 12px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .grid-item img {
   margin: auto;
   display: block;
-  max-width: 90%;
+  max-width: 75%;
   max-height: auto;
   border-radius: 8px;
-  border: 2px solid var(--site-white-color);
+  border: 2px solid var(--site-black-color);
   transition: 0.15s;
 }
-.grid-item img:hover {
-  border: 2px solid var(--site-red-color);
-}
 
+/*
 .overlay {
   left: 0;
   right: 0;
@@ -316,7 +324,7 @@ p {
   opacity: 1;
   height: 75%;
 }
-
+*/
 .content-container h1 {
   font-weight: 300;
   text-align: center;
@@ -443,6 +451,7 @@ p {
 @media screen and (max-width: 504px) {
   body {
     background-image: url('../img/background_phone.png');
+    background-size: 100%;
   }
 
   .flex-container p {

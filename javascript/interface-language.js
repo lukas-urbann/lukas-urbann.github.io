@@ -1,3 +1,31 @@
+//Lang//Lang//Lang//Lang//Lang//Lang
+
+//HEADERS
+writeLang("notification-close").innerHTML = "Zavřít";
+writeLang("body-portfolio").innerHTML = "Portfólio vývojáře";
+writeLang("category-projects").innerHTML = "Projekty";
+writeLang("category-education").innerHTML = "Studium";
+writeLang("category-contact").innerHTML = "Kontakt";
+writeLang("category-about").innerHTML = "O mně";
+//NAVMENU
+writeLang("lang-flag").src = "img/cz_flag.png";
+writeLang("nav-projects").innerHTML = "Projekty";
+writeLang("nav-studium").innerHTML = "Studium";
+writeLang("nav-contact").innerHTML = "Kontakt";
+writeLang("nav-about").innerHTML = "O mně";
+//DESCRIPTIONS
+writeLang("desc-mathack").innerHTML = "Jednoduchý program - slouží jako vzdělávací pomůcka matematiky. Program cílen pro širokou veřejnost.";
+writeLang("desc-moralityabyss").innerHTML = "Hra vytvořena pro školní projekt, v projektu byla použita grafika podobná starým hrám z dob PS1.";
+writeLang("desc-spaceinvaders").innerHTML = "Projekt vytvořen jako zadání pro klauzurní práce. Snaha zreplikovat a modernizovat klasickou hru Space Invaders.";
+//TEXTS
+writeLang("studium-text").innerHTML = "Již třetím rokem studuji na střední škole ve Zlíně obor vývoj počítačových her a multimediálních aplikací. Jsem zaměřen převážně na tvorbu desktopových aplikací a vývoj indie video her. Pracuji primárně v jazycích jako Java, Python nebo C++.";
+writeLang("about-text").innerHTML = "Jmenuji se Lukáš Urban a profesně se zabývám programováním a výpočetní technologií. Je to mou vášní již od dětství, kdy jsem tvořil své první prototypy her v GameMakeru. Tvořím moderní, robustní, ale hlavně srozumitelné a snadno použivatelné aplikace.";
+writeLang("contact-text").innerHTML = "Nejrychlejší forma kontaktu je zkrze email nebo discord. Po domluvě jsem ochoten přistoupit i na další formy komunikace";
+//FOOTER
+writeLang("footer-my-profiles").innerHTML = "- Mé profily -";
+
+//Lang//Lang//Lang//Lang//Lang//Lang
+
 let lang;
 
 function changeLanguage(currLang)
@@ -53,29 +81,7 @@ function setLang(lang)
     switch(lang)
     {
         case "cs-CZ":
-            //HEADERS
-            writeLang("notification-close").innerHTML = "Zavřít";
-            writeLang("body-portfolio").innerHTML = "Portfólio vývojáře";
-            writeLang("category-projects").innerHTML = "Projekty";
-            writeLang("category-education").innerHTML = "Studium";
-            writeLang("category-contact").innerHTML = "Kontakt";
-            writeLang("category-about").innerHTML = "O mně";
-            //NAVMENU
-            writeLang("lang-flag").src = "img/cz_flag.png";
-            writeLang("nav-projects").innerHTML = "Projekty";
-            writeLang("nav-studium").innerHTML = "Studium";
-            writeLang("nav-contact").innerHTML = "Kontakt";
-            writeLang("nav-about").innerHTML = "O mně";
-            //DESCRIPTIONS
-            writeLang("desc-mathack").innerHTML = "Jednoduchý program - slouží jako vzdělávací pomůcka matematiky. Program cílen pro širokou veřejnost.";
-            writeLang("desc-moralityabyss").innerHTML = "Hra vytvořena pro školní projekt, v projektu byla použita grafika podobná starým hrám z dob PS1.";
-            writeLang("desc-spaceinvaders").innerHTML = "Projekt vytvořen jako zadání pro klauzurní práce. Snaha zreplikovat a modernizovat klasickou hru Space Invaders.";
-            //TEXTS
-            writeLang("studium-text").innerHTML = "Již třetím rokem studuji na střední škole ve Zlíně obor vývoj počítačových her a multimediálních aplikací. Jsem zaměřen převážně na tvorbu desktopových aplikací a vývoj indie video her. Pracuji primárně v jazycích jako Java, Python nebo C++.";
-            writeLang("about-text").innerHTML = "Jmenuji se Lukáš Urban a profesně se zabývám programováním a výpočetní technologií. Je to mou vášní již od dětství, kdy jsem tvořil své první prototypy her v GameMakeru. Tvořím moderní, robustní, ale hlavně srozumitelné a snadno použivatelné aplikace.";
-            writeLang("contact-text").innerHTML = "Nejrychlejší forma kontaktu je zkrze email nebo discord. Po domluvě jsem ochoten přistoupit i na další formy komunikace";
-            //FOOTER
-            writeLang("footer-my-profiles").innerHTML = "- Mé profily -";
+            
             break;
         default:
             //HEADERS
