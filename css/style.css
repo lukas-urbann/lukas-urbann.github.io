@@ -273,17 +273,22 @@ p {
   text-align: center;
   width: 85%;
   background-color: #ccc;
-  border-radius: 1em;
   padding-bottom: 1em;
-  padding-top: 1em;
-  transition: 0.2s;
+  border-radius: 21px;
+  max-width: 380px;
+  transition: 0.1s;
+}
+
+.grid-item .section-line {
+  background-color: #0f1119;
+  height: 1px;
 }
 
 .grid-item:hover {
-  transform: scale(1.05);
-  -webkit-box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--site-red-color);
+  -moz-box-shadow: 0px 0px 0px 2px var(--site-red-color);
+  box-shadow: 0px 0px 0px 2px var(--site-red-color);
 }
 
 .grid-item .description {
@@ -296,20 +301,10 @@ box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
 .grid-item img {
   margin: auto;
   display: block;
-  max-width: 75%;
+  max-width: 100%;
   max-height: auto;
-  border-radius: 8px;
-  border: 1px solid var(--site-black-color);
+  border-radius: 21px 21px 0px 0px;
   transition: 0.15s;
-}
-
-.grid-item img:hover {
-  border: 1px solid var(--site-red-color);
-  -webkit-box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
-  transform: scale(1.1);
-  cursor: pointer;
 }
 
 .grid-item .btn {
@@ -325,37 +320,6 @@ box-shadow: 0px 0px 94px 0px rgba(0,0,0,0.75);
   border-radius: 4px;
 }
 
-/*
-.overlay {
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  pointer-events: none;
-  bottom: 0;
-  height: 0;
-  width: 90%;
-  max-width: 384px;
-  opacity: 0;
-  transition: 0.35s ease-in-out;
-  background-color: var(--site-transparent-black-color);
-  border-radius: 8px;
-  border: 2px solid var(--site-white-color);
-  color: var(--site-transparent-black-color);
-  overflow: hidden;
-}
-.grid-item img:hover + .overlay {
-  opacity: 1;
-  height: calc(100% - 4px);
-  color: var(--site-white-color);
-  border: 2px solid var(--site-red-color);
-}
-.overlay a:hover + .overlay {
-  opacity: 1;
-  height: 75%;
-}
-*/
 .content-container h1 {
   font-weight: 300;
   text-align: center;

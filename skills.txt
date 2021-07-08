@@ -1,0 +1,5 @@
+PHP, Nette
+JavaScript, Vue, Nuxt
+Strapi, WordPress
+HTML, CSS, TailwindCSS
+Java, C#
