@@ -1,30 +1,32 @@
-let lang;
+//Lang//Lang//Lang//Lang//Lang//Lang
 
-//LANG
 //HEADERS
-//let notification_close = writeLang("notification-close").innerHTML;
-/*writeLang("body-portfolio").innerHTML;
-writeLang("category-projects").innerHTML;
-writeLang("category-education").innerHTML;
-writeLang("category-contact").innerHTML;
-writeLang("category-about").innerHTML;
+writeLang("notification-close").innerHTML = "Zavřít";
+writeLang("body-portfolio").innerHTML = "Portfólio vývojáře";
+writeLang("category-projects").innerHTML = "Projekty";
+writeLang("category-education").innerHTML = "Studium";
+writeLang("category-contact").innerHTML = "Kontakt";
+writeLang("category-about").innerHTML = "O mně";
 //NAVMENU
-writeLang("lang-flag").src;
-writeLang("nav-projects").innerHTML;
-writeLang("nav-studium").innerHTML;
-writeLang("nav-contact").innerHTML;
-writeLang("nav-about").innerHTML;
+writeLang("lang-flag").src = "img/cz_flag.png";
+writeLang("nav-projects").innerHTML = "Projekty";
+writeLang("nav-studium").innerHTML = "Studium";
+writeLang("nav-contact").innerHTML = "Kontakt";
+writeLang("nav-about").innerHTML = "O mně";
 //DESCRIPTIONS
-writeLang("desc-mathack").innerHTML;
-writeLang("desc-moralityabyss").innerHTML;
-writeLang("desc-spaceinvaders").innerHTML;
+desc-mathack
+desc-moralityabyss
+desc-spaceinvaders
 //TEXTS
-writeLang("studium-text").innerHTML;
-writeLang("about-text").innerHTML;
-writeLang("contact-text").innerHTML;*/
+studium-text
+about-text
+contact-text
 //FOOTER
-let my_profiles = document.getElementById("footer-my-profiles").innerHTML;
-//LANG
+footer-my-profiles
+
+//Lang//Lang//Lang//Lang//Lang//Lang
+
+let lang;
 
 function changeLanguage(currLang)
 {
@@ -79,29 +81,7 @@ function setLang(lang)
     switch(lang)
     {
         case "cs-CZ":
-            //HEADERS
-            writeLang("notification-close").innerHTML = "Zavřít";
-            writeLang("body-portfolio").innerHTML = "Portfólio vývojáře";
-            writeLang("category-projects").innerHTML = "Projekty";
-            writeLang("category-education").innerHTML = "Studium";
-            writeLang("category-contact").innerHTML = "Kontakt";
-            writeLang("category-about").innerHTML = "O mně";
-            //NAVMENU
-            writeLang("lang-flag").src = "img/cz_flag.png";
-            writeLang("nav-projects").innerHTML = "Projekty";
-            writeLang("nav-studium").innerHTML = "Studium";
-            writeLang("nav-contact").innerHTML = "Kontakt";
-            writeLang("nav-about").innerHTML = "O mně";
-            //DESCRIPTIONS
-            writeLang("desc-mathack").innerHTML = "Jednoduchý program - slouží jako vzdělávací pomůcka matematiky. Program cílen pro širokou veřejnost.";
-            writeLang("desc-moralityabyss").innerHTML = "Hra vytvořena pro školní projekt, v projektu byla použita grafika podobná starým hrám z dob PS1.";
-            writeLang("desc-spaceinvaders").innerHTML = "Projekt vytvořen jako zadání pro klauzurní práce. Snaha zreplikovat a modernizovat klasickou hru Space Invaders.";
-            //TEXTS
-            writeLang("studium-text").innerHTML = "Již třetím rokem studuji na střední škole ve Zlíně obor vývoj počítačových her a multimediálních aplikací. Jsem zaměřen převážně na tvorbu desktopových aplikací a vývoj indie video her. Pracuji primárně v jazycích jako Java, Python nebo C++.";
-            writeLang("about-text").innerHTML = "Jmenuji se Lukáš Urban a profesně se zabývám programováním a výpočetní technologií. Je to mou vášní již od dětství, kdy jsem tvořil své první prototypy her v GameMakeru. Tvořím moderní, robustní, ale hlavně srozumitelné a snadno použivatelné aplikace.";
-            writeLang("contact-text").innerHTML = "Nejrychlejší forma kontaktu je zkrze email nebo discord. Po domluvě jsem ochoten přistoupit i na další formy komunikace";
-            //FOOTER
-            my_profiles.innerHTML = "moje profilyk";
+            
             break;
         default:
             //HEADERS
@@ -126,7 +106,7 @@ function setLang(lang)
             writeLang("contact-text").innerHTML = "The fastest form of contact is via email or discord. I am willing to accept other forms of communication upon agreement.";
             writeLang("about-text").innerHTML = "My name is Lukáš Urban and I am professionally involved in programming and computer technology. It has been my passion since I was a kid, when I created my first prototypes of games in GameMaker. I create modern, robust, but most importantly understandable and easy to use applications.";
             //FOOTER
-            my_profiles.innerHTML = "moje profily1212k";
+            writeLang("footer-my-profiles").innerHTML = "- My profiles -";
             break;
     }
 }
