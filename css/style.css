@@ -267,6 +267,12 @@ p {
   grid-row-gap: 5vh;
 }
 
+.grid-container a {
+  text-decoration: none;
+  width: 85%;
+  max-width: 380px;
+}
+
 .grid-item {
   margin: auto;
   position: relative;
