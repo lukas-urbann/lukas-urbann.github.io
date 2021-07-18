@@ -62,7 +62,7 @@ nav {
   z-index: 99;
   width: 100%;
   max-height: 35px;
-  border-bottom: 2px solid ;
+  border-bottom: 1px solid var(--site-black-color);
 }
 
 .nav-background {
@@ -252,10 +252,16 @@ p {
 /* NOTIFICATION */
 
 /* BODY-GRID */
+header {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 .content-container {
   margin-right: auto;
   margin-left: auto;
-  padding-top: 0.5em;
+  padding-top: 4em;
+  padding-bottom: 6em;
   width: 70%;
   display: block;
   grid-row-start: top;
@@ -275,11 +281,15 @@ p {
   margin-right: auto;
 }
 
-.section-separator {
-  padding-bottom: 128px;
-  padding-top: 128px;
-  font-size: 2em;
-}
+.section-line-black {
+  background-color: var(--site-transparent-black-color);
+  width: 5%;
+  height: 4px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+} 
 
 .grid-container {
   width: 100%;
@@ -406,11 +416,23 @@ p {
 /* CHROME SCROLLBAR */
 
 /* GLOBAL VARS */
+.transition-dark-black {
+  background-image: url('../img/spacer.png');
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 128px;
+}
+
+.absolute-horizontal-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .background-dark-black {
   background-color: var(--site-transparent-black-color);
-  width: 100%;
-  padding-bottom: 2em;
-  padding-top: 2em;
 }
 
 .background-black {
@@ -419,6 +441,10 @@ p {
 
 .background-white {
   background-color: #ccc;
+}
+
+.background-dark-white {
+  background-color: rgb(163, 163, 163);
 }
 
 .text-red {
