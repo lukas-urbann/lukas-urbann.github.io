@@ -4,3 +4,4 @@ Strapi, WordPress
 HTML, CSS, TailwindCSS
 Java, C#
 Linux, Bash
+Angličtina B2
