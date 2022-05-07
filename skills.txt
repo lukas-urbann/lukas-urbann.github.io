@@ -1,7 +1,0 @@
-PHP, Nette
-JavaScript, Vue, Nuxt
-Strapi, WordPress
-HTML, CSS, TailwindCSS
-Java, C#
-Linux, Bash
-Angličtina B2

@@ -1,219 +1,83 @@
 <!DOCTYPE html>
 <html>
-<!-- Head -->
-  <head>
-    <title>Lukáš Urban</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="preset/favicon.png"  type="image/icon type">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet" href="../font-awesome/css/all.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
-  </head>
-<!-- Head -->
-  <body>
-    <div id="page-start">
-  <!-- Nav -->
-      <nav class="unselectable">
-        <ul>
-          <li>
-            <a href="#" draggable="false">Lukáš Urban</a>
-          </li>
-          <li class="spacer">&nbsp;</li>
-          <li class="" onclick="changeLanguage()"><img id="lang-flag" draggable="false" src="img/cz_flag.png"></li>
-          <li><a id="hamburger-menu" href="javascript:void(0);" class="hamburger-menu" draggable="false" onclick="hamburgerMenu()"><i id="hamburger-menu-icon" class="fas fa-bars"></i></a></li>
-          <span id="nav-menu" onclick="hamburgerMenu()" style="float: right;" class="unselectable full-menu">
-            <li><a id="nav-projects" href="#category-projects" draggable="false">Projekty</a></li>
-            <li><a id="nav-studium" href="#category-education" draggable="false">Studium</a></li>
-            <li><a id="nav-about" href="#category-about" draggable="false">O mně</a></li>
-        </span>
-        </ul>
-      </nav>
-  <!-- Nav  -->
-
-  <!-- Notification -->
-      <div id="notification" class="notification unselectable">
-        <div class="notification-content">
-          <p id="notification-text">Text</p><br>
-          <div style="float: center;" id="notification-close" class="btn">Zavřít</div>
-        </div>
-      </div>
-  <!-- Notification -->
-
-  <!-- Site Body-->
-  <div class="unselectable" style="margin-bottom: 13em;">
-    <span class="header-background"></span>
-    <header class="text-white">
-      <div class="vertical-center">
-        <div class="flex-container">
-          <div>
-            <h1 class="name">Lukáš <span class="text-red">Urban</span></h1>
-            <h2 class="secondary-title" id="body-portfolio">Portfólio vývojáře.</h2>
-          </div>
-          <div>
-            <p class="selectable">Ahoj, jmenuji se <b>Lukáš Urban</b> a jsem <b>český vývojář</b>.<br>Tvořím krásné, lehké a jednoduché aplikace. </p>
-            <img style="width: 15%;" class="image-absolute-float-right unselectable" draggable="false" src="img/cubes_red.png">
-          </div>
-        </div>
-      </div>
-      <div class="prof-btns absolute-horizontal-center">
-        <a draggable="false" href="#category-projects">
-          <i class="fas fa-arrow-down prof-btn-alt"></i>
-        </a>
-      </div>
-    </header>
-    
-    <div class="background-dark-black text-white" id="category-projects">
-      <div class="content-container">
-        <h1 class="main-title">Projekty</h1>
-        <div class="section-line"></div>
-        <div class="TEST">
-          <div class="imgblock">
-            <img draggable="false" src="img/projects_unknown.png">
-          </div>
-          <div class="section-line"></div>
-          <div class="desc">
-            <h4>Projekt, na kterém zrovna pracuji:</h4>
-            <h3>Demons of the Past</h3>
-            <div class="progress-bar-background">
-              <span class="progess-bar"></span>
+    <head>
+        <title>Lukáš Urban</title>
+        <link rel="stylesheet" href="page/css/tailwind.css">
+        <link rel="stylesheet" href="page/css/addition.css">
+        <link rel="icon" type="image/x-icon" href="page/img/favicon.png">
+        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav>
+            <div id="nav-bar" class="bg-dark-black p-2 w-screen fixed top-0 block unselectable">
+                <ul class="flex">
+                    <li class="mr-3">
+                        <a class="
+                        inline-block p-2 rounded text-white text-xl
+                        md:text-lg md:py-1
+                        " href="#">Lukáš <span class="text-normal-red">Urban</span></a>
+                    </li>
+                    
+                    <li class="ml-auto md:hidden md:invisible">
+                        <div onclick="toggleMenu();" id="nav-menu-button" class="
+                        text-dark-white text-xl px-3 py-2 rounded-xl cursor-pointer
+                        md:text-4xl md:py-4">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </div>
-        <div class="grid-container">
-            <div class="grid-item">
-              <a href="https://github.com/lukas-urbann/space-invaders-clone">
-                <img draggable="false" src="img/projects_space-invaders.png">
-                <div class="description">
-                  <h3>Space Invaders Clone</h3>
-                  <div class="section-line"></div>
-                  <p id="desc-spaceinvaders">Projekt vytvořen jako zadání pro klauzurní práce. Snaha zreplikovat a modernizovat klasickou hru Space Invaders.</p>
-                </div>
-              </a>
+
+            <div id="nav-menu" class="
+            menu hidden bg-dark-black w-1/2 rounded-xl border border-normal-black text-center text-xl p-4 mt-12 ml-auto fixed right-2 top-5 unselectable
+            md:block md:top-0 md:text-xl md:p-0 md:my-0.5 md:w-2/3 md:border-0
+            ">
+                <ul id="nav-menu-list" class="flex-wrap font-thin md:flex-nowrap md:list-none md:ml-auto md:">
+                    <li class="md:inline-block">
+                        <div class="
+                        grid grid-cols-2
+                        md:grid-cols-2 md:grid-rows-1">
+                            <div id="flag-cz" class="py-1 rounded-xl md:h-8 md:w-8 md:py-0 md:m-2">
+                                <div onclick="changeLang('cz');" class="w-8 h-8 mx-auto rounded-full border cursor-pointer md:border-2">
+                                    <img src="page/img/flag_cz.svg" class="md:h-8 md:w-8">
+                                </div>
+                            </div>
+                            <div id="flag-en" class="py-1 rounded-xl md:h-8 md:w-8 md:py-0 md:m-2">
+                                <div onclick="changeLang('en');" class="w-8 h-8 mx-auto rounded-full border cursor-pointer md:border-2 ">
+                                    <img src="page/img/flag_en.svg" class="md:h-8 md:w-8">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="nav-btn-li-intro" class="nav-li my-1 py-1 rounded-xl md:inline md:p-2 md:m-0">
+                        <a id="nav-btn-text-intro" class="inline-block text-white md:text-lg" href="#section-fir1">Úvod</a>
+                    </li>
+                    <li id="nav-btn-li-portfolio" class="nav-li my-1 py-1 rounded-xl md:inline md:p-2 md:m-0">
+                        <a id="nav-btn-text-portfolio" class="inline-block text-white md:text-lg" href="#section-fir2">Portfólio</a>
+                    </li>
+                    <li id="nav-btn-li-about" class="nav-li my-1 py-1 rounded-xl md:inline md:p-2 md:m-0">
+                        <a id="nav-btn-text-about" class="inline-block text-white md:text-lg" href="#section-fir3">O mně</a>
+                    </li>
+                    <li id="nav-btn-li-contact" class="nav-li my-1 py-1 rounded-xl md:inline md:p-2 md:m-0">
+                        <a id="nav-btn-text-contact" class="inline-block text-white md:text-lg" href="#section-fir4">Kontakt</a>
+                    </li>
+                </ul>
             </div>
-          <div class="grid-item">
-            <a href="https://github.com/lukas-urbann/matHack">
-              <img draggable="false" src="img/projects_mathack.png">
-              <div class="description">
-                <h3>matHack</h3>
-                <div class="section-line"></div>
-                <p id="desc-mathack">Jednoduchý program - slouží jako vzdělávací pomůcka matematiky. Program cílen pro širokou veřejnost.</p>
-              </div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="https://github.com/lukas-urbann/morality-abyss">
-              <img draggable="false" src="img/projects_morality-abyss.png">
-              <div class="description">
-                <h3>Morality Abyss</h3>
-                <div class="section-line"></div>
-                <p id="desc-moralityabyss">Hra vytvořena pro školní projekt, v projektu byla použita grafika podobná starým hrám z dob PS1.</p>
-              </div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="https://github.com/lukas-urbann/noon-theme">
-              <img draggable="false" src="img/projects_noontheme.png">
-              <div class="description">
-                <h3>Noon Theme</h3>
-                <div class="section-line"></div>
-                <p id="desc-noontheme">Krásný a moderní vzhled pro textový editor Visual Studio Code.</p>
-              </div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="https://github.com/lukas-urbann/morality-abyss-2">
-              <img draggable="false" src="img/projects_morality-abyss-2.png">
-              <div class="description">
-                <h3>Morality Abyss 2</h3>
-                <div class="section-line"></div>
-                <p id="desc-noontheme">Závěrečná klauzurní práce. Příběhové pokračovaní hry Morality Abyss.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="transition-dark-black"></div>
+        </nav>
+        <section id="section-fir1" class="section-content h-screen bg-yellow-500">
+        </section>
+        <section id="section-fir2" class="section-content h-screen bg-normal-red">
+        </section>
+        <section id="section-fir3" class="section-content h-screen bg-normal-black">
+        </section>
+        <section id="section-fir4" class="section-content h-screen bg-green-400">
+        </section>
 
-    <div class="background-white text-dark-black">
-      <div class="content-container">
-        <h1 class="main-title" id="category-education">Studium</h1>
-        <div class="section-line-black"></div>
-        <div class="flex-container">
-          <div>
-            <img draggable="false" src="img/studium_left_img.png">
-          </div>
-          <div>
-            <p id="studium-text" class="selectable" style="text-align: center;">Již čtvrtým rokem studuji na střední škole ve Zlíně obor vývoj počítačových her a multimediálních aplikací. Jsem zaměřen převážně na tvorbu desktopových aplikací a vývoj indie video her. Pracuji primárně v jazycích jako Java, Python nebo C++.</p>
-          </div>
-          <div>
-            <img draggable="false" src="img/studium_right_img.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="transition-dark-white"></div>
-
-    <div class="background-dark-white text-black">
-      <div class="content-container">
-      <h1 class="main-title" id="category-about">O mně</h1>
-      <div class="section-line-black"></div>
-      <div class="flex-container">
-        <div>
-          <img draggable="false" src="img/projects_unknown.png">
-        </div>
-        <div>
-          <p class="selectable" id="about-text">Jmenuji se Lukáš Urban a profesně se zabývám programováním a výpočetní technologií. Je to mou vášní již od dětství, kdy jsem tvořil své první prototypy her v GameMakeru. Tvořím moderní, robustní, ale hlavně srozumitelné a snadno použivatelné aplikace.</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-  <!-- Site Body-->
-
-  <!-- Footer -->
-    
-    <footer class="unselectable">
-      <div style="transform: translateY(-2.25em);" class="prof-btns absolute-horizontal-center">
-        <a draggable="false" href="#page-start">
-          <i class="fas fa-arrow-up prof-btn-alt"></i>
-        </a>
-      </div>
-      <br>      
-      <div class="prof-btns">
-        <span class="tooltip">
-          <span class="tooltiptext">GitHub</span>
-          <a draggable="false" href="https://github.com/lukas-urbann">
-            <i class="fab fa-github prof-btn"></i>
-          </a>
-        </span>
-        <span class="tooltip">
-          <span class="tooltiptext">E-Mail</span>
-          <a draggable="false" href="javascript:void(0);">
-            <i onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'><b>lukas.urbann@seznam.cz</b></a>')" class="fas fa-envelope-open-text prof-btn"></i>
-          </a>
-        </span>
-        <span class="tooltip">
-          <span class="tooltiptext">Zdrojový kód webu</span>
-          <a draggable="false" href="https://github.com/lukas-urbann/lukas-urbann.github.io">
-            <i class="fas fa-code-branch prof-btn"></i>
-          </a>
-        </span>
-      </div>
-      <h2><span class="text-red">2021</span> - Lukáš Urban</h2>
-      <br>
-      <br>
-    </footer>
-  <!-- Footer -->
-  <!-- Additional JavaScript for proper functioning -->
-    <script src="javascript/hamburger-menu.js"></script>
-    <script src="javascript/interface-language.js"></script>
-    <script src="javascript/overlay.js"></script>
-  <!-- Additional JavaScript for proper functioning -->
-    </div>
-    </div>
-  </body>
+        <script src="page/javascript/hamburger-menu.js"></script>
+        <script src="page/javascript/language.js"></script>
+        <script src="page/javascript/section-selector.js"></script>
+    </body>
 </html>

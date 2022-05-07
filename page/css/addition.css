@@ -1,0 +1,128 @@
+@font-face {
+    font-family: PublicSans;
+    src: url("../fonts/PublicSans-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: PublicSans;
+    src: url("../fonts/PublicSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: PublicSans;
+    src: url("../fonts/PublicSans-Light.ttf");
+    font-weight: 100;
+}
+  
+html {
+    font-family: PublicSans;
+}
+
+.responsive-show {
+    animation-name: dropdownShow;
+    animation-duration: 0.15s;
+    display: block;
+    transform-origin: top right;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.responsive-hide {
+    animation-name: dropdownHide;
+    animation-duration: 0.15s;
+    transform-origin: top right;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.active-btn {
+  background-color: rgba(247, 61, 61, 255);
+  animation-name: btnSelection;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+ul li a:hover
+{
+  color: rgba(247, 61, 61, 255);
+}
+
+ul .active-btn a:hover {
+  color: white !important;
+}
+
+@keyframes btnSelection {
+  0% {
+      background-color: rgba(29, 31, 43, 255);
+      transform: scale(1.1);
+      display: none;
+  }
+
+  40% {
+    background-color: rgba(100, 45, 50, 255);
+    transform: scale(0.85);
+    display: none;
+}
+
+  100% {
+      background-color: rgba(247, 61, 61, 255);
+      transform: scale(1);
+      display: block;
+  }
+}
+
+@keyframes dropdownShow {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+      display: none;
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+      display: block;
+  }
+}
+
+  @keyframes dropdownHide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        display: block;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+        display: none;
+    }
+  }
+
+/* CHROME SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--site-transparent-black-color);
+  margin-top:35px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--site-red-color);
+  border-radius: 4px;
+  border: 1px solid var(--site-transparent-black-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--size-bright-red-color);
+}
+/* CHROME SCROLLBAR */
+
+.unselectable {
+    -webkit-user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
