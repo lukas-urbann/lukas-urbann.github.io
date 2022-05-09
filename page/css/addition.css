@@ -56,19 +56,16 @@ ul .active-btn a:hover {
 
 @keyframes btnSelection {
   0% {
-      background-color: rgba(29, 31, 43, 255);
       transform: scale(1.1);
       display: none;
   }
 
   40% {
-    background-color: rgba(100, 45, 50, 255);
     transform: scale(0.85);
     display: none;
 }
 
   100% {
-      background-color: rgba(247, 61, 61, 255);
       transform: scale(1);
       display: block;
   }
@@ -125,4 +122,14 @@ ul .active-btn a:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#nav-menu {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+#nav-bar {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
