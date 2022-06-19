@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Personal website",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "author": "Lukáš Urban",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
@@ -14,6 +12,7 @@
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "feather-icons": "^4.29.0"
   }
 }

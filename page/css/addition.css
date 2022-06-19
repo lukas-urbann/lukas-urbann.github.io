@@ -124,6 +124,8 @@ ul .active-btn a:hover {
     user-select: none;
 }
 
+/*
+
 #nav-menu {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -133,3 +135,5 @@ ul .active-btn a:hover {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
 }
+
+*/

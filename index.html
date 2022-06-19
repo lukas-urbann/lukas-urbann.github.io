@@ -5,9 +5,7 @@
         <link rel="stylesheet" href="page/css/tailwind.css">
         <link rel="stylesheet" href="page/css/addition.css">
         <link rel="icon" type="image/x-icon" href="page/img/favicon.png">
-        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
-        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -15,13 +13,13 @@
             
             
             <div id="nav-bar" class="bg-dark-black p-2 w-screen fixed top-0 block unselectable
-                                    md:relative md:mr-auto md:z-10 md:w-1/4 bg-opacity-70 md:bg-opacity-0 md:rounded-b-xl">
-                <ul class="flex">
-                    <li class="mr-3">
+                                    md:relative md:mr-auto md:z-10 md:w-auto bg-opacity-70 md:rounded-xl md:inline-block">
+                <ul class="inline-block">
+                    <li class="inline-block">
                         <a class="
                         inline-block p-2 rounded-xl text-white text-xl
                         md:text-lg md:py-1
-                        " href="#">Lukáš <span class="text-normal-red">Urban</span></a>
+                        " href="#">Lukáš <i data-feather="circle"></i> <span class="text-normal-red">Urban</span></a>
                     </li>
                     
                     <li class="ml-auto md:hidden md:invisible">
@@ -37,7 +35,7 @@
 
             <div id="nav-menu" class="
             menu hidden bg-dark-black w-1/2 rounded-xl border border-normal-black text-center text-xl p-4 mt-12 ml-auto fixed right-2 top-5 unselectable
-            md:block md:text-xl md:p-0 md:m-0 md:border-0 md:top-0 md:text-right md:absolute md:right-0 md:w-full md:rounded-none md:pr-4 bg-opacity-70 md:rounded-b-xl
+            md:block md:text-xl md:p-0 md:m-0 md:border-0 md:top-0 md:w-auto bg-opacity-70 md:rounded-xl
             ">
                 <ul id="nav-menu-list" class="flex-wrap font-thin md:flex-nowrap md:list-none md:overflow-hidden">
                     <li class="md:inline-block md:absolute md:right-12">
@@ -56,17 +54,17 @@
                             </div>
                         </div>
                     </li>
-                    <li id="nav-btn-li-intro" class="nav-li my-1 py-1 rounded-xl md:inline">
-                        <a id="nav-btn-text-intro" class="inline-block text-white md:text-lg" href="#section-fir1">Úvod</a>
+                    <li id="nav-btn-li-intro" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
+                        <a id="nav-btn-text-intro" class="inline-block text-white md:text-lg md:p-2" href="#section-fir1">Úvod</a>
                     </li>
-                    <li id="nav-btn-li-portfolio" class="nav-li my-1 py-1 rounded-xl md:inline">
-                        <a id="nav-btn-text-portfolio" class="inline-block text-white md:text-lg" href="#section-fir2">Portfólio</a>
+                    <li id="nav-btn-li-portfolio" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
+                        <a id="nav-btn-text-portfolio" class="inline-block text-white md:text-lg md:p-2" href="#section-fir2">Portfólio</a>
                     </li>
-                    <li id="nav-btn-li-about" class="nav-li my-1 py-1 rounded-xl md:inline">
-                        <a id="nav-btn-text-about" class="inline-block text-white md:text-lg" href="#section-fir3">O mně</a>
+                    <li id="nav-btn-li-about" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
+                        <a id="nav-btn-text-about" class="inline-block text-white md:text-lg md:p-2" href="#section-fir3">O mně</a>
                     </li>
-                    <li id="nav-btn-li-contact" class="nav-li my-1 py-1 rounded-xl md:inline">
-                        <a id="nav-btn-text-contact" class="inline-block text-white md:text-lg" href="#section-fir4">Kontakt</a>
+                    <li id="nav-btn-li-contact" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
+                        <a id="nav-btn-text-contact" class="inline-block text-white md:text-lg md:p-2" href="#section-fir4">Kontakt</a>
                     </li>
                 </ul>
             </div>
