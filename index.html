@@ -1,85 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lukáš Urban</title>
-        <link rel="stylesheet" href="page/css/tailwind.css">
-        <link rel="stylesheet" href="page/css/addition.css">
-        <link rel="icon" type="image/x-icon" href="page/img/favicon.png">
-        <script src="https://unpkg.com/feather-icons"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <nav class=" md:sticky md:top-0 md:mx-auto rounded-none md:container">
-            
-            
-            <div id="nav-bar" class="bg-dark-black p-2 w-screen fixed top-0 block unselectable
-                                    md:relative md:mr-auto md:z-10 md:w-auto bg-opacity-70 md:rounded-xl md:inline-block">
-                <ul class="inline-block">
-                    <li class="inline-block">
-                        <a class="
-                        inline-block p-2 rounded-xl text-white text-xl
-                        md:text-lg md:py-1
-                        " href="#">Lukáš <i data-feather="circle"></i> <span class="text-normal-red">Urban</span></a>
-                    </li>
-                    
-                    <li class="ml-auto md:hidden md:invisible">
-                        <div onclick="toggleMenu();" id="nav-menu-button" class="
-                        text-dark-white text-xl px-3 py-2 rounded-xl cursor-pointer
-                        md:text-4xl md:py-4">
-                            <i class="fas fa-bars"></i>
-                        </div>
-                    </li>
-                </ul>
+  <head>
+    <title>Lukáš Urban</title>
+    <link rel="stylesheet" href="page/css/tailwind.css" />
+    <link rel="stylesheet" href="page/css/addition.css" />
+    <link rel="icon" type="image/x-icon" href="page/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <nav class="md:sticky md:top-0 md:mx-auto rounded-none md:container">
+      <div
+        id="nav-bar"
+        class="transition-all duration-300 bg-dark-black p-2 w-screen fixed top-0 block unselectable md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block md:top-2"
+      >
+        <ul class="inline-block">
+          <li class="inline-block">
+            <p
+              class="inline-block p-2 rounded-xl text-white text-xl md:text-lg md:py-1"
+              >Lukáš <span class="text-normal-red">Urban</span></a
+            >
+          </li>
+
+          <li class="ml-auto md:hidden md:invisible">
+            <div
+              onclick="toggleMenu();"
+              id="nav-menu-button"
+              class="text-dark-white text-xl px-3 py-2 rounded-xl cursor-pointer md:text-4xl md:py-4"
+            >
+              <i class="fas fa-bars"></i>
             </div>
+          </li>
+        </ul>
+      </div>
 
-
-            <div id="nav-menu" class="
-            menu hidden bg-dark-black w-1/2 rounded-xl border border-normal-black text-center text-xl p-4 mt-12 ml-auto fixed right-2 top-5 unselectable
-            md:block md:text-xl md:p-0 md:m-0 md:border-0 md:top-0 md:w-auto bg-opacity-70 md:rounded-xl
-            ">
-                <ul id="nav-menu-list" class="flex-wrap font-thin md:flex-nowrap md:list-none md:overflow-hidden">
-                    <li class="md:inline-block md:absolute md:right-12">
-                        <div class="
-                        grid grid-cols-2
-                        md:flex md:flex-row md:flex-nowrap ">
-                            <div id="flag-cz" class="py-1 rounded-xl md:h-8 md:w-8 md:p-0 md:m-0">
-                                <div onclick="changeLang('cz');" class="w-8 h-8 mx-auto rounded-full border cursor-pointer md:border-2">
-                                    <img src="page/img/flag_cz.svg">
-                                </div>
-                            </div>
-                            <div id="flag-en" class="py-1 rounded-xl md:h-8 md:w-8 md:p-0 md:m-0">
-                                <div onclick="changeLang('en');" class="w-8 h-8 mx-auto rounded-full border cursor-pointer md:border-2">
-                                    <img src="page/img/flag_en.svg">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="nav-btn-li-intro" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
-                        <a id="nav-btn-text-intro" class="inline-block text-white md:text-lg md:p-2" href="#section-fir1">Úvod</a>
-                    </li>
-                    <li id="nav-btn-li-portfolio" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
-                        <a id="nav-btn-text-portfolio" class="inline-block text-white md:text-lg md:p-2" href="#section-fir2">Portfólio</a>
-                    </li>
-                    <li id="nav-btn-li-about" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
-                        <a id="nav-btn-text-about" class="inline-block text-white md:text-lg md:p-2" href="#section-fir3">O mně</a>
-                    </li>
-                    <li id="nav-btn-li-contact" class="nav-li my-1 py-1 rounded-xl md:inline md:mx-1">
-                        <a id="nav-btn-text-contact" class="inline-block text-white md:text-lg md:p-2" href="#section-fir4">Kontakt</a>
-                    </li>
-                </ul>
+      <div
+        id="nav-menu"
+        class="transition-all duration-300 menu hidden bg-dark-black w-1/2 rounded-xl border border-normal-black text-center text-xl p-4 mt-12 ml-auto fixed right-2 top-5 max-w-md md:inline-block md:text-lg md:m-0 md:border-0 md:w-auto md:mx-auto md:rounded-xl md:top-2 md:py-1 md:px-1 md:left-0 md:right-0"
+      >
+        <ul
+          id="nav-menu-list"
+          class="flex-wrap font-thin md:flex-nowrap md:list-none"
+        >
+          <li
+            class="md:block md:bg-dark-black md:fixed md:p-2 md:top-2 md:rounded-xl md:right-0 transition-all duration-300"
+          >
+            <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
+              <div
+                id="flag-cz"
+                class="py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2"
+              >
+                <div
+                  onclick="changeLang('cz');"
+                  class="w-8 h-8 mx-auto rounded-full border cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5"
+                >
+                  <img src="page/img/flag_cz.svg" />
+                </div>
+              </div>
+              <div
+                id="flag-en"
+                class="py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2"
+              >
+                <div
+                  onclick="changeLang('en');"
+                  class="w-8 h-8 mx-auto rounded-full border cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5"
+                >
+                  <img src="page/img/flag_en.svg" />
+                </div>
+              </div>
             </div>
-         </nav>
-        <section id="section-fir1" class="section-content h-screen bg-yellow-500">
-        </section>
-        <section id="section-fir2" class="section-content h-screen bg-normal-red">
-        </section>
-        <section id="section-fir3" class="section-content h-screen bg-normal-black">
-        </section>
-        <section id="section-fir4" class="section-content h-screen bg-green-400">
-        </section>
+          </li>
+          <li
+            id="nav-btn-li-intro"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors"
+          >
+            <a
+              id="nav-btn-text-intro"
+              class="text-white md:text-lg md:p-2"
+              href="#section-fir1"
+              >Úvod</a
+            >
+          </li>
+          <li
+            id="nav-btn-li-portfolio"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors"
+          >
+            <a
+              id="nav-btn-text-portfolio"
+              class="text-white md:text-lg md:p-2"
+              href="#section-fir2"
+              >Portfólio</a
+            >
+          </li>
+          <li
+            id="nav-btn-li-about"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors"
+          >
+            <a
+              id="nav-btn-text-about"
+              class="text-white md:text-lg md:p-2"
+              href="#section-fir3"
+              >O mně</a
+            >
+          </li>
+          <li
+            id="nav-btn-li-contact"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors"
+          >
+            <a
+              id="nav-btn-text-contact"
+              class="text-white md:text-lg md:p-2"
+              href="#section-fir4"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section
+      id="section-fir1"
+      class="section-content h-screen bg-yellow-500"
+    ></section>
+    <section
+      id="section-fir2"
+      class="section-content h-screen bg-normal-red"
+    ></section>
+    <section
+      id="section-fir3"
+      class="section-content h-screen bg-normal-black"
+    ></section>
+    <section
+      id="section-fir4"
+      class="section-content h-screen bg-green-400"
+    ></section>
 
-        <script src="page/javascript/hamburger-menu.js"></script>
-        <script src="page/javascript/language.js"></script>
-        <script src="page/javascript/section-selector.js"></script>
-    </body>
+    <script src="page/javascript/hamburger-menu.js"></script>
+    <script src="page/javascript/language.js"></script>
+    <script src="page/javascript/section-selector.js"></script>
+  </body>
 </html>

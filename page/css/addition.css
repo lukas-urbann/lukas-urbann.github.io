@@ -124,16 +124,8 @@ ul .active-btn a:hover {
     user-select: none;
 }
 
-/*
-
-#nav-menu {
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+*, *::after, *::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;    
 }
-
-#nav-bar {
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-}
-
-*/
