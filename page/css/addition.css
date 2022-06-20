@@ -23,10 +23,10 @@ html {
 .responsive-show {
     animation-name: dropdownShow;
     animation-duration: 0.15s;
-    display: block;
+    display: inline-block;
     transform-origin: top right;
     animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; -- just dont */
 }
 
 .responsive-hide {
@@ -43,6 +43,11 @@ html {
   animation-duration: 0.15s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+  color: #0f1119 !important;
+}
+
+.active-btn a {
+  color: #0f1119 !important;
 }
 
 ul li a:hover
@@ -52,12 +57,14 @@ ul li a:hover
 
 ul .active-btn a:hover {
   color: white !important;
+  cursor: default;
 }
 
 @keyframes btnSelection {
   0% {
       transform: scale(1.1);
       display: none;
+      font-weight: normal;
   }
 
   40% {
@@ -67,7 +74,8 @@ ul .active-btn a:hover {
 
   100% {
       transform: scale(1);
-      display: block;
+      display: inline-block;
+      font-weight: bold;
   }
 }
 
@@ -80,7 +88,7 @@ ul .active-btn a:hover {
   100% {
       opacity: 1;
       transform: scale(1);
-      display: block;
+      display: inline-block;
   }
 }
 
@@ -88,7 +96,7 @@ ul .active-btn a:hover {
     0% {
         opacity: 1;
         transform: scale(1);
-        display: block;
+        display: inline-block;
     }
     100% {
         opacity: 0;

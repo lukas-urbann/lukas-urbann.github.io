@@ -1,6 +1,8 @@
 var flag_cz = document.getElementById("flag-cz");
 var flag_en = document.getElementById("flag-en");
 
+console.log("i use arch btw")
+
 function changeLang(lang)
 {
 
