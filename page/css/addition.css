@@ -18,6 +18,7 @@
   
 html {
     font-family: PublicSans;
+    scroll-behavior: smooth;
 }
 
 .responsive-show {
@@ -55,16 +56,14 @@ ul li a:hover
   color: rgba(247, 61, 61, 255);
 }
 
-ul .active-btn a:hover {
-  color: white !important;
-  cursor: default;
+ul .active-btn:hover {
+  background-color: #ffa6a6;
 }
 
 @keyframes btnSelection {
   0% {
       transform: scale(1.1);
       display: none;
-      font-weight: normal;
   }
 
   40% {
@@ -75,7 +74,6 @@ ul .active-btn a:hover {
   100% {
       transform: scale(1);
       display: inline-block;
-      font-weight: bold;
   }
 }
 
@@ -107,21 +105,20 @@ ul .active-btn a:hover {
 
 /* CHROME SCROLLBAR */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--site-transparent-black-color);
-  margin-top:35px;
+  background-color: #0f1119;
+  border-left: 2px #1d1f2b solid;
 }
  
 ::-webkit-scrollbar-thumb {
-  background: var(--site-red-color);
-  border-radius: 4px;
-  border: 1px solid var(--site-transparent-black-color);
+  background: #f73d3d;
+  border-left: 2px #1d1f2b solid;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--size-bright-red-color);
+  background: #ccc;
 }
 /* CHROME SCROLLBAR */
 
