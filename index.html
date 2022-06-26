@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <nav style="margin-top: -68px;" class="md:sticky md:top-0 rounded-none md:container md:mx-auto md:px-4 md:transition-all md:duration-300">
+  <nav class="z-10 md:sticky md:top-0 rounded-none md:container md:mx-auto md:px-4 md:transition-all md:duration-300">
     <div id="nav-bar"
-      class="transition-all rounded-lg m-2 duration-300 bg-dark-black p-2 left-0 right-0 fixed top-0 block unselectable md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block md:top-2">
+      class="z-10 transition-all rounded-lg m-2 duration-300 bg-dark-black p-2 left-0 right-0 fixed top-0 block unselectable md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block md:top-2">
       <ul class="inline-block w-full">
         <li class="inline-block">
           <p class="inline-block p-2 rounded-xl text-white text-xl md:text-lg md:py-1">Lukáš <span
@@ -29,7 +29,7 @@
     </div>
 
     <div id="nav-menu"
-      class="transition-all duration-300 menu hidden bg-dark-black w-1/2 rounded-xl border border-normal-black text-center text-xl p-4 mt-12 ml-auto fixed right-2 top-7 max-w-md md:inline-block md:text-lg md:m-0 md:border-0 md:w-auto md:mx-auto md:rounded-xl md:top-2 md:py-1 md:px-1 md:left-0 md:right-0 md:relative md:ml-3">
+      class="z-10 transition-all duration-300 menu hidden bg-dark-black w-1/2 rounded-xl border border-normal-black text-center text-xl p-4 mt-12 ml-auto fixed right-2 top-7 max-w-md md:inline-block md:text-lg md:m-0 md:border-0 md:w-auto md:mx-auto md:rounded-xl md:top-2 md:py-1 md:px-1 md:left-0 md:right-0 md:relative md:ml-3">
       <ul id="nav-menu-list" class="flex-wrap font-thin md:flex-nowrap md:list-none">
         <li
           class="md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0 md:rounded-xl md:-right-32 transition-all duration-300">
@@ -51,7 +51,7 @@
         <li id="nav-btn-li-intro"
           class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors">
           <a id="nav-btn-text-intro" class="text-white md:text-lg md:p-2 md:transition-colors md:duration-100"
-            href="#section-fir1">Úvod</a>
+            href="#">Úvod</a>
         </li>
         <li id="nav-btn-li-portfolio"
           class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors">
@@ -71,10 +71,23 @@
       </ul>
     </div>
   </nav>
-  <section id="section-fir1" class="section-content h-screen bg-yellow-500"></section>
-  <section id="section-fir2" class="section-content h-screen bg-normal-red"></section>
-  <section id="section-fir3" class="section-content h-screen bg-normal-black"></section>
-  <section id="section-fir4" class="section-content h-screen bg-green-400"></section>
+  <section style="height: auto;" id="introduction" class="section-content md:container mx-auto h-screen bg-normal-black transition-all duration-500">
+    <div class="grid grid-flow-col grid-cols-1 grid-rows-2 md:grid-flow-row md:grid-cols-2 md:grid-rows-1 h-auto">
+      <div style="background-color: #3c3f4d;" class="relative rounded-lg p-4 m-2 justify-self-stretch md:row-start-1 md:row-end-3">
+        <div class="absolute bottom-4 block font-black text-5xl mt-auto md:text-4xl">
+          <h1 id="block-portfolio" class="transform-all duration-300">Vítej na mém portfóliu.</h1>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 grid-rows-1 m-2 md:grid-cols-1 md:grid-rows-2 max-h-48">
+        <div id="pic-me" style="background-image: url(https://www.atc-network.com/Upload/ShowCase/35728/sensis1a.jpg);" class="border-2 bg-normal-red rounded-lg mr-2 justify-self-stretch p-4 md:mb-2 md:mr-0 duration-150">
+          To jsem já.
+        </div>
+        <div style="background-image: url(page/img/gaming.jpg); background-size: cover;" class="bg-normal-red rounded-lg ml-2 justify-self-stretch p-4 md:mt-2 md:ml-0">
+          Věnuji se tvorbě videoher a videohernímu designu. Je to má vášen kterou si pěstuji od svého dětství.
+        </div>
+      </div>
+  </section>
+  <!-- <section id="section-fir2" class="section-content h-screen bg-normal-red"></section> -->
 
   <script src="page/javascript/hamburger-menu.js"></script>
   <script src="page/javascript/language.js"></script>
