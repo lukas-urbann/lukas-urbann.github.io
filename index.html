@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="page/css/addition.css" />
   <link rel="icon" type="image/x-icon" href="page/img/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <li class="ml-auto md:hidden md:invisible inline-block float-right mr-2">
           <div onclick="toggleMenu();" id="nav-menu-button"
             class="text-dark-white text-xl px-3 py-2 rounded-xl cursor-pointer md:text-4xl md:py-4 transition-colors duration-150">
-            XX
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
         </li>
       </ul>
@@ -34,13 +35,15 @@
         <li
           class="md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0 md:rounded-xl md:-right-32 transition-all duration-300">
           <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
-            <div id="flag-cz" class="transition-colors duration-150 py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
+            <div id="flag-cz"
+              class="transition-colors duration-150 py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
               <div onclick="changeLang('cz');"
                 class="w-8 h-8 mx-auto rounded-full border-2 cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5">
                 <img src="page/img/flag_cz.svg" />
               </div>
             </div>
-            <div id="flag-en" class="transition-colors duration-150 py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
+            <div id="flag-en"
+              class="transition-colors duration-150 py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
               <div onclick="changeLang('en');"
                 class="w-8 h-8 mx-auto rounded-full border-2 cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5">
                 <img src="page/img/flag_en.svg" />
@@ -71,23 +74,47 @@
       </ul>
     </div>
   </nav>
-  <section style="height: auto;" id="introduction" class="section-content md:container mx-auto h-screen bg-normal-black transition-all duration-500">
-    <div class="grid grid-flow-col grid-cols-1 grid-rows-2 md:grid-flow-row md:grid-cols-2 md:grid-rows-1 h-auto">
-      <div style="background-color: #3c3f4d;" class="relative rounded-lg p-4 m-2 justify-self-stretch md:row-start-1 md:row-end-3">
-        <div class="absolute bottom-4 block font-black text-5xl mt-auto md:text-4xl">
-          <h1 id="block-portfolio" class="transform-all duration-300">Vítej na mém portfóliu.</h1>
+  <section id="introduction"
+    class="section-content md:container mx-auto h-screen bg-normal-black transition-all duration-500">
+    <div class="grid grid-flow-col grid-cols-1 grid-rows-2 md:grid-flow-row md:grid-cols-2 md:grid-rows-1 h-3/4">
+      <div style="background-color: #3c3f4d;"
+        class="overflow-hidden relative rounded-lg p-4 m-2 justify-self-stretch md:row-start-1 md:row-end-3 box-shadow">
+        <div class="font-black text-5xl md:text-4xl 2xl:text-8xl w-full h-full">
+          <h1 id="text-portfolio" class="transform-all duration-300 absoluteleft-0 right-0 m-auto">Vítej na mém
+            portfóliu.</h1>
+          <br>
+          <p class="text-lg">
+            <i class="fa fa-caret-right" aria-hidden="true"></i> Aktuality 26.6.2022<br><br><span
+              class="text-sm font-thin">Po několika letech došlo k renovaci webu. Byl upraven celkový vzhled webu, který
+              nyní využivá také nové technologie.</span>
+          </p>
         </div>
       </div>
-      <div class="grid grid-cols-2 grid-rows-1 m-2 md:grid-cols-1 md:grid-rows-2 max-h-48">
-        <div id="pic-me" style="background-image: url(https://www.atc-network.com/Upload/ShowCase/35728/sensis1a.jpg);" class="border-2 bg-normal-red rounded-lg mr-2 justify-self-stretch p-4 md:mb-2 md:mr-0 duration-150">
-          To jsem já.
-        </div>
-        <div style="background-image: url(page/img/gaming.jpg); background-size: cover;" class="bg-normal-red rounded-lg ml-2 justify-self-stretch p-4 md:mt-2 md:ml-0">
-          Věnuji se tvorbě videoher a videohernímu designu. Je to má vášen kterou si pěstuji od svého dětství.
-        </div>
+      <div style="background-image: url(page/img/gaming.jpg); background-size: cover;"
+        class="box-shadow overflow-auto bg-normal-red rounded-lg ml-2 justify-self-stretch p-4 md:m-2 md:ml-0 hover:border-2 box-shadow-text md:font-semibold md:text-lg relative lg:text-3xl xl:text-4xl 2xl:text-4xl">
+        <p id="text-intro-about" class="absolute bottom-4">Věnuji se tvorbě videoher a videohernímu designu. Je to má
+          vášen, kterou si pěstuji od svého dětství.</p>
       </div>
   </section>
+
+  <section style="background-image: url(page/img/keyboard.jpg);" id="section-fir2" class="section-content h-screen bg-cover container mx-auto rounded-xl box-shadow-text box-shadow">
+    <div>
+      
+    </div>
+  </section>
   <!-- <section id="section-fir2" class="section-content h-screen bg-normal-red"></section> -->
+
+  <footer
+    class="transition-all duration-500 clear-both relative bottom-0 w-11/12 bg-dark-black container mx-auto m-4 p-2 rounded-xl">
+    <div>
+      <p class="font-black">#!/bin/bash</p>
+      <span class="text-sm text-normal-red">footer@lukas-urbann.github.io:-S</span>
+    </div>
+    <div class="flex">
+
+    </div>
+    <p class="text-center mt-2"><span class="text-normal-red">&copy;2022</span> Lukáš Urban</p>
+  </footer>
 
   <script src="page/javascript/hamburger-menu.js"></script>
   <script src="page/javascript/language.js"></script>

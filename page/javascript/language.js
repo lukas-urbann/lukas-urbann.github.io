@@ -14,6 +14,8 @@ function changeLang(lang)
             writeLang("nav-btn-text-portfolio").innerHTML = "Portfolio";
             writeLang("nav-btn-text-about").innerHTML = "About me";
             writeLang("nav-btn-text-contact").innerHTML = "Contact";
+            writeLang("text-portfolio").innerHTML = "Welcome to my portfolio.";
+            writeLang("text-intro-about").innerHTML = "I am a <span class='text-normal-red'>video game designer</span> and video game designer. It's a <span class='text-normal-red'>passion of mine</span> that I've been cultivating since I was a kid.";
             flag_cz.classList.remove("active-btn");
             flag_en.classList.add("active-btn");
             break;
@@ -23,6 +25,8 @@ function changeLang(lang)
             writeLang("nav-btn-text-portfolio").innerHTML = "Portfólio";
             writeLang("nav-btn-text-about").innerHTML = "O mně";
             writeLang("nav-btn-text-contact").innerHTML = "Kontakt";
+            writeLang("text-portfolio").innerHTML = "Vítej na mém portfóliu.";
+            writeLang("text-intro-about").innerHTML = "<span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášen,</span> kterou si pěstuji od svého dětství.";
             flag_en.classList.remove("active-btn");
             flag_cz.classList.add("active-btn");
             break;

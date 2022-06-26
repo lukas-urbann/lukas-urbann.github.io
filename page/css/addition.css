@@ -145,7 +145,7 @@ section {
   padding: 12px;
 }
 
-#block-portfolio {
+#text-portfolio {
   background: rgb(200,53,169);
   background: linear-gradient(90deg, rgba(200,53,169,1) 0%, rgba(84,47,173,1) 38%, rgba(0,212,255,1) 100%);
   -webkit-background-clip: text;
@@ -160,6 +160,18 @@ section {
 
 .fancy-border {
   border-color: linear-gradient(90deg, rgba(200,53,169,1) 0%, rgba(84,47,173,1) 38%, rgba(0,212,255,1) 100%);
+}
+
+.box-shadow-text {
+  -webkit-box-shadow: inset -136px -139px 212px 11px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -136px -139px 212px 11px rgba(0,0,0,0.75);
+  box-shadow: inset -136px -139px 212px 11px rgba(0,0,0,0.75);
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
 }
 
 /* #3c3f4d */
