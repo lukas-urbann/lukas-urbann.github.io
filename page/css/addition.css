@@ -174,4 +174,14 @@ section {
 box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
 }
 
+.text-shadow-black {
+  text-shadow: rgb(0, 0, 0) 0px 0 6px;
+}
+
+.box-blur {
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
 /* #3c3f4d */

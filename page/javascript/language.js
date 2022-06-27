@@ -16,6 +16,8 @@ function changeLang(lang)
             writeLang("nav-btn-text-contact").innerHTML = "Contact";
             writeLang("text-portfolio").innerHTML = "Welcome to my portfolio.";
             writeLang("text-intro-about").innerHTML = "I am a <span class='text-normal-red'>video game designer</span> and video game designer. It's a <span class='text-normal-red'>passion of mine</span> that I've been cultivating since I was a kid.";
+            writeLang("text-creds").innerHTML = "The website was created without a template. Used images are from <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. The code is publicly available. Web technologies used are listed on the repository.";
+            writeLang("text-about-me").innerHTML = "About me";
             flag_cz.classList.remove("active-btn");
             flag_en.classList.add("active-btn");
             break;
@@ -26,7 +28,9 @@ function changeLang(lang)
             writeLang("nav-btn-text-about").innerHTML = "O mně";
             writeLang("nav-btn-text-contact").innerHTML = "Kontakt";
             writeLang("text-portfolio").innerHTML = "Vítej na mém portfóliu.";
-            writeLang("text-intro-about").innerHTML = "<span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášen,</span> kterou si pěstuji od svého dětství.";
+            writeLang("text-intro-about").innerHTML = "<span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášeň,</span> kterou si pěstuji od svého dětství.";
+            writeLang("text-creds").innerHTML = "Web byl vytvořen bez předlohy. Použité obrázky z webu <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.";
+            writeLang("text-about-me").innerHTML = "O mně";
             flag_en.classList.remove("active-btn");
             flag_cz.classList.add("active-btn");
             break;
