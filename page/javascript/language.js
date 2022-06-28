@@ -27,27 +27,28 @@ function changeLang(lang)
             writeLang("text-about-yt-main").innerHTML = "I own a youtube channel";
             writeLang("text-about-yt-info").innerHTML = "I offer technical content created for a teenage audience.";
             writeLang("text-about-yt-tainment").innerHTML = "The content serves as <a href='https://en.wikipedia.org/wiki/Infotainment' class='text-normal-red underline'>infotainment</a>.";
-            
             writeLang("text-my-projects").innerHTML = "My<br>projects";
             writeLang("project-morality-abyss").innerHTML = "Morality Abyss";
-            writeLang("project-morality-abyss-description").innerHTML = "";
+            writeLang("project-morality-abyss-description").innerHTML = "The project was created in 2020 as a school assignment. It is a 3D horror game inspired by the indie classic 'Slender: The Eight Pages'. The game's story has a faintly comedic basis.";
             writeLang("project-farm-escapade").innerHTML = "Farm Escapade";
-            writeLang("project-farm-escapade-description").innerHTML = "My<br>projects";
+            writeLang("project-farm-escapade-description").innerHTML = "One of my favorite games. The player finds himself in the role of a farmer on a wacky farm, where he must manage to make as much money and plant as many plants as possible while under time constraints.";
             writeLang("project-starfighter").innerHTML = "Starfighter";
-            writeLang("project-starfighter-description").innerHTML = "My<br>projects";
+            writeLang("project-starfighter-description").innerHTML = "One of my oldest projects. This is a modern interpretation of the game classic 'Space Invaders'. The game features a custom shop and an endless game mode.";
             writeLang("project-drainage").innerHTML = "Drainage (Concept)";
-            writeLang("project-drainage-description").innerHTML = "My<br>projects";
+            writeLang("project-drainage-description").innerHTML = "A short story game concept working on the basis of a strong atmosphere. Its full development has not yet begun.";
             writeLang("project-hateful").innerHTML = "Hateful (On hold)";
-            writeLang("project-hateful-description").innerHTML = "My<br>projects";
+            writeLang("project-hateful-description").innerHTML = "The project has been submitted as a Graduation game project. The project was not completed due to the scope of the original plan. The game is on indefinite hold for development. The game features older retro themed graphics and a horror atmosphere.";
             writeLang("project-lukashos").innerHTML = "Lukash Desktop (WM Configuration)";
-            writeLang("project-lukashos-description").innerHTML = "My<br>projects";
+            writeLang("project-lukashos-description").innerHTML = "This is an archive of changes and configurations to the standalone BSPWM desktop environment for Linux systems. Suitable for systems installed on USB flash drives or other computers with weaker hardware.";
             writeLang("project-wallpapers").innerHTML = "Custom Wallpapers";
-            writeLang("project-wallpapers-description").innerHTML = "My<br>projects";
+            writeLang("project-wallpapers-description").innerHTML = "Wallpapers created by my hand.";
             writeLang("project-website").innerHTML = "This Web";
-            writeLang("project-website-description").innerHTML = "My<br>projects";
+            writeLang("project-website-description").innerHTML = "The source code of the website you are currently on.";
             writeLang("contact-title").innerHTML = "Contact";
-            writeLang("contact-other").innerHTML = "My<br>projects";
-            writeLang("contact-mail").innerHTML = "My<br>projects";
+            writeLang("contact-other").innerHTML = "I am able to agree to other forms of contact by appointment. You can download my CV <a href='downloads/urban_cv_en.pdf' class='text-normal-red underline'>here</a>.";
+            writeLang("contact-mail").innerHTML = "I can be contacted via my email address <a onclick='show_notification(`E-Mail: <a href=mailto:lukas.urbann@seznam.cz>lukas.urbann@seznam.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>here</a>";
+            writeLang("text-thats-me").innerHTML = "That's me";
+            writeLang("notification-close").innerHTML = "Close";
             flag_cz.classList.remove("active-btn");
             flag_en.classList.add("active-btn");
             break;
@@ -70,7 +71,6 @@ function changeLang(lang)
             writeLang("text-about-yt-main").innerHTML = "Vlastním youtube kanál.";
             writeLang("text-about-yt-info").innerHTML = "Nabízím technický obsah tvořený pro mladistvé publikum.";
             writeLang("text-about-yt-tainment").innerHTML = "Obsah slouží jako <a href='https://cs.wikipedia.org/wiki/Infotainment' class='text-normal-red underline'>infotainment</a>.";
-            
             writeLang("text-my-projects").innerHTML = "Moje<br>projekty";
             writeLang("project-morality-abyss").innerHTML = "Morality Abyss";
             writeLang("project-morality-abyss-description").innerHTML = "Projekt vznikl v roce 2020 jako úkol do školy. Jedná se o horrorovou 3D hru inspirovanou indie klasikou 'Slender: The Eight Pages'. Herní příběh má slabě komedický základ.";
@@ -90,7 +90,9 @@ function changeLang(lang)
             writeLang("project-website-description").innerHTML = "Zdrojový kód webu, na kterém se právě nacházíte.";
             writeLang("contact-title").innerHTML = "Kontakt";
             writeLang("contact-other").innerHTML = "Na jiné formy kontaktu jsem schopen přistoupit po domluvě. <a href='downloads/urban_cv_cz.pdf' class='text-normal-red underline'>CV</a> ke stažení zde.";
-            writeLang("contact-mail").innerHTML = "Je možné mě kontaktovat skrze moji e-mailovou adresu <a onclick='show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')' class=underline text-normal-red cursor-pointer text-sm md:text-xl'>zde</a>.";
+            writeLang("contact-mail").innerHTML = "Je možné mě kontaktovat skrze moji e-mailovou adresu <a onclick='show_notification(`E-Mail: <a href=mailto:lukas.urbann@seznam.cz>lukas.urbann@seznam.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>zde</a>.";
+            writeLang("text-thats-me").innerHTML = "To jsem já";
+            writeLang("notification-close").innerHTML = "Zavřít";
             flag_en.classList.remove("active-btn");
             flag_cz.classList.add("active-btn");
             break;

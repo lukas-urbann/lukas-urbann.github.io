@@ -238,10 +238,9 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
   text-shadow: rgb(0, 0, 0) 0px 0 6px;
 }
 
-/* #3c3f4d */
-
 .box-blur {
   background-color: rgba(255, 255, 255, 0.8);
+  color: #0f1119;
 }
 
 @supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
@@ -249,11 +248,12 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
     background-color: rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    color:rgba(255, 255, 255, 0.8);
   }
 }  
 
 
-/* NOTIFICATION */
+/* legacy NOTIFICATION */
 .notification {
   display: none;
   position: fixed;
@@ -272,8 +272,9 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
   color: black;
   margin: auto;
   padding: 1.5em;
-  width: 30%;
+  width: 75%;
   border-radius: 4px;
+  text-align: center;
 }
 
 .notification-content a {
