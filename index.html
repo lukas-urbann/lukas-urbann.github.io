@@ -1,196 +1,334 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Lukáš Urban</title>
-  <link rel="stylesheet" href="page/css/tailwind.css" />
-  <link rel="stylesheet" href="page/css/addition.css" />
-  <link rel="icon" type="image/x-icon" href="page/img/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+  <head>
+    <title>Lukáš Urban</title>
+    <link rel="stylesheet" href="page/css/tailwind.css" />
+    <link rel="stylesheet" href="page/css/addition.css" />
+    <link rel="icon" type="image/x-icon" href="page/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 
-<body>
-  <nav class="z-10 md:sticky md:top-0 rounded-none md:container md:mx-auto md:px-4 md:transition-all md:duration-300">
-    <div id="nav-bar"
-      class="border z-10 border-normal-black transition-all rounded-lg m-2 duration-300 bg-dark-black p-2 left-0 right-0 fixed top-0 block unselectable md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block md:top-2">
-      <ul class="inline-block w-full">
-        <li class="inline-block">
-          <p class="inline-block p-2 rounded-xl text-white text-xl md:text-lg md:py-1">Lukáš <span
-              class="text-normal-red">Urban</span></a>
-        </li>
+  <body class="overflow-x-hidden">
+    <nav class="z-10 md:sticky md:top-0 rounded-none md:container md:mx-auto
+      md:px-4 md:transition-all md:duration-500 container mx-auto">
+      <div id="nav-bar"
+        class="border-solid border border-normal-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
+        p-2 left-0 right-0 fixed top-0 block unselectable
+        md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
+        md:top-2">
+        <ul class="inline-block w-full">
+          <li class="inline-block">
+            <p class="inline-block p-2 rounded-xl text-dark-black text-xl md:text-lg
+              md:py-1">Lukáš <span
+                class="text-normal-red">Urban</span></a>
+          </li>
 
-        <li class="ml-auto md:hidden md:invisible inline-block float-right mr-2">
-          <div onclick="toggleMenu();" id="nav-menu-button"
-            class="text-dark-white text-xl px-3 py-2 rounded-xl cursor-pointer md:text-4xl md:py-4 transition-colors duration-150">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </div>
-        </li>
-      </ul>
-    </div>
+          <li class="ml-auto md:hidden md:invisible inline-block float-right
+            mr-2">
+            <div onclick="toggleMenu();" id="nav-menu-button"
+              class="text-black text-xl px-3 py-2 rounded-xl cursor-pointer
+              md:text-4xl md:py-4 transition-colors duration-150">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <div id="nav-menu"
-      class="z-10 transition-all duration-300 menu hidden bg-dark-black w-1/2 rounded-xl border-solid border border-normal-black text-center text-xl p-4 mt-12 ml-auto fixed right-2 top-7 max-w-md md:inline-block md:text-lg md:m-0 md:border-0 md:w-auto md:mx-auto md:rounded-xl md:top-2 md:py-1 md:px-1 md:left-0 md:right-0 md:relative md:ml-3">
-      <ul id="nav-menu-list" class="flex-wrap font-thin md:flex-nowrap md:list-none">
-        <li
-          class="md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0 md:rounded-xl md:-right-32 transition-all duration-300">
-          <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
-            <div id="flag-cz"
-              class="transition-colors duration-150 py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
-              <div onclick="changeLang('cz');"
-                class="w-8 h-8 mx-auto rounded-full border-2 cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5">
-                <img src="page/img/flag_cz.svg" />
+      <div id="nav-menu"
+        class="z-10 transition-all duration-300 menu hidden bg-dark-black w-1/2
+        rounded-xl border-solid border border-normal-black text-center text-xl
+        p-4 mt-12 ml-auto fixed right-2 top-7 max-w-md md:inline-block
+        md:text-lg md:m-0 md:w-auto md:mx-auto md:rounded-xl
+        md:top-2 md:py-1 md:px-1 md:left-0 md:right-0 md:relative md:ml-3">
+        <ul id="nav-menu-list" class="flex-wrap font-thin md:flex-nowrap
+          md:list-none">
+          <li id="nav-flags"
+            class="md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
+            md:rounded-xl md:-right-32 border-solid border-0 md:border border-normal-black">
+            <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
+              <div id="flag-cz"
+                class="transition-colors duration-150 py-1 rounded-lg
+                md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
+                <div onclick="changeLang('cz');"
+                  class="flag-btn w-8 h-8 mx-auto rounded-full border-2
+                  cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5">
+                  <img src="page/img/flag_cz.svg" />
+                </div>
+              </div>
+              <div id="flag-en"
+                class="transition-colors duration-150 py-1 rounded-lg
+                md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
+                <div onclick="changeLang('en');"
+                  class="flag-btn w-8 h-8 mx-auto rounded-full border-2
+                  cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5">
+                  <img src="page/img/flag_en.svg" />
+                </div>
               </div>
             </div>
-            <div id="flag-en"
-              class="transition-colors duration-150 py-1 rounded-lg md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2">
-              <div onclick="changeLang('en');"
-                class="w-8 h-8 mx-auto rounded-full border-2 cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5">
-                <img src="page/img/flag_en.svg" />
-              </div>
-            </div>
-          </div>
-        </li>
-        <li id="nav-btn-li-intro"
-          class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors">
-          <a id="nav-btn-text-intro" class="text-white md:text-lg md:p-2 md:transition-colors md:duration-100"
-            href="#">Úvod</a>
-        </li>
-        <li id="nav-btn-li-portfolio"
-          class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors">
-          <a id="nav-btn-text-portfolio" class="text-white md:text-lg md:p-2 md:transition-colors md:duration-100"
-            href="#portfolio">Portfólio</a>
-        </li>
-        <li id="nav-btn-li-about"
-          class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors">
-          <a id="nav-btn-text-about" class="text-white md:text-lg md:p-2 md:transition-colors md:duration-100"
-            href="#about-me">O mně</a>
-        </li>
-        <li id="nav-btn-li-contact"
-          class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 duration-150 transition-colors">
-          <a id="nav-btn-text-contact" class="text-white md:text-lg md:p-2 md:transition-colors md:duration-100"
-            href="#contact">Kontakt</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--    XXXXXXXXXXXXXXXXXXXXXXXX               -->
-  <section id="introduction"
-    class="container mx-auto h-full min-h-screen bg-normal-black transition-all duration-500">
-    <div class="md:mt-24 grid grid-flow-col grid-cols-1 grid-rows-2 md:grid-flow-row md:grid-cols-2 md:grid-rows-1 h-3/4">
+          </li>
+          <li id="nav-btn-li-intro"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1
+            duration-150 transition-colors">
+            <a id="nav-btn-text-intro" class="text-dark-black md:text-lg md:p-2
+              md:transition-colors md:duration-100"
+              href="#">Úvod</a>
+          </li>
+          <li id="nav-btn-li-portfolio"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1
+            duration-150 transition-colors">
+            <a id="nav-btn-text-portfolio" class="text-dark-black md:text-lg md:p-2
+              md:transition-colors md:duration-100"
+              href="#portfolio">Portfólio</a>
+          </li>
+          <li id="nav-btn-li-about"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1
+            duration-150 transition-colors">
+            <a id="nav-btn-text-about" class="text-dark-black md:text-lg md:p-2
+              md:transition-colors md:duration-100"
+              href="#about-me">O mně</a>
+          </li>
+          <li id="nav-btn-li-contact"
+            class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1
+            duration-150 transition-colors">
+            <a id="nav-btn-text-contact" class="text-dark-black md:text-lg md:p-2
+              md:transition-colors md:duration-100"
+              href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--    XXXXXXXXXXXXXXXXXXXXXXXX               -->
+    <section id="introduction" class="container mx-auto h-full bg-normal-black
+      transition-all duration-500">
       <div
-        class="bg-black overflow-hidden relative rounded-t-lg md:rounded-r-none md:rounded-l-lg p-4 m-0 md:m-2 md:mr-0 justify-self-stretch md:row-start-1 md:row-end-3 box-shadow">
-        <div class="font-black text-7xl md:text-7xl lg:text-8xl 2xl:text-9xl w-full h-full">
-          <h1 data-aos="fade-down" id="text-portfolio" class="transform-all duration-300 absoluteleft-0 right-0 m-auto">Vítej na mém
-            portfóliu.</h1>
-          <br>
+        class="md:mt-24 grid grid-flow-col grid-cols-1 grid-rows-2
+        md:grid-flow-row md:grid-cols-2 md:grid-rows-1 h-3/4">
+        <div
+          class="bg-black overflow-hidden relative rounded-t-lg
+          md:rounded-r-none md:rounded-l-lg p-4 m-0 md:m-2 md:mr-0
+          justify-self-stretch md:row-start-1 md:row-end-3 box-shadow">
+          <div class="font-black text-7xl md:text-7xl lg:text-8xl 2xl:text-9xl
+            w-full h-full">
+            <h1 data-aos="fade-down" id="text-portfolio" class="transform-all
+              duration-300 absoluteleft-0 right-0 m-auto">
+              Vítej na mém
+              portfóliu.</h1>
+            <br>
+          </div>
         </div>
-      </div>
-      <div style="background-image: url(page/img/gaming.jpg); background-size: cover;"
-        class="overflow-hidden box-shadow bg-normal-red rounded-b-lg md:rounded-l-none md:rounded-r-lg justify-self-stretch p-4 md:m-2 md:ml-0 hover:border-2 box-shadow-text font-semibold text-2xl md:text-lg relative lg:text-3xl xl:text-4xl 2xl:text-4xl">
-        <p data-aos="fade-up" id="text-intro-about" class="absolute bottom-4 text-shadow-black">Věnuji se tvorbě videoher a videohernímu designu. Je to má
-          vášen, kterou si pěstuji od svého dětství.</p>
-      </div>
-  </section>
-  <!--    XXXXXXXXXXXXXXXXXXXXXXXX               -->
-  <section data-aos="fade-left" id="portfolio" class="section-content h-screen container mx-auto pt-24">
-    <div class="rounded-lg h-full">
-      <div class="grid grid-cols-2 grid-flow-row auto-rows-min auto-cols-min
-      ">
-        <div class="bg-black self-stretch m-2 rounded-lg">
-          <h1 class="text-4xl text-center">Mé projekty</h1>
+        <div style="background-image: url(page/img/gaming.jpg); background-size:
+          cover;"
+          class="overflow-hidden box-shadow bg-normal-red rounded-b-lg
+          md:rounded-l-none md:rounded-r-lg justify-self-stretch p-4 md:m-2
+          md:ml-0 hover:border-2 box-shadow-text font-semibold text-2xl
+          md:text-lg relative lg:text-3xl xl:text-4xl 2xl:text-4xl">
+          <p data-aos="fade-up" id="text-intro-about" class="absolute bottom-4
+            text-shadow-black">Věnuji se tvorbě
+            videoher a videohernímu designu. Je to má
+            vášen, kterou si pěstuji od svého dětství.</p>
         </div>
-        <div class="bg-normal-red self-stretch mx-1 my-4 rounded-lg box-shadow">
-          asd
-        </div>
-        <div class="bg-normal-red self-stretch mx-1 my-4 rounded-lg box-shadow">
-          asd
-        </div>
-        <div class="bg-normal-red self-stretch mx-1 my-4 rounded-lg box-shadow">
-          asd
-        </div>
-        <div class="bg-normal-red self-stretch mx-1 my-4 rounded-lg box-shadow">
-          asd
-        </div>
-      </div>
-    </div>
-  </section>
-<!--    XXXXXXXXXXXXXXXXXXXXXXXX               -->
-  <section data-aos="fade-right" id="about-me" class="duration-500 transition-all section-content h-screen container mx-auto pt-24">
-    <div style="background-image: url(page/img/keyboard.jpg);" class="relative rounded-lg bg-cover box-shadow-text box-shadow h-full p-8">
-      <h1 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span> <span id="text-about-me">O mně</span></h1>
-      <div class="grid grid-rows-2 grid-cols-2 h-full">
-        <div style="background-image: url(page/img/me.jpeg);" class="transition-all duration-500 border-2 border-normal-red bg-center m-12 rounded-lg bg-cover p-8">
-        </div>
-        <div>
-          <ul class="box-blur rounded-lg p-4 mt-12 text-lg">
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Jsem devatenáctiletý student.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Studuji obor Softwarového inženýra.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Rád šířím filozofii otevřeného a svobodného softwaru.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Zaměřuji se primárně na tvorbu a design videoher.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Moje CV ke stažení zde.</li>
-          </ul>
-        </div>
-
-        </div>
-    </div>
-  </section>
-  <!-- <section id="section-fir2" class="section-content h-screen bg-normal-red"></section> -->
-  <section data-aos="fade-right" id="contact" class="duration-500 transition-all section-content h-screen container mx-auto pt-24">
-    <div style="background-image: url(page/img/keyboard.jpg);" class="relative rounded-lg bg-cover box-shadow-text box-shadow h-full p-8">
-      <h1 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span> <span id="text-about-me">O mně</span></h1>
-      <div class="grid grid-rows-2 grid-cols-2 h-full">
-        <div style="background-image: url(page/img/me.jpeg);" class="transition-all duration-500 border-2 border-normal-red bg-center m-12 rounded-lg bg-cover p-8">
-        </div>
-        <div>
-          <ul class="box-blur rounded-lg p-4 mt-12 text-lg">
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Jsem devatenáctiletý student.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Studuji obor Softwarového inženýra.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Rád šířím filozofii otevřeného a svobodného softwaru.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Zaměřuji se primárně na tvorbu a design videoher.</li>
-            <li><i class="fa fa-caret-right" aria-hidden="true"></i> Moje CV ke stažení zde.</li>
-          </ul>
-        </div>
-
-        </div>
-    </div>
-  </section>
-
-
-  <footer
-    class="transition-all duration-500 clear-both relative bottom-0 bg-dark-black left-2 right-2 ml-auto mr-auto container my-4 p-2 rounded-xl box-shadow">
-    <div>
-      <p class="font-black">#!/bin/bash</p>
-      <span class="text-sm text-normal-red">footer@lukas-urbann.github.io:~$</span>
-    </div>
-    <div class="flex flex-nowrap flex-row text-center text-3xl justify-center absolute mt-2">
-      <div class="flex-initial mx-3">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </div>
-      <div class="flex-initial mx-3">
-        <a href="š" class="hover:text-normal-red cursor-pointer">
-          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </section>
+      <div class="text-4xl w-full text-center mt-12">
+        <a href="#portfolio" class="hover:text-normal-red">
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
         </a>
       </div>
-      <div class="flex-initial mx-3">
-        <i class="fa fa-gamepad" aria-hidden="true"></i>
-      </div>
-      <div class="flex-initial mx-3">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-      </div>
-    </div>
-    <div class="mt-14">
-      <p class="text-center mt-2"><span class="text-normal-red">&copy;2022</span> Lukáš Urban</p>
-      <p id="text-creds" class="text-xs text-center">Web byl vytvořen bez předlohy. Použité obrázky z webu <a class="text-normal-red" href="https://unsplash.com">unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.</p>
-    </div>
-  </footer>
+      <!--    XXXXXXXXXXXXXXXXXXXXXXXX               -->
+      <section id="portfolio" class="transition-all duration-500
+        h-full container mx-auto pt-24">
+        <div class="rounded-lg h-full transition duration-500">
 
-  <script src="page/javascript/hamburger-menu.js"></script>
-  <script src="page/javascript/language.js"></script>
-  <script src="page/javascript/section-selector.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-</body>
+
+          <div class="grid grid-cols-2 grid-flow-row lg:grid-cols-3 gap-x-4 auto-rows-fr">
+            <div class="fancy-background relative self-stretch my-4
+              rounded-lg box-shadow h-96 min-h-96 max-h-96 p-4">
+              <h1
+                class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl
+                bg-black p-2 bg-opacity-40 rounded-lg font-black text-left
+                absolute m-auto top-1/2 transform -translate-y-1/2">
+                Mé<br>projekty</h1>
+            </div>
+
+
+            <div class="text-normal-black self-stretch my-4 rounded-lg
+              box-shadow max-h-96 overflow-hidden">
+                <div style="background-image: url(page/img/gaming.jpg);"class="bg-cover
+                  h-40 rounded-t-lg"></div>
+                <div class="p-2 bg-normal-white rounded-b-lg h-full">
+                  tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt
+                </div>
+            </div>
+
+            <div class="text-normal-black self-stretch my-4 rounded-lg
+            box-shadow max-h-96 overflow-hidden">
+              <div style="background-image: url(page/img/gaming.jpg);"class="bg-cover
+                h-40 rounded-t-lg"></div>
+              <div class="p-2 bg-dark-white rounded-b-lg h-full">
+                tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt
+              </div>
+          </div><div class="text-normal-black self-stretch my-4 rounded-lg
+          box-shadow max-h-96 overflow-hidden">
+            <div style="background-image: url(page/img/gaming.jpg);"class="bg-cover
+              h-40 rounded-t-lg"></div>
+            <div class="p-2 bg-dark-white rounded-b-lg h-full">
+              tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt
+            </div>
+        </div>
+        <div class="text-normal-black self-stretch my-4 rounded-lg
+              box-shadow max-h-96 overflow-hidden">
+                <div style="background-image: url(page/img/gaming.jpg);"class="bg-cover
+                  h-40 rounded-t-lg"></div>
+                <div class="p-2 bg-dark-white rounded-b-lg h-full">
+                  tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt
+                </div>
+            </div><div class="text-normal-black self-stretch my-4 rounded-lg
+            box-shadow max-h-96 overflow-hidden">
+              <div style="background-image: url(page/img/gaming.jpg);"class="bg-cover
+                h-40 rounded-t-lg"></div>
+              <div class="p-2 bg-dark-white rounded-b-lg h-full">
+                tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt tohle je super projekt
+              </div>
+          </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--    XXXXXXXXXXXXXXXXXXXXXXXX               -->
+    <section id="about-me" class="duration-500 transition-all section-content
+      h-full container mx-auto pt-24">
+      <div style="background-image: url(page/img/keyboard.jpg);"
+        class="relative rounded-lg bg-cover box-shadow-text box-shadow p-8">
+        <h1 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span>
+          <span id="text-about-me">O
+            mně</span></h1>
+        <div class="grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2
+          auto-cols-auto auto-rows-auto">
+          <div data-aos="fade-right" style="background-image: url(page/img/me.jpeg);padding-top:
+            100%;"
+            class="relative transition-all duration-500 border-2
+            border-normal-red bg-center my-4 md:m-8 rounded-lg bg-cover p-8">
+            <p data-aos="zoom-out" class="p-2 bg-yellow-300 border-2 border-black rounded-lg absolute -left-4
+              -bottom-4 text-xl text-black">To jsem já.</p>
+          </div>
+          <div data-aos="zoom-in-right" data-aos-offset="500">
+            <ul class="box-blur rounded-lg p-4 text-lg border-2
+              border-normal-white">
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-age">Jsem devatenáctiletý
+                  student.</span></li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-prof">Studuji obor
+                  Softwarového inženýra.</span></li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-philosophy">Rád šířím
+                  filozofii otevřeného a svobodného softwaru.</span></li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-objective">Zaměřuji se
+                  primárně na tvorbu a design videoher.</span></li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-interest">Zajímám se o
+                  kyberbezpečnost.</span></li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-cv">Moje <a
+                    href="downloads/urban_cv_cz.pdf" class="text-normal-red
+                    underline">CV</a> ke stažení zde.</span></li>
+            </ul>
+          </div>
+
+
+          <div class="my-auto">
+            <ul class="box-blur rounded-lg p-4 mt-12 text-lg border-2
+              border-normal-white">
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-yt-main">Vlastním youtube
+                  kanál.</span></li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-yt-info">Nabízím technický
+                  obsah tvořený pro mladistvé publikum.</span></li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
+                  id="text-about-yt-tainment">Obsah slouží jako
+                  <a href="https://wikipedia.org/wiki/Infotainment"
+                    class="text-normal-red underline">infotainment</a>.</span></li>
+            </ul>
+          </div>
+
+          <div class="w-full h-full">
+            <a href="https://www.youtube.com/channel/UCHdTk9KXJGUTvmOFaKNy57w">
+              <div style="background-image: url(page/img/me-yt.png);padding-top:
+              100%;"
+                class="transition-all duration-500 bg-center rounded-lg h-1/2 w-auto
+                bg-cover">
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="duration-500 transition-all container mx-auto
+      pt-24">
+      <div class="h-full">
+        <div class="grid grid-rows-2 grid-cols-1">
+          <div class="bg-black self-stretch rounded-xl">
+            asd
+          </div>
+          <div class="bg-black self-stretch rounded-xl">
+            asd
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="transition-all duration-500 clear-both relative bottom-0
+      mx-auto container my-4 p-2">
+      <div class="w-auto bg-dark-black rounded-xl p-2 mx-1">
+        <div>
+          <p class="font-black">#!/bin/bash</p>
+          <span class="text-sm text-normal-red">footer@lukas-urbann.github.io:~$</span>
+        </div>
+        <div class="flex flex-nowrap flex-row text-center text-3xl
+          justify-center mt-4 w-full">
+          <div class="flex-initial mx-3">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </div>
+          <div class="flex-initial mx-3">
+            <a href="https://www.youtube.com/channel/UCHdTk9KXJGUTvmOFaKNy57w"
+              class="hover:text-normal-red cursor-pointer">
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="flex-initial mx-3">
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div class="flex-initial mx-3">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="text-center mt-2"><span class="text-normal-red">&copy;2022</span>
+            Lukáš Urban</p>
+          <p id="text-creds" class="text-xs text-center">Web byl vytvořen bez
+            předlohy. Použité obrázky z webu <a
+              class="text-normal-red" href="https://unsplash.com">unsplash</a>.
+            Kód webu je veřejně dostupný. Použité
+            technologie webu jsou vypsané na repozitáři.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="page/javascript/hamburger-menu.js"></script>
+    <script src="page/javascript/language.js"></script>
+    <script src="page/javascript/section-selector.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
 
 </html>
