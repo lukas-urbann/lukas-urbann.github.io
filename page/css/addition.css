@@ -1,0 +1,300 @@
+@font-face {
+    font-family: PublicSans;
+    src: url("../fonts/PublicSans-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: PublicSans;
+    src: url("../fonts/PublicSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: PublicSans;
+    src: url("../fonts/PublicSans-Light.ttf");
+    font-weight: 100;
+}
+  
+@font-face {
+  font-family: HackerCRT;
+  src: url("../fonts/HackedCRT.ttf");
+  font-weight: normal;
+}
+
+.hacker-font {
+  font-family: HackerCRT;
+}
+
+html {
+    font-family: PublicSans;
+    scroll-behavior: smooth;
+    background-color: #1d1f2b;
+    color: #ccc;
+}
+
+#nav-menu, #nav-bar {
+  box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+  #nav-menu, #nav-bar {
+    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+}
+
+.responsive-show {
+    animation-name: dropdownShow;
+    animation-duration: 0.15s;
+    display: inline-block;
+    transform-origin: top right;
+    animation-timing-function: ease-out;
+    /* animation-fill-mode: forwards; -- just dont */
+}
+
+.responsive-hide {
+    animation-name: dropdownHide;
+    animation-duration: 0.15s;
+    transform-origin: top right;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.active-btn {
+  background-color: rgba(247, 61, 61, 255);
+  animation-name: btnSelection;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  color: #0f1119 !important;
+}
+
+.active-btn a {
+  color: #0f1119 !important;
+}
+
+ul li a:hover
+{
+  color: rgba(247, 61, 61, 255);
+}
+
+ul .active-btn:hover {
+  background-color: #ffa6a6;
+}
+
+@keyframes btnSelection {
+  0% {
+      transform: scale(1.1);
+      display: none;
+  }
+
+  40% {
+    transform: scale(0.85);
+    display: none;
+}
+
+  100% {
+      transform: scale(1);
+      display: inline-block;
+  }
+}
+
+@keyframes dropdownShow {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+      display: none;
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+      display: inline-block;
+  }
+}
+
+  @keyframes dropdownHide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        display: inline-block;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+        display: none;
+    }
+  }
+
+/* CHROME SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0f1119;
+  border-left: 1px #1d1f2b solid;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #f73d3d;
+  border-left: 1px #1d1f2b solid;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+/* CHROME SCROLLBAR */
+
+.unselectable {
+    -webkit-user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*, *::after, *::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;    
+}
+
+#introduction {
+  margin-top: 76px;
+}
+
+section {
+  padding: 12px;
+}
+
+#text-portfolio {
+  background: rgb(200,53,169);
+  background: linear-gradient(90deg, rgba(200,53,169,1) 0%, rgba(84,47,173,1) 38%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.too-small-text {
+  visibility: hidden;
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    visibility: hidden;
+  }
+
+  .too-small-text {
+    font-weight: bold;
+    visibility: visible;
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    margin-top: -68px;
+  }
+
+  #nav-flags {
+    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  @supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+    #nav-flags {
+      box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
+      background-color: rgba(255, 255, 255, 0.4);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+  }  
+}
+
+.fancy-background {
+  background: rgb(200,53,169);
+  background: linear-gradient(75deg, rgba(200,53,169,1) 0%, rgba(84,47,173,1) 38%, rgba(0,212,255,1) 100%);
+}
+
+.box-shadow-text {
+  -webkit-box-shadow: inset -136px -139px 212px 11px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -136px -139px 212px 11px rgba(0,0,0,0.75);
+  box-shadow: inset -136px -139px 212px 11px rgba(0,0,0,0.75);
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+}
+
+.text-shadow-black {
+  text-shadow: rgb(0, 0, 0) 0px 0 6px;
+}
+
+.box-blur {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #0f1119;
+}
+
+@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+  .box-blur {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color:rgba(255, 255, 255, 0.8);
+  }
+}  
+
+
+/* legacy NOTIFICATION */
+.notification {
+  display: none;
+  position: fixed;
+  padding-top: 20vh;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.notification-content {
+  background-color: #ccc;
+  color: black;
+  margin: auto;
+  padding: 1.5em;
+  width: 75%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.notification-content a {
+  color: red;
+}
+
+.notification-btn {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  color: white;
+  width: 6em;
+  padding: 0.75em;
+  text-align: center;
+  transition-duration: 0.0625s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.notification-btn:hover {
+  background-color: #ffa6a6;
+  color: black;
+}
+/* NOTIFICATION */
