@@ -108,16 +108,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+<!-- Notification -->
+<div id="notification" class="notification">
+  <div class="notification-content">
+    <p id="notification-text">Text</p><br>
+    <div id="notification-close" class="notification-btn">Zavřít</div>
+  </div>
+</div>
+<!-- Notification -->
 
 
 
@@ -334,7 +332,7 @@
 
 
           </div>
-          <div data-aos="zoom-in-right" data-aos-offset="500">
+          <div data-aos="zoom-in-right" data-aos-offset="500" class="my-auto">
             <ul class="box-blur rounded-lg p-4 text-lg border-2
               border-normal-white">
               <li><i class="fa fa-caret-right" aria-hidden="true"></i> <span
@@ -413,15 +411,23 @@
 
 
 
-    <section id="contact" class="section-content duration-500 transition-all container mx-auto
+    <section id="contact" class="section-content duration-500 transition-all container mx-auto font-black
       pt-24">
-      <div class="h-full">
-        <div class="grid grid-rows-2 grid-cols-1">
-          <div class="bg-black self-stretch rounded-xl">
-            asd
+      <div class="h-full mx-2">
+        <div class="grid grid-rows-2 grid-cols-2">
+          <div class="text-shadow-black bg-dark-black box-shadow self-stretch rounded-xl col-start-1 col-end-3 text-center font-black px-4 py-12 text-5xl my-4 bg-cover bg-center" style="background-image: url(page/img/contact.jpg);">
+            Kontakt
           </div>
-          <div class="bg-black self-stretch rounded-xl">
-            asd
+          <div class="relative bg-dark-black self-stretch rounded-xl mr-2 box-shadow bg-cover bg-left-bottom text-sm md:text-lg" style="background-image: url(page/img/contact.jpg);">
+            <div class="m-0 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center p-2 w-3/4  rounded-lg box-shadow-text">
+              Je možné mě kontaktovat skrze moji e-mailovou adresu
+              <a onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')" class="underline text-normal-red cursor-pointer text-sm md:text-xl">zde</a>.
+            </div>
+          </div>
+          <div class="relative bg-dark-black self-stretch rounded-xl ml-2 bg-cover box-shadow bg-top text-sm  md:text-lg" style="background-image: url(page/img/contact.jpg);">
+            <div class="m-0 absolute box-shadow-text top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center p-2 w-3/4 rounded-lg">
+              Na jiné formy kontaktu jsem schopen přistoupit po domluvě. CV ke stažení zde.
+            </div>
           </div>
         </div>
       </div>
@@ -478,7 +484,7 @@
             </a>
           </div>
           <div class="flex-initial mx-3">
-            <a href="#"
+            <a onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')"
               class="hover:text-normal-red cursor-pointer text-2xl">
               <i class="fa fa-envelope" aria-hidden="true"></i><span class="text-sm"> >e-mail</span>
             </a>
@@ -499,6 +505,7 @@
     <script src="page/javascript/hamburger-menu.js"></script>
     <script src="page/javascript/language.js"></script>
     <script src="page/javascript/section-selector.js"></script>
+    <script src="page/javascript/overlay.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
   </body>
