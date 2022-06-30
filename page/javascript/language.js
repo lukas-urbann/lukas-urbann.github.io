@@ -49,6 +49,7 @@ function changeLang(lang)
             writeLang("contact-mail").innerHTML = "I can be contacted via my email address <a onclick='show_notification(`E-Mail: <a href=mailto:lukas.urbann@seznam.cz>lukas.urbann@seznam.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>here</a>";
             writeLang("text-thats-me").innerHTML = "That's me";
             writeLang("notification-close").innerHTML = "Close";
+            writeLang("warning-small-window").innerHTML = "The window is too small!";
             flag_cz.classList.remove("active-btn");
             flag_en.classList.add("active-btn");
             break;
@@ -93,6 +94,7 @@ function changeLang(lang)
             writeLang("contact-mail").innerHTML = "Je možné mě kontaktovat skrze moji e-mailovou adresu <a onclick='show_notification(`E-Mail: <a href=mailto:lukas.urbann@seznam.cz>lukas.urbann@seznam.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>zde</a>.";
             writeLang("text-thats-me").innerHTML = "To jsem já";
             writeLang("notification-close").innerHTML = "Zavřít";
+            writeLang("warning-small-window").innerHTML = "Okno je příliš malé!";
             flag_en.classList.remove("active-btn");
             flag_cz.classList.add("active-btn");
             break;
