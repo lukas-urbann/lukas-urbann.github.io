@@ -1,50 +1,41 @@
 @font-face {
-    font-family: PublicSans;
-    src: url("../fonts/PublicSans-Regular.ttf");
+    font-family: TitilliumWeb;
+    src: url("../fonts/TitilliumWeb-Regular.ttf");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: PublicSans;
-    src: url("../fonts/PublicSans-Bold.ttf");
+    font-family: TitilliumWeb;
+    src: url("../fonts/TitilliumWeb-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: PublicSans;
-    src: url("../fonts/PublicSans-Light.ttf");
+    font-family: TitilliumWeb;
+    src: url("../fonts/TitilliumWeb-Light.ttf");
     font-weight: 100;
-}
-  
-@font-face {
-  font-family: HackerCRT;
-  src: url("../fonts/HackedCRT.ttf");
-  font-weight: normal;
-}
-
-.hacker-font {
-  font-family: HackerCRT;
 }
 
 html {
-    font-family: PublicSans;
+    font-family: TitilliumWeb;
     scroll-behavior: smooth;
     background-color: #1d1f2b;
     color: #ccc;
 }
 
-#nav-menu, #nav-bar {
-  box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-  background-color: rgba(255, 255, 255, 0.8);
+.fancy-border
+{
+  box-shadow: inset 0px 0px 0px 1px rgb(110, 110, 110);
+  background-color: rgba(26, 22, 22, 0.8);
 }
 
-@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
-  #nav-menu, #nav-bar {
-    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-    background-color: rgba(255, 255, 255, 0.4);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-  }
+#nav-menu, #nav-bar {
+  box-shadow: inset 0px 0px 0px 1px rgb(110, 110, 110);
+  background-color: rgba(26, 22, 22, 0.8);
+}
+
+.inner-border-gray {
+  box-shadow: inset 0px 0px 0px 1px rgb(110, 110, 110);
 }
 
 .responsive-show {
@@ -135,11 +126,13 @@ ul .active-btn:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0f1119;
-  border-left: 1px #1d1f2b solid;
+  /* background-color: #0f111900; */
+  /* border-left: 1px #1d1f2b solid; */
+  background-color: rgba(15, 17, 25, 0);
 }
  
 ::-webkit-scrollbar-thumb {
+  padding-right: 1px;
   background: #f73d3d;
   border-left: 1px #1d1f2b solid;
 }
@@ -202,19 +195,10 @@ section {
     margin-top: -68px;
   }
 
-  #nav-flags {
-    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  @supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
     #nav-flags {
-      box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-      background-color: rgba(255, 255, 255, 0.4);
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
-    }
-  }  
+    box-shadow: inset 0px 0px 0px 1px rgb(110, 110, 110);
+    background-color: rgba(26, 22, 22, 0.8);
+  }
 }
 
 .fancy-background {
@@ -237,21 +221,6 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
 .text-shadow-black {
   text-shadow: rgb(0, 0, 0) 0px 0 6px;
 }
-
-.box-blur {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #0f1119;
-}
-
-@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
-  .box-blur {
-    background-color: rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    color:rgba(255, 255, 255, 0.8);
-  }
-}  
-
 
 /* legacy NOTIFICATION */
 .notification {
