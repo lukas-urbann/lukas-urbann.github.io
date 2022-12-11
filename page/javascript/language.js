@@ -65,7 +65,7 @@ function changeLang(lang)
             writeLang("nav-btn-text-portfolio").innerHTML = "Portfólio";
             writeLang("nav-btn-text-about").innerHTML = "O mně";
             writeLang("nav-btn-text-contact").innerHTML = "Kontakt";
-            writeLang("text-portfolio").innerHTML = "Vítej na mém portfóliu.";
+            writeLang("text-portfolio").innerHTML = "Vítej na<br>mém portfóliu.";
             writeLang("text-intro-about").innerHTML = "<span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášeň,</span> kterou si pěstuji od svého dětství.";
             writeLang("text-creds").innerHTML = "Web byl vytvořen bez předlohy. Použité obrázky z webu <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.";
             writeLang("text-about-me").innerHTML = "O mně";
