@@ -30,8 +30,8 @@ function changeLang(lang)
             writeLang("text-my-projects").innerHTML = "My<br>projects";
             writeLang("project-morality-abyss").innerHTML = "Morality Abyss";
             writeLang("project-morality-abyss-description").innerHTML = "The project was created in 2020 as a school assignment. It is a 3D horror game inspired by the indie classic 'Slender: The Eight Pages'. The game's story has a faintly comedic basis.";
-            //writeLang("project-farm-escapade").innerHTML = "Farm Escapade";
-            //writeLang("project-farm-escapade-description").innerHTML = "One of my favorite games. The player finds himself in the role of a farmer on a wacky farm, where he must manage to make as much money and plant as many plants as possible while under time constraints.";
+            writeLang("project-farm-escapade").innerHTML = "Farm Escapade";
+            writeLang("project-farm-escapade-description").innerHTML = "One of my favorite games. The player finds himself in the role of a farmer on a wacky farm, where he must manage to make as much money and plant as many plants as possible while under time constraints.";
             writeLang("project-starfighter").innerHTML = "Starfighter";
             writeLang("project-starfighter-description").innerHTML = "One of my oldest projects. This is a modern interpretation of the game classic 'Space Invaders'. The game features a custom shop and an endless game mode.";
             writeLang("project-hateful").innerHTML = "Hateful (Project on hold)";
@@ -81,8 +81,8 @@ function changeLang(lang)
             writeLang("text-my-projects").innerHTML = "Moje<br>projekty";
             writeLang("project-morality-abyss").innerHTML = "Morality Abyss";
             writeLang("project-morality-abyss-description").innerHTML = "Projekt vznikl v roce 2020 jako úkol do školy. Jedná se o horrorovou 3D hru inspirovanou indie klasikou 'Slender: The Eight Pages'. Herní příběh má slabě komedický základ.";
-            //writeLang("project-farm-escapade").innerHTML = "Farmářská eskapáda";
-            //writeLang("project-farm-escapade-description").innerHTML = "Jedna z mých nejoblíbenějších her. Hráč se ocitne v roli farmáře na potrhlé farmě, kde musí za doprovodu časového omezení stihnout vydělat co nejvíce peněz a zasadit co nejvíc rostlin.";
+            writeLang("project-farm-escapade").innerHTML = "Farmářská eskapáda";
+            writeLang("project-farm-escapade-description").innerHTML = "Jedna z mých nejoblíbenějších her. Hráč se ocitne v roli farmáře na potrhlé farmě, kde musí za doprovodu časového omezení stihnout vydělat co nejvíce peněz a zasadit co nejvíc rostlin.";
             writeLang("project-starfighter").innerHTML = "Starfighter";
             writeLang("project-starfighter-description").innerHTML = "Jeden z mých nejstarších projektu. Jedná se o moderní interpretaci herní klasiky 'Space Invaders'. Hra obsahuje vlastní obchod a nekonečný herní mód.";
             writeLang("project-hateful").innerHTML = "Hateful (Pozastavený vývoj)";
