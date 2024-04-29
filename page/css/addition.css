@@ -79,25 +79,21 @@ ul .active-btn:hover {
 
 @keyframes btnSelection {
   0% {
-      transform: scale(1.1);
-      display: none;
+      transform: scale(1);
+      display: inline-block;
   }
-
-  40% {
-    transform: scale(0.85);
-    display: none;
-}
-
   100% {
       transform: scale(1);
       display: inline-block;
+      color: #ccc;
+      background-color: #f73d3d;
   }
 }
 
 @keyframes dropdownShow {
   0% {
       opacity: 0;
-      transform: scale(0.9);
+      transform: scale(0.7);
       display: none;
   }
   100% {
@@ -115,7 +111,7 @@ ul .active-btn:hover {
     }
     100% {
         opacity: 0;
-        transform: scale(0.9);
+        transform: scale(0.7);
         display: none;
     }
   }
@@ -217,8 +213,8 @@ section {
 
 .box-shadow {
   -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
 }
 
 .text-shadow-black {
@@ -270,3 +266,4 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
   color: black;
 }
 /* NOTIFICATION */
+

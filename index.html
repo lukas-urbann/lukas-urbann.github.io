@@ -10,14 +10,12 @@
   <link rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-
 <body class="overflow-x-hidden">
   <div class="too-small-text" id="warning-small-window">
     Okno je příliš malé!
   </div>
-  <nav class="z-10 md:sticky md:top-0 rounded-none md:container md:mx-auto
-      md:px-4 md:transition-all md:duration-500 container mx-auto">
-    <div id="nav-bar" class="border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
+  <nav class="c-navbar">
+    <div id="nav-bar" class="c-blur border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
         p-2 left-0 right-0 fixed top-0 block unselectable
         md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
         md:top-2">
@@ -37,11 +35,7 @@
       </ul>
     </div>
 
-    <div id="nav-menu" class="z-10 transition-all duration-300 menu hidden bg-dark-black w-1/2
-        rounded-xl border-solid border border-black text-center text-xl
-        p-4 mt-12 ml-auto fixed right-2 top-7 max-w-md md:inline-block
-        md:text-lg md:m-0 md:w-auto md:mx-auto md:rounded-xl
-        md:top-2 md:py-1 md:px-1 md:left-0 md:right-0 md:relative md:ml-3">
+    <div id="nav-menu" class="c-blur c-navmenu">
       <ul id="nav-menu-list" class="flex-wrap font-thin md:flex-nowrap
           md:list-none">
         <li id="nav-flags" class="md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
@@ -144,25 +138,23 @@
         </div>
         <!-- Steel Nemesis -->
         <div style="background-image: url(page/img/projects/steel-nemesis.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Play Button -->
             <a target="_blank" href="https://redhavoc12.itch.io/steel-nemesis"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-itch-io text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-itch-io c-project-button-icon" aria-hidden="true"></i>
             </a>
             <!-- Youtube Button -->
             <a target="_blank" href="https://youtu.be/4jVQK7SO4B0"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-youtube text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-youtube c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-          class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+          class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-steel-nemesis">Steel Nemesis</h1>
             <p class="text-lg" id="project-steel-nemesis-description">Steel Nemesis Description</p>
           </div>
@@ -170,31 +162,28 @@
 
         <!-- Scary Horror Game -->
         <div style="background-image: url(page/img/projects/scary-horror-game.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Play Button -->
             <a target="_blank" href="https://redhavoc12.itch.io/scary-horror-game"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-itch-io text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-itch-io c-project-button-icon" aria-hidden="true"></i>
             </a>
             <!-- Youtube Button -->
             <a target="_blank" href="https://www.youtube.com/watch?v=53bI3xmylfk"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-youtube text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-youtube c-project-button-icon" aria-hidden="true"></i>
             </a>
             <!-- GitHub Button -->
             <a target="_blank" href="https://github.com/lukas-urbann/game-off-2022"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-github text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-github c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-scary-horror-game">Scary Horror Game</h1>
             <p class="text-lg" id="project-scary-horror-game-description">Scary Horror Game Description</p>
           </div>
@@ -202,25 +191,23 @@
 
         <!-- Farm Escapade-->
         <div style="background-image: url(page/img/projects/farm.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Play Button -->
             <a target="_blank" href="https://redhavoc12.itch.io/farm-escapade"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-itch-io text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-itch-io c-project-button-icon" aria-hidden="true"></i>
             </a>
             <!-- Youtube Button -->
             <a target="_blank" href="https://youtu.be/U2P3nn2IUcI"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-youtube text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-youtube c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-          class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+          class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-farm-escapade">Farm Escapade</h1>
             <p class="text-lg" id="project-farm-escapade-description">Farm Escapade Description</p>
           </div>
@@ -228,19 +215,18 @@
         
         <!-- Hateful -->
         <div style="background-image: url(page/img/projects/hateful.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Youtube Button -->
             <a target="_blank" href="https://youtu.be/hRecRIsvskA"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-youtube text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="">
+              <i class="fa-brands fa-youtube c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-hateful">Hateful</h1>
             <p class="text-lg" id="project-hateful-description">Hateful Description</p>
           </div>
@@ -248,19 +234,18 @@
 
         <!-- Morality Abyss -->
         <div style="background-image: url(page/img/projects/morality-abyss.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Play Button -->
             <a target="_blank" href="https://redhavoc12.itch.io/morality-abyss"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-itch-io text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-itch-io c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-morality-abyss">Morality Abyss</h1>
             <p class="text-lg" id="project-morality-abyss-description">Morality Abyss Description</p>
           </div>
@@ -268,31 +253,28 @@
         
         <!-- Pixel Pong -->
         <div style="background-image: url(page/img/projects/pixel-pong.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Play Button -->
             <a target="_blank" href="https://redhavoc12.itch.io/pixel-pong"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-itch-io text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-itch-io c-project-button-icon" aria-hidden="true"></i>
             </a>
             <!-- Youtube Button -->
             <a target="_blank" href="https://www.youtube.com/watch?v=oL0a6PjGCY4"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-youtube text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-youtube c-project-button-icon" aria-hidden="true"></i>
             </a>
             <!-- GitHub Button -->
             <a target="_blank" href="https://github.com/lukas-urbann/pixel-pong"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-github text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-github c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-pixel-pong">Pixel Pong</h1>
             <p class="text-lg" id="project-pixel-pong-description">Pixel Pong Description</p>
           </div>
@@ -300,19 +282,19 @@
 
         <!-- Starfighter -->
         <div style="background-image: url(page/img/projects/starfighter.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Play Button -->
             <a target="_blank" href="https://redhavoc12.itch.io/starfighter"
               class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
               h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all">
-              <i class="fa-brands fa-itch-io text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              <i class="fa-brands fa-itch-io c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-starfighter">Starfighter</h1>
             <p class="text-lg" id="project-starfighter-description">Starfighter Description</p>
           </div>
@@ -320,25 +302,23 @@
 
         <!-- Sample Driver -->
         <div style="background-image: url(page/img/projects/endless-driver.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- Play Button -->
             <a target="_blank" href="https://redhavoc12.itch.io/endless-driver"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-itch-io text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-itch-io c-project-button-icon" aria-hidden="true"></i>
             </a>
             <!-- GitHub Button -->
             <a target="_blank" href="https://github.com/lukas-urbann/endless-driver"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-github text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-github c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-endless-driver">Endless Driver</h1>
             <p class="text-lg" id="project-endless-driver-description">Endless Driver Description</p>
           </div>
@@ -346,19 +326,18 @@
 
         <!-- Dotfiles -->
         <div style="background-image: url(page/img/projects/lukashos.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- GitHub Button -->
             <a target="_blank" href="https://github.com/lukas-urbann/dotfiles"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-github text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-github c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-dotfiles">Dotfiles</h1>
             <p class="text-lg" id="project-dotfiles-description">Dotfiles Description</p>
           </div>
@@ -366,19 +345,18 @@
 
         <!-- Wallpapers -->
         <div style="background-image: url(page/img/projects/wallpaper.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- GitHub Button -->
             <a target="_blank" href="https://github.com/lukas-urbann/wallpapers"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-github text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-github c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-wallpapers">Wallpapers</h1>
             <p class="text-lg" id="project-wallpapers-description">Wallpapers Description</p>
           </div>
@@ -386,19 +364,18 @@
 
         <!-- Website -->
         <div style="background-image: url(page/img/projects/website.jpg);"
-          class="text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black box-shadow inner-border-gray">
+          class="c-project-cover">
           <!-- Game Action Button Flexbox -->
-          <div class="flex flex-nowrap mt-2 ml-2">
+          <div class="c-project-buttons">
             <!-- GitHub Button -->
             <a target="_blank" href="https://github.com/lukas-urbann/lukas-urbann.github.io"
-              class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all ">
-              <i class="fa-brands fa-github text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0" aria-hidden="true"></i>
+              class="c-project-button">
+              <i class="fa-brands fa-github c-project-button-icon" aria-hidden="true"></i>
             </a>
           </div>
           <!-- Game Text Section -->
           <div
-            class="overflow-y-auto p-4 text-dark-white bg-black bg-opacity-90 h-1/2 absolute bottom-0 text-left inner-border-gray rounded-lg mx-2 mb-2">
+            class="c-project-description">
             <h1 class="font-black text-xl text-normal-red" id="project-website">Website</h1>
             <p class="text-lg" id="project-website-description">Website Description</p>
           </div>
