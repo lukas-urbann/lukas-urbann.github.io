@@ -4,7 +4,7 @@ var flag_en = document.getElementById("flag-en");
 const lang = "en"
 
 const en = {
-    "nav-btn-text-intro": "Introduction",
+    "nav-btn-text-intro": "Intro",
     "nav-btn-text-portfolio": "Portfolio",
     "nav-btn-text-about": "About me",
     "nav-btn-text-contact": "Contact",
