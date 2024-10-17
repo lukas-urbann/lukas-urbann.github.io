@@ -15,7 +15,7 @@ napsat osvč
     <link href="page/img/favicon.webp" rel="icon" type="image/x-icon"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta charset="utf-8">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css"
           rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
@@ -23,10 +23,7 @@ napsat osvč
     Okno je příliš malé!
 </div>
 <nav class="c-navbar">
-    <div class="c-blur border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
-        p-2 left-0 right-0 fixed top-0 block unselectable
-        md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
-        md:top-2" id="nav-bar">
+    <div class="c-navbar-wrapper unselectable" id="nav-bar">
         <ul class="inline-block w-full">
             <li class="inline-block">
                 <p class="inline-block p-2 rounded-xl text-normal-white text-xl md:text-lg
@@ -46,44 +43,31 @@ napsat osvč
     <div class="c-blur c-navmenu" id="nav-menu">
         <ul class="flex-wrap font-thin md:flex-nowrap
           md:list-none" id="nav-menu-list">
-            <li class="md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
-            md:rounded-xl md:-right-32 border-solid border-0 md:border border-black" id="nav-flags">
+            <li class="c-nav-flags" id="nav-flags">
                 <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
-                    <div class="transition-colors duration-150 py-1 rounded-lg
-                md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2" id="flag-cz">
-                        <div class="flag-btn w-8 h-8 mx-auto rounded-full border-2
-                  cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5" onclick="changeLang('cz');">
+                    <div class="c-flag-wrapper" id="flag-cz">
+                        <div class="c-flag flag-btn" onclick="changeLang('cz');">
                             <img alt="flag_cz" src="page/img/flag_cz.svg"/>
                         </div>
                     </div>
-                    <div class="transition-colors duration-150 py-1 rounded-lg
-                md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2" id="flag-en">
-                        <div class="flag-btn w-8 h-8 mx-auto rounded-full border-2
-                  cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5" onclick="changeLang('en');">
+                    <div class="c-flag-wrapper" id="flag-en">
+                        <div class="c-flag flag-btn" onclick="changeLang('en');">
                             <img alt="flag_en" src="page/img/flag_en.svg"/>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-intro">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#" id="nav-btn-text-intro">Úvod</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-intro">
+                <a class="c-nav-btn-hyperlink" href="#" id="nav-btn-text-intro">Úvod</a>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-portfolio">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#portfolio" id="nav-btn-text-portfolio">Portfólio</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-portfolio">
+                <a class="c-nav-btn-hyperlink" href="#portfolio" id="nav-btn-text-portfolio">Portfólio</a>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-about">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#about-me" id="nav-btn-text-about">O mně</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-about">
+                <a class="c-nav-btn-hyperlink" href="#about-me" id="nav-btn-text-about">O mně</a>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-contact">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#contact" id="nav-btn-text-contact">Kontakt</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-contact">
+                <a class="c-nav-btn-hyperlink" href="#contact" id="nav-btn-text-contact">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -394,11 +378,15 @@ napsat osvč
                 <!-- Game Action Button Flexbox -->
                 <div class="c-project-buttons">
                     <!-- Play Button -->
-                    <a class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all"
+                    <a class="c-project-button"
                        href="https://redhavoc12.itch.io/starfighter"
                        target="_blank">
                         <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
+                    </a>
+                    <!-- GitHub Button -->
+                    <a class="c-project-button" href="https://github.com/lukas-urbann/space-invaders-clone"
+                       target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
                     </a>
                 </div>
                 <!-- Game Text Section -->
@@ -573,32 +561,30 @@ napsat osvč
 </section>
 
 <!-- Footer -->
-<footer class="transition-all duration-500 clear-both relative bottom-0
-      mx-auto container my-4 p-2">
-    <div class="w-auto bg-dark-black rounded-xl p-2 mx-1 border border-black border-solid">
+<footer class="c-footer">
+    <div class="c-footer-wrapper">
         <!-- Footer Decoration -->
         <div>
             <p class="font-black">#!/bin/bash</p>
             <span class="text-sm text-normal-red">footer@urban-lukas.cz:~$</span>
         </div>
         <!-- Footer Icons -->
-        <div class="flex flex-wrap flex-row text-center hacker-font
-          justify-center mt-4 w-full">
+        <div class="c-footer-icons-layout">
             <!-- Github Icon -->
-            <div class="flex-initial mx-3">
-                <a class="hover:text-normal-red cursor-pointer text-2xl" href="https://github.com/lukas-urbann">
+            <div class="c-footer-icon">
+                <a class="c-footer-icon-hyperlink" href="https://github.com/lukas-urbann">
                     <i aria-hidden="true" class="fa-brands fa-github"></i>
                 </a>
             </div>
             <!-- Itch Icon -->
-            <div class="flex-initial mx-3">
-                <a class="hover:text-normal-red cursor-pointer text-2xl" href="https://redhavoc12.itch.io/">
+            <div class="c-footer-icon">
+                <a class="c-footer-icon-hyperlink" href="https://redhavoc12.itch.io/">
                     <i aria-hidden="true" class="fa-brands fa-itch-io"></i>
                 </a>
             </div>
             <!-- Mail Icon -->
-            <div class="flex-initial mx-3">
-                <a class="hover:text-normal-red cursor-pointer text-2xl"
+            <div class="c-footer-icon">
+                <a class="c-footer-icon-hyperlink"
                    onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">
                     <i aria-hidden="true" class="fa-solid fa-envelope-open-text"></i>
                 </a>
