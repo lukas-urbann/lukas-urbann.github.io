@@ -1,7 +1,5 @@
-var flag_cz = document.getElementById("flag-cz");
-var flag_en = document.getElementById("flag-en");
-
-const lang = "en"
+const flag_cz = document.getElementById("flag-cz");
+const flag_en = document.getElementById("flag-en");
 
 const en = {
     "nav-btn-text-intro": "Intro",
@@ -168,52 +166,49 @@ const blank = {
     "warning-small-window": "",
 }
 
-function changeLang (lang) {
-  switch (lang) {
-    case "en":
-        langHandler("en", en)
-        flag_cz.classList.remove("active-btn");
-        flag_en.classList.add("active-btn");
-      break;
-    case "cz":
-        langHandler("cz", cz);
-        flag_en.classList.remove("active-btn");
-        flag_cz.classList.add("active-btn");
-      break;
-    default:
-        langHandler("blank", blank);
-        flag_en.classList.remove("active-btn");
-        flag_cz.classList.remove("active-btn");
-      break;
-  }
+function changeLang(lang) {
+    switch (lang) {
+        case "en":
+            langHandler("en", en)
+            flag_cz.classList.remove("active-btn");
+            flag_en.classList.add("active-btn");
+            break;
+        case "cz":
+            langHandler("cz", cz);
+            flag_en.classList.remove("active-btn");
+            flag_cz.classList.add("active-btn");
+            break;
+        default:
+            langHandler("blank", blank);
+            flag_en.classList.remove("active-btn");
+            flag_cz.classList.remove("active-btn");
+            break;
+    }
 }
 
-function langHandler (lang, langOptions) {
-  setCookie("language", lang, 7)
-  
-  Object.keys(langOptions).forEach(x => {
-    writeLang(x).innerHTML = langOptions[x]
-  })
+function langHandler(lang, langOptions) {
+    setCookie("language", lang, 7)
+
+    Object.keys(langOptions).forEach(x => {
+        writeLang(x).innerHTML = langOptions[x]
+    })
 }
 
-function writeLang(id)
-{
+function writeLang(id) {
     return document.getElementById(id);
 }
 
-window.onload = function()
-{
-    switch(getCookie("language"))
-    {
+window.onload = function () {
+    switch (getCookie("language")) {
         case "en":
             changeLang("en");
-        break;
+            break;
         case "cz":
             changeLang("cz");
-        break;
+            break;
         default:
             changeLang("en");
-        break;
+            break;
     }
 }
 
@@ -221,26 +216,23 @@ function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
 
-    for(let i = 0; i < ca.length; i++)
-    {
-      let c = ca[i];
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
 
-      while (c.charAt(0) == ' ')
-      {
-        c = c.substring(1);
-      }
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
 
-      if (c.indexOf(name) == 0)
-      {
-        return c.substring(name.length, c.length);
-      }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return "";
 }
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires;
 }

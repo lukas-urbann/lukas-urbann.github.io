@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
     let totalHeight = 0;
     sections.forEach((sec, i) => {
         totalHeight += sec.clientHeight
-        if (totalHeight >= window.scrollY+100 && !changed) {
+        if (totalHeight >= window.scrollY + 100 && !changed) {
             active_index = i
             changed = true
             changeState()
