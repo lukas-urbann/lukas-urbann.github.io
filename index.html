@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="cs">
 
+<!--
+Přidat work together sekci
+přidat cv
+odebrat polyperfect
+napsat osvč
+-->
+
 <head>
     <title>Lukáš Urban</title>
     <link href="page/css/tailwind.css" rel="stylesheet"/>
@@ -23,7 +30,7 @@
         <ul class="inline-block w-full">
             <li class="inline-block">
                 <p class="inline-block p-2 rounded-xl text-normal-white text-xl md:text-lg
-              md:py-1">Lukáš <span class="text-normal-red">Urban</span></p>
+              md:py-1">Lukáš <span class="text-normal-red font-black">Urban</span></p>
             </li>
 
             <li class="ml-auto md:hidden md:invisible inline-block float-right
@@ -100,7 +107,7 @@
             w-full h-full">
                 <h1 class="transform-all
               duration-300 absoluteleft-0 right-0 m-auto" id="text-portfolio">
-                    </h1>
+                </h1>
                 <br>
             </div>
         </div>
@@ -388,7 +395,8 @@
                 <div class="c-project-buttons">
                     <!-- Play Button -->
                     <a class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all" href="https://redhavoc12.itch.io/starfighter"
+              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all"
+                       href="https://redhavoc12.itch.io/starfighter"
                        target="_blank">
                         <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
                     </a>
@@ -496,23 +504,31 @@
         <div class="grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2
          ">
             <div class="w-full md:w-2/3 relative transition-all duration-500 border-2
-            border-normal-red bg-center my-4 md:m-8 rounded-lg bg-cover p-8" style="background-image: url(page/img/me.webp);aspect-ratio: 1 / 1;">
+            border-normal-red bg-center my-4 md:m-8 rounded-lg bg-cover p-8"
+                 style="background-image: url(page/img/me.webp);aspect-ratio: 1 / 1;">
                 <p class="p-2 bg-yellow-300 border-2 border-black rounded-xl absolute -left-4
               -bottom-4 text-xl text-black" id="text-thats-me">That's me Text</p>
             </div>
             <div class="my-auto">
                 <ul class="rounded-xl p-4 text-lg border border-black border-solid inner-border-gray bg-black bg-opacity-70">
-                    <li><i aria-hidden="true" class="fa fa-angles-right text-sm"></i> <span id="text-about-age"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i><span id="text-about-prof"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i><span id="text-about-objective"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-interest"></span></li>
+                    <li><i aria-hidden="true" class="fa fa-angles-right text-sm"></i> <span id="text-about-age"></span>
+                    </li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i><span
+                            id="text-about-prof"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i><span
+                            id="text-about-objective"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span
+                            id="text-about-interest"></span></li>
                 </ul>
             </div>
             <div class="my-auto">
                 <ul class="box-blur rounded-lg p-4 mt-12 text-lg border border-black border-solid inner-border-gray bg-black bg-opacity-70">
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-polyperfect-main"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-polyperfect-info"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-polyperfect-link"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span
+                            id="text-about-polyperfect-main"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span
+                            id="text-about-polyperfect-info"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span
+                            id="text-about-polyperfect-link"></span></li>
                 </ul>
             </div>
             <div>
@@ -542,7 +558,7 @@
                      id="contact-mail">
                     Email contact
                     <a class="underline text-normal-red cursor-pointer text-sm md:text-xl"
-                       onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')">zde</a>.
+                       onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">zde</a>.
                 </div>
             </div>
             <div class="relative bg-dark-black self-stretch rounded-xl ml-2 bg-cover box-shadow bg-top text-sm  md:text-lg border border-black border-solid"
@@ -563,7 +579,7 @@
         <!-- Footer Decoration -->
         <div>
             <p class="font-black">#!/bin/bash</p>
-            <span class="text-sm text-normal-red">footer@lukas-urbann.github.io:~$</span>
+            <span class="text-sm text-normal-red">footer@urban-lukas.cz:~$</span>
         </div>
         <!-- Footer Icons -->
         <div class="flex flex-wrap flex-row text-center hacker-font
@@ -590,7 +606,7 @@
             <!-- Mail Icon -->
             <div class="flex-initial mx-3">
                 <a class="hover:text-normal-red cursor-pointer text-2xl"
-                   onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')">
+                   onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">
                     <i aria-hidden="true" class="fa-solid fa-envelope-open-text"></i>
                 </a>
             </div>
@@ -608,6 +624,7 @@
 <script src="page/javascript/language.js"></script>
 <script src="page/javascript/section-selector.js"></script>
 <script src="page/javascript/overlay.js"></script>
+<!-- <script src="page/javascript/url-redirect.js"></script> -->
 </body>
 
 </html>
