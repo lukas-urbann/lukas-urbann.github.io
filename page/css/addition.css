@@ -17,7 +17,7 @@
 }
 
 html {
-    font-family: TitilliumWeb;
+    font-family: TitilliumWeb, serif;
     scroll-behavior: smooth;
     background-color: #1d1f2b;
     color: #ccc;
