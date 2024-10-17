@@ -15,29 +15,29 @@
       See https://stackoverflow.com/a/76207141.
     */
     .backdrop-hack {
-      @apply absolute inset-0 -z-10;
+        @apply absolute inset-0 -z-10;
     }
-  }
+}
 
 .c-project-cover {
-  @apply text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black;
+    @apply text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black;
 }
 
 .c-project-buttons {
-  @apply flex flex-nowrap mt-2 ml-2;
+    @apply flex flex-nowrap mt-2 ml-2;
 }
 
 .c-project-button {
-  @apply flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-  h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all;
+    @apply flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
+    h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all;
 }
 
 .c-project-button-icon {
-  @apply text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0;
+    @apply text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0;
 }
 
 .c-project-description {
-  @apply c-blur overflow-y-auto p-4 text-dark-white bg-black bg-opacity-40 h-1/2 absolute bottom-0 text-left rounded-lg mx-2 mb-2 border border-black;
+    @apply c-blur overflow-y-auto p-4 text-dark-white bg-black bg-opacity-40 h-1/2 absolute bottom-0 text-left rounded-lg mx-2 mb-2 border border-black;
 }
 
 .c-blur {
@@ -45,7 +45,7 @@
     /* filter: blur(10px); */
     /* -webkit-filter: blur(10px); */
 }
-  
+
 .c-blur-self {
     filter: blur(10px);
     -webkit-filter: blur(10px);
@@ -64,6 +64,59 @@
 }
 
 .c-section-base {
-    @apply container mx-auto h-full 
+    @apply container mx-auto h-full
     transition-all duration-500;
+}
+
+.c-nav-btn {
+    @apply my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
+    duration-150 transition-colors;
+}
+
+.c-nav-btn-hyperlink {
+    @apply text-dark-white md:text-lg md:p-2
+    md:transition-colors md:duration-100;
+}
+
+.c-footer-icons-layout {
+    @apply flex flex-wrap flex-row text-center justify-center mt-4 w-full;
+}
+
+.c-footer-icon {
+    @apply flex-initial mx-3;
+}
+
+.c-footer-icon-hyperlink {
+    @apply hover:text-normal-red cursor-pointer text-2xl;
+}
+
+.c-footer {
+    @apply transition-all duration-500 clear-both relative bottom-0
+    mx-auto container my-4 p-2;
+}
+
+.c-footer-wrapper {
+    @apply w-auto bg-dark-black rounded-xl p-2 mx-1 border border-black border-solid;
+}
+
+.c-navbar-wrapper {
+    @apply c-blur border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
+    p-2 left-0 right-0 fixed top-0 block
+    md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
+    md:top-2;
+}
+
+.c-flag-wrapper {
+    @apply transition-colors duration-150 py-1 rounded-lg
+    md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2;
+}
+
+.c-flag {
+    @apply w-8 h-8 mx-auto rounded-full border-2
+    cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5;
+}
+
+.c-nav-flags {
+    @apply md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
+    md:rounded-xl md:-right-32 border-solid border-0 md:border border-black
 }
