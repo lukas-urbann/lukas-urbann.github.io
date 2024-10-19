@@ -246,13 +246,13 @@ section {
 }
 
 .notification-content a {
-    color: red;
+    color: rgb(247 61 61);
 }
 
 .notification-btn {
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
+    background-color: rgb(247 61 61);
     color: white;
     width: 6em;
     padding: 0.75em;
