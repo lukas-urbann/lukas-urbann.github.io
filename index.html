@@ -2,10 +2,11 @@
 <html lang="cs">
 
 <!--
-Přidat work together sekci
-přidat cv
-odebrat polyperfect
-napsat osvč
+TODO:
+Embedded video player
+CV
+Form
+Překlad pro tooltipy
 -->
 
 <head>
@@ -45,12 +46,14 @@ napsat osvč
           md:list-none" id="nav-menu-list">
             <li class="c-nav-flags" id="nav-flags">
                 <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
-                    <div class="c-flag-wrapper" id="flag-cz">
+                    <div class="c-flag-wrapper c-contains-reversed-tooltip" id="flag-cz">
+                        <span class="c-tooltip fancy-border" id="flag-tooltip-cz">Czech Language</span>
                         <div class="c-flag flag-btn" onclick="changeLang('cz');">
                             <img alt="flag_cz" src="page/img/flag_cz.svg"/>
                         </div>
                     </div>
-                    <div class="c-flag-wrapper" id="flag-en">
+                    <div class="c-flag-wrapper c-contains-reversed-tooltip" id="flag-en">
+                        <span class="c-tooltip fancy-border" id="flag-tooltip-en">English Language</span>
                         <div class="c-flag flag-btn" onclick="changeLang('en');">
                             <img alt="flag_en" src="page/img/flag_en.svg"/>
                         </div>
@@ -581,41 +584,62 @@ napsat osvč
         <!-- Footer Icons -->
         <div class="c-footer-icons-layout">
             <!-- Github Icon -->
-            <div class="c-footer-icon">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">GitHub</span>
                 <a class="c-footer-icon-hyperlink" href="https://github.com/lukas-urbann">
                     <i aria-hidden="true" class="fa-brands fa-github"></i>
                 </a>
             </div>
             <!-- Itch Icon -->
-            <div class="c-footer-icon">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Itch.io</span>
                 <a class="c-footer-icon-hyperlink" href="https://redhavoc12.itch.io/">
                     <i aria-hidden="true" class="fa-brands fa-itch-io"></i>
                 </a>
             </div>
             <!-- YouTube Icon -->
-            <div class="c-footer-icon">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">YouTube</span>
                 <a class="c-footer-icon-hyperlink" href="https://www.youtube.com/@redhavoc12">
                     <i aria-hidden="true" class="fa-brands fa-youtube"></i>
                 </a>
             </div>
             <!-- Instagram Icon -->
-            <div class="c-footer-icon">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Instagram</span>
                 <a class="c-footer-icon-hyperlink" href="https://www.instagram.com/lukas.urbann/">
                     <i aria-hidden="true" class="fa-brands fa-instagram"></i>
                 </a>
             </div>
             <!-- Mail Icon -->
-            <div class="c-footer-icon">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">E-Mail</span>
                 <a class="c-footer-icon-hyperlink"
                    onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">
                     <i aria-hidden="true" class="fa-solid fa-envelope"></i>
                 </a>
             </div>
+            <!-- Mail Icon -->
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Contact Form</span>
+                <a class="c-footer-icon-hyperlink"
+                   onclick="">
+                    <i class="fa-solid fa-file-contract"></i>
+                </a>
+            </div>
+            <!-- Donate Icon -->
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Buy me a coffee</span>
+                <a class="c-footer-icon-hyperlink" href="https://buymeacoffee.com/lukasurban">
+                    <i aria-hidden="true" class="fa-solid fa-circle-dollar-to-slot"></i>
+                </a>
+            </div>
         </div>
         <!-- Footer Text -->
         <div class="mt-4">
-            <p class="text-center mt-2"><span class="text-normal-red"><i style="font-size: 14px"
-                                                                         class="fa-regular fa-copyright"></i>&nbsp;2025</span>&nbsp;<i
+            <p class="text-center mt-2"><span class="text-normal-red">
+                <i style="font-size: 14px"
+                   class="fa-regular fa-copyright"></i>&nbsp;2025</span>&nbsp;<i
                     class="fa-solid fa-angle-right" style="font-size: 12px;"></i><i
                     class="fa-solid fa-angle-right" style="font-size: 12px;"></i>&nbsp;
                 <span style="font-size: 17px">Lukáš Urban</span>

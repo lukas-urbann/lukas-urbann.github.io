@@ -120,3 +120,27 @@
     @apply md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
     md:rounded-xl md:-right-32 border-solid border-0 md:border border-black
 }
+
+.c-contains-tooltip {
+    @apply relative inline-block;
+}
+
+.c-contains-tooltip .c-tooltip {
+    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-normal-black text-normal-white text-center p-2 absolute mb-2 bottom-full left-1/2 transform -translate-x-1/2;
+}
+
+.c-contains-reversed-tooltip .c-tooltip {
+    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-normal-black text-normal-white text-center p-2 absolute mb-2 top-full left-1/2 transform -translate-x-1/2;
+}
+
+.c-tooltip {
+    @apply opacity-0 transition-all scale-0 ease-in-out translate-y-4 pointer-events-none;
+}
+
+.c-contains-tooltip:hover .c-tooltip {
+    @apply visible opacity-100 scale-100 ease-in-out -translate-y-1;
+}
+
+.c-contains-reversed-tooltip:hover .c-tooltip {
+    @apply visible opacity-100 scale-100 ease-in-out translate-y-1;
+}

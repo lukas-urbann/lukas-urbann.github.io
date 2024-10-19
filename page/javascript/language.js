@@ -8,7 +8,7 @@ const en = {
     "nav-btn-text-contact": "Contact",
     "text-portfolio": "Welcome to my<br>portfolio.",
     "text-intro-about": "I am a <span class='text-normal-red'>video game designer</span> and developer. It's a <span class='text-normal-red'>passion of mine</span> that I've been cultivating since I was a kid.",
-    "text-creds": "The website was created without a template. Used images are from <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. The code is publicly available. Web technologies used are listed on the repository.",
+    "text-creds": "Used images are from <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. The code is publicly available. Web technologies used are listed on the repository.",
     "text-about-me": "About me",
     "text-about-age": "I'm a 21-year-old student.",
     "text-about-prof": "I'm a software engineer.",
@@ -37,7 +37,7 @@ const en = {
     "project-website": "This Website",
     "project-website-description": "You can view this website's source-code if you wish to - it is available on my GitHub.",
     "project-wallpapers": "Custom Wallpapers",
-    "project-wallpapers-description": "You can view some wallpapers that are of my creation.",
+    "project-wallpapers-description": "You can view some wallpapers that are of my creation. There are not many, but some may like them.",
     "project-polylithic": "Polylithic",
     "project-polylithic-description": "The Polylithic is an atmospheric 3rd person crafting survival set in the Paleolithic/Neolithic era where the player crafts items, unlocks technology, discovers the world, builds bases, and can either grow the tribe and command the settlement or play the game solo.",
     "project-fff": "FFF",
@@ -54,6 +54,8 @@ const en = {
     "text-thats-me": "That's me",
     "notification-close": "Close",
     "warning-small-window": "The window is too small!",
+    "flag-tooltip-en": "English Version",
+    "flag-tooltip-cz": "Czech Version",
 }
 
 const cz = {
@@ -63,7 +65,7 @@ const cz = {
     "nav-btn-text-contact": "Kontakt",
     "text-portfolio": "Vítej na<br>mém portfóliu.",
     "text-intro-about": "<span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášeň,</span> kterou si pěstuji od svého dětství.",
-    "text-creds": "Web byl vytvořen bez předlohy. Použité obrázky z webu <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.",
+    "text-creds": "Použité obrázky z webu <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.",
     "text-about-me": "O mně",
     "text-about-age": "Jsem 21-letý student.",
     "text-about-prof": "Studuji obor Softwarového inženýra.",
@@ -92,7 +94,7 @@ const cz = {
     "project-website": "Tento Web",
     "project-website-description": "Můžeš se podívat na zdrojový kód tohoto webu, pokud si přeješ - je dostupný na mém GitHubu.",
     "project-wallpapers": "Vlastní Tapety",
-    "project-wallpapers-description": "Můžete si prohlédnout některé tapety, které jsem vytvořil.",
+    "project-wallpapers-description": "Můžete si prohlédnout některé tapety, které jsem vytvořil. Není jich mnoho, ale mohou se někomu líbit.",
     "project-polylithic": "Polylithic",
     "project-polylithic-description": "Polylithic se odehrává v dobách pravěku a jde o crafting survival z pohledu třetí osoby s důrazem na správu kmene. Ve hře lovíte, stavíte, odemykáte nové vylepšení, ale zároveň se staráte i o potřeby a štěstí své pravěké rodiny.",
     "project-fff": "FFF",
@@ -109,6 +111,8 @@ const cz = {
     "text-thats-me": "To jsem já",
     "notification-close": "Zavřít",
     "warning-small-window": "Okno je příliš malé!",
+    "flag-tooltip-en": "Anglická verze",
+    "flag-tooltip-cz": "Česká verze",
 }
 
 const blank = {
@@ -164,6 +168,8 @@ const blank = {
     "text-thats-me": "",
     "notification-close": "",
     "warning-small-window": "",
+    "flag-tooltip-en": "",
+    "flag-tooltip-cz": "",
 }
 
 function changeLang(lang) {

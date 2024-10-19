@@ -252,7 +252,7 @@ section {
     color: black;
     margin: auto;
     padding: 1.5em;
-    width: 75%;
+    width: max-content;
     border-radius: 4px;
     text-align: center;
 }
@@ -280,4 +280,3 @@ section {
 }
 
 /* NOTIFICATION */
-
