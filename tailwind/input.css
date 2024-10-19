@@ -69,7 +69,7 @@
 }
 
 .c-nav-btn {
-    @apply my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
+    @apply my-1 py-1 rounded-lg md:inline-block md:mx-1
     duration-150 transition-colors;
 }
 
@@ -112,8 +112,8 @@
 }
 
 .c-flag {
-    @apply w-8 h-8 mx-auto rounded-full border-2
-    cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5;
+    @apply w-8 h-8 mx-auto rounded-full
+    cursor-pointer md:w-7 md:h-7 md:mt-0.5;
 }
 
 .c-nav-flags {

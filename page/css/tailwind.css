@@ -676,10 +676,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-0 {
-  margin-top: 0px;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -698,10 +694,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.h-12 {
-  height: 3rem;
 }
 
 .h-3\/4 {
@@ -724,20 +716,12 @@ video {
   min-height: 24rem;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .w-3\/4 {
   width: 75%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.flex-initial {
-  flex: 0 1 auto;
 }
 
 .-translate-x-1\/2 {
@@ -811,10 +795,6 @@ video {
   overflow-x: hidden;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -857,11 +837,6 @@ video {
 .border-normal-red {
   --tw-border-opacity: 1;
   border-color: rgb(247 61 61 / var(--tw-border-opacity));
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -919,6 +894,10 @@ video {
 
 .bg-top {
   background-position: top;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -1037,11 +1016,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1088,17 +1062,6 @@ video {
   
       See https://stackoverflow.com/a/76207141.
     */
-
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:border-normal-red:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(247 61 61 / var(--tw-border-opacity));
-}
 
 .hover\:text-normal-red:hover {
   --tw-text-opacity: 1;
@@ -1580,8 +1543,6 @@ video {
   border-radius: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1766,7 +1727,6 @@ video {
   width: 2rem;
   cursor: pointer;
   border-radius: 9999px;
-  border-width: 2px;
 }
 
 @media (min-width: 768px) {
@@ -1774,7 +1734,6 @@ video {
     margin-top: 0.125rem;
     height: 1.75rem;
     width: 1.75rem;
-    border-width: 2px;
   }
 }
 

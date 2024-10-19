@@ -55,11 +55,13 @@ html {
 }
 
 .active-btn {
-    background-color: rgba(247, 61, 61, 255);
+    box-shadow: 0px 0px 8px 0px rgba(240, 45, 45, 1) inset;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(240, 45, 45, 1) inset;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(240, 45, 45, 1) inset;
     animation-name: btnSelection;
-    animation-duration: 0.15s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     color: #0f1119 !important;
 }
 
@@ -71,19 +73,29 @@ ul li a:hover {
     color: rgba(247, 61, 61, 255);
 }
 
-ul .active-btn:hover {
-    background-color: #ffa6a6;
-}
-
 @keyframes btnSelection {
     0% {
-        transform: scale(1);
-        display: inline-block;
+        background-color: #f73d3d;
+        box-shadow: 0px 0px 0px 16px #0f1119 inset;
+        -webkit-box-shadow: 0px 0px 0px 16px #0f1119 inset;
+        -moz-box-shadow: 0px 0px 0px 16px #0f1119 inset;
     }
+
+    35% {
+        background-color: #f73d3d;
+        box-shadow: 0px 0px 0px 4px #0f1119 inset;
+        -webkit-box-shadow: 0px 0px 0px 4px #0f1119 inset;
+        -moz-box-shadow: 0px 0px 0px 4px #0f1119 inset;
+    }
+
+    70% {
+        background-color: #f73d3d;
+        box-shadow: 0px 0px 0px 2px #0f1119 inset;
+        -webkit-box-shadow: 0px 0px 0px 2px #0f1119 inset;
+        -moz-box-shadow: 0px 0px 0px 2px #0f1119 inset;
+    }
+
     100% {
-        transform: scale(1);
-        display: inline-block;
-        color: #ccc;
         background-color: #f73d3d;
     }
 }
