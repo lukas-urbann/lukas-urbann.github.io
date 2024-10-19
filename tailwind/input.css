@@ -113,7 +113,7 @@
 
 .c-flag {
     @apply w-8 h-8 mx-auto rounded-full
-    cursor-pointer md:w-7 md:h-7 md:mt-0.5;
+    cursor-pointer md:w-7 md:h-7 md:mt-0.5 hover:scale-90 transition-all;
 }
 
 .c-nav-flags {
