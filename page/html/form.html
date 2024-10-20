@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Lukáš Urban - Form</title>
+    <link href="../css/tailwind.css" rel="stylesheet"/>
+    <link href="../css/addition.css" rel="stylesheet"/>
+    <link href="../img/favicon.webp" rel="icon" type="image/x-icon"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.css"
+          rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+<div class="too-small-text" id="warning-small-window">
+    Okno je příliš malé!
+</div>
+
+<div class="notification" id="notification">
+    <div class="notification-content">
+        <p id="notification-text">Text</p><br>
+        <div class="notification-btn" id="notification-close">Zavřít</div>
+    </div>
+</div>
+
+<div class="c-form">
+    <a class="hover:text-normal-red underline" href="../../index.html"><i class="fa-solid fa-angles-left"></i><span id="form-back">&nbsp;Return to Main Page</span></a>
+    <h1 id="form-header">Contact Form</h1>
+    <form action="../php/form-submit.php" method="POST" accept-charset="utf-8">
+        <label for="name"><i class="fa-solid fa-chevron-right text-normal-red"></i><i
+                class="fa-solid fa-chevron-right text-normal-red"></i>
+            <span id="form-name">&nbsp;Name</span></label>
+        <br>
+        <input placeholder="..." class="fancy-border" type="text" id="name" name="name" required/>
+        <br>
+        <label for="email"><i class="fa-solid fa-chevron-right text-normal-red"></i><i
+                class="fa-solid fa-chevron-right text-normal-red"></i>
+            <span id="form-email">&nbsp;E-Mail</span></label>
+        <br>
+        <input placeholder="..." class="fancy-border" type="email" id="email" name="email" required/>
+        <br>
+        <label for="message"><i class="fa-solid fa-chevron-right text-normal-red"></i><i
+                class="fa-solid fa-chevron-right text-normal-red"></i>
+            <span id="form-message">&nbsp;Message</span></label>
+        <br>
+        <textarea placeholder="..." class="fancy-border" name="message" id="message" cols="30" rows="10"
+                  required></textarea>
+        <br>
+        <div class="text-center">
+            <button class="notification-btn" type="submit" name="submit" id="form-send">Send_Text</button>
+        </div>
+    </form>
+</div>
+
+<!-- Additional Scripts -->
+<script src="../javascript/language.js"></script>
+</body>
+</html>

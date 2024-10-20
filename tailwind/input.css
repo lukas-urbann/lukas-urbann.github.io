@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.c-project-cover {
+    @apply text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black;
+}
+
+.c-project-buttons {
+    @apply flex flex-nowrap mt-2 ml-2;
+}
+
+.c-project-button {
+    @apply flex-initial text-white hover:text-normal-red cursor-pointer border-white border-2 rounded-full bg-dark-black bg-opacity-80 hover:border-normal-red mt-0
+    h-12 w-12 text-center relative mr-2 transform hover:scale-110 transition-all
+}
+
+.c-project-button-icon {
+    @apply text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0;
+}
+
+.c-project-description {
+    @apply transition-colors shadow-lg shadow-black cursor-pointer h-max max-h-40 overflow-hidden p-4 text-dark-white bg-dark-black bg-opacity-90 absolute bottom-0 text-left rounded-lg mx-2 my-2 border border-black;
+}
+
+.c-project-description:hover {
+    @apply bg-opacity-100;
+}
+
+.c-project-description-full {
+    @apply bg-opacity-100 h-full w-full border-none cursor-pointer m-0 max-h-full;
+}
+
+.c-navbar {
+    @apply z-10 md:sticky md:top-0 rounded-none md:container md:mx-auto md:px-4 md:transition-all md:duration-500 container mx-auto;
+}
+
+.c-navmenu {
+    @apply z-10 transition-all duration-300 hidden w-1/2
+    rounded-xl border-solid border border-black text-center text-xl
+    p-4 mt-12 ml-auto fixed right-2 top-7 max-w-md md:inline-block
+    md:text-lg md:m-0 md:w-auto md:mx-auto md:rounded-xl
+    md:top-2 md:py-1 md:px-1 md:left-0 md:right-0 md:relative md:ml-3;
+}
+
+.c-section-base {
+    @apply container mx-auto h-full
+    transition-all duration-500;
+}
+
+.c-nav-btn {
+    @apply my-1 py-1 rounded-lg md:inline-block md:mx-1
+    duration-150 transition-colors;
+}
+
+.c-nav-btn-hyperlink {
+    @apply text-dark-white md:text-lg md:p-2
+    md:transition-colors md:duration-100;
+}
+
+.c-footer-icons-layout {
+    @apply flex flex-wrap flex-row text-center justify-center mt-4 w-full;
+}
+
+.c-footer-icon {
+    @apply flex-initial mx-3;
+}
+
+.c-footer-icon-hyperlink {
+    @apply hover:text-normal-red cursor-pointer text-2xl;
+}
+
+.c-footer {
+    @apply transition-all duration-500 clear-both relative bottom-0
+    mx-auto container my-4 p-2;
+}
+
+.c-footer-wrapper {
+    @apply w-auto bg-dark-black rounded-xl p-2 mx-1 border border-black border-solid;
+}
+
+.c-navbar-wrapper {
+    @apply border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
+    p-2 left-0 right-0 fixed top-0 block
+    md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
+    md:top-2;
+}
+
+.c-flag-wrapper {
+    @apply transition-colors duration-150 py-1 rounded-lg
+    md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2;
+}
+
+.c-flag {
+    @apply w-8 h-8 mx-auto rounded-full
+    cursor-pointer md:w-7 md:h-7 md:mt-0.5 hover:scale-90 transition-all;
+}
+
+.c-nav-flags {
+    @apply md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
+    md:rounded-xl md:-right-32 border-solid border-0 md:border border-black
+}
+
+.c-contains-tooltip {
+    @apply relative inline-block;
+}
+
+.c-contains-tooltip .c-tooltip {
+    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-dark-black text-normal-white text-center p-2 absolute mb-2 bottom-full left-1/2 transform -translate-x-1/2;
+}
+
+.c-contains-reversed-tooltip .c-tooltip {
+    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-dark-black text-normal-white text-center p-2 absolute mb-2 top-full left-1/2 transform -translate-x-1/2;
+}
+
+.c-tooltip {
+    @apply opacity-0 transition-all scale-0 ease-in-out translate-y-4 pointer-events-none;
+}
+
+.c-contains-tooltip:hover .c-tooltip {
+    @apply visible opacity-100 scale-100 ease-in-out -translate-y-1;
+}
+
+.c-contains-reversed-tooltip:hover .c-tooltip {
+    @apply visible opacity-100 scale-100 ease-in-out translate-y-1;
+}
+
+.c-form {
+    @apply relative container mx-auto bg-dark-black p-12 rounded-xl md:mt-12 w-full md:w-2/3 xl:w-1/2;
+}
+
+.c-form input {
+    @apply w-full h-12 bg-dark-white text-normal-black border border-black rounded-xl mb-4 mt-2 p-2;
+}
+
+.c-form textarea {
+    @apply text-left w-full bg-dark-white text-normal-black border border-black rounded-xl mb-4 mt-2 p-2 resize-none;
+}
+
+.c-form label {
+    @apply text-normal-white;
+}
+
+.c-form h1 {
+    @apply text-5xl text-center text-dark-white mb-12;
+}

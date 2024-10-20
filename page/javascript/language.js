@@ -1,7 +1,5 @@
-var flag_cz = document.getElementById("flag-cz");
-var flag_en = document.getElementById("flag-en");
-
-const lang = "en"
+const flag_cz = document.getElementById("flag-cz");
+const flag_en = document.getElementById("flag-en");
 
 const en = {
     "nav-btn-text-intro": "Intro",
@@ -10,15 +8,18 @@ const en = {
     "nav-btn-text-contact": "Contact",
     "text-portfolio": "Welcome to my<br>portfolio.",
     "text-intro-about": "I am a <span class='text-normal-red'>video game designer</span> and developer. It's a <span class='text-normal-red'>passion of mine</span> that I've been cultivating since I was a kid.",
-    "text-creds": "The website was created without a template. Used images are from <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. The code is publicly available. Web technologies used are listed on the repository.",
+    "text-creds": "Used images are from <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. The code is publicly available. Web technologies used are listed on the repository.",
     "text-about-me": "About me",
-    "text-about-age": "I'm a 21-year-old student.",
-    "text-about-prof": "I'm a software engineer.",
-    "text-about-objective": "My primary focus is on video game development and design",
-    "text-about-interest": "I am interested in cybersecurity.",
-    "text-about-polyperfect-main": "I work for Polyperfect.",
-    "text-about-polyperfect-info": "We create game assets and now our own video games.",
-    "text-about-polyperfect-link": "<a class='text-normal-red underline' href='https://www.polyperfect.com/'>Polyperfect</a> is best known for creating assets for other developers.",
+    "text-about-1": "I'm a 21-year-old student.",
+    "text-about-2": "I focus on creating video games and video game assets.",
+    "text-about-3": "I study Bachelor of Software Engineering at <a href='https://fai.utb.cz/'>UTB</a>.",
+    "text-about-4": "I created my first game at the age of 6 in GameMaker.",
+    "text-about-5": "I specialize in C# programming.",
+    "text-about-6": "I have excellent communication and teamwork skills.",
+    "text-about-7": "I have been working with Polyperfect for a long time - a leading creator of game assets.",
+    "text-about-8": "I am very flexible and adapt easily to new situations.",
+    "text-about-9": "I fit well into a team and contribute to a positive working atmosphere.",
+    "text-about-10": "I am open to collaboration and accept commissions.",
     "text-my-projects": "Projects<br>I worked on",
     "project-morality-abyss": "Morality Abyss",
     "project-morality-abyss-description": "The project was created in 2020 as a school assignment. It is a 3D horror game inspired by the indie classic 'Slender: The Eight Pages'. The game's story has a faintly comedic basis.",
@@ -28,8 +29,6 @@ const en = {
     "project-starfighter-description": "One of my oldest projects. This is a modern interpretation of the game classic 'Space Invaders'. The game features a custom shop and an endless game mode.",
     "project-hateful": "Hateful (Project on hold)",
     "project-hateful-description": "The project has been submitted as a Graduation game project. The project was not completed due to the scope of the original plan. The game is on indefinite hold for development. The game features older retro themed graphics and a horror atmosphere.",
-    "project-dotfiles": "Lukash Desktop (WM Configuration)",
-    "project-dotfiles-description": "This is an archive of changes and configurations to the standalone BSPWM desktop environment for Linux systems. Suitable for systems installed on USB flash drives or other computers with weaker hardware.",
     "project-steel-nemesis": "Steel Nemesis",
     "project-steel-nemesis-description": "Steel Nemesis is a game based on an earlier project of mine called \"Starfighter\". In the game you find yourself in the cockpit of a spaceship shooting through endless waves of enemies. The game is supposed to have a lot more content in its full version. The game is in development.",
     "project-scary-horror-game": "Scary Horror Game",
@@ -41,7 +40,7 @@ const en = {
     "project-website": "This Website",
     "project-website-description": "You can view this website's source-code if you wish to - it is available on my GitHub.",
     "project-wallpapers": "Custom Wallpapers",
-    "project-wallpapers-description": "You can view some wallpapers that are of my creation.",
+    "project-wallpapers-description": "You can view some wallpapers that are of my creation. There are not many, but some may like them.",
     "project-polylithic": "Polylithic",
     "project-polylithic-description": "The Polylithic is an atmospheric 3rd person crafting survival set in the Paleolithic/Neolithic era where the player crafts items, unlocks technology, discovers the world, builds bases, and can either grow the tribe and command the settlement or play the game solo.",
     "project-fff": "FFF",
@@ -50,12 +49,29 @@ const en = {
     "project-dvzscm-description": "A Day in the Life of an Average Czech Guy takes you on a journey through the ordinary joys and worries of an ordinary guy. Wake up in the pub where you spend most of your time.",
     "project-chaloupka": "Gretel and Hansel",
     "project-chaloupka-description": "Deep in the impenetrable forest, in the eerie shadow of a gingerbread house, two children were lost. To have a chance to save themselves, their only hope is to reunite in the maze of forest paths and trails. But there are many dangers lurking in the gloom of the forest. In her flying mortar, Baba Yaga traverses the skies above the forest, while her wicked servants scour every nook and cranny. Will Hansel and Gretel be reunited?",
+    "project-low-poly-fantasy-pack": "Low Poly Animated Fantasy Creatures",
+    "project-low-poly-fantasy-pack-description": "Asset pack of high quality low-poly animated creatures ready for use in Unity3D. Created by Polyperfect",
     "contact-title": "Contact",
-    "contact-other": "I am able to agree to other forms of contact by appointment.",
-    "contact-mail": "I can be contacted via my email address <a onclick='show_notification(`E-Mail: <a href=mailto:lukas.urbann@seznam.cz>lukas.urbann@seznam.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>here</a>",
+    "contact-work": "Interested? <a href='page/html/form.html' class='text-normal-red underline'>Let's work together!</a>",
+    "contact-mail": "I can be contacted via my email address <a onclick='show_notification(`E-Mail: <a href=mailto:kontakt@urban-lukas.cz>kontakt@urban-lukas.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>here</a>",
     "text-thats-me": "That's me",
     "notification-close": "Close",
     "warning-small-window": "The window is too small!",
+    "flag-tooltip-en": "English Version",
+    "flag-tooltip-cz": "Czech Version",
+    "form-send": "Send",
+    "form-header": "Contact Form",
+    "form-name": "&nbsp;Name",
+    "form-email": "&nbsp;E-Mail",
+    "form-message": "&nbsp;Message",
+    "form-back": "&nbsp;Return to Main Page",
+    "form-error-header": "Incorrectly filled out form!",
+    "form-error-name": "The name is invalid.",
+    "form-error-email": "E-Mail address is invalid.",
+    "form-error-message": "The message must be no less than 10 characters.",
+    "form-error-back": "Back",
+    "form-error-general": "Incorrect data found.",
+    "form-error-text": "Please correct the incorrect information and resubmit the form.",
 }
 
 const cz = {
@@ -65,15 +81,18 @@ const cz = {
     "nav-btn-text-contact": "Kontakt",
     "text-portfolio": "Vítej na<br>mém portfóliu.",
     "text-intro-about": "<span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášeň,</span> kterou si pěstuji od svého dětství.",
-    "text-creds": "Web byl vytvořen bez předlohy. Použité obrázky z webu <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.",
+    "text-creds": "Použité obrázky z webu <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.",
     "text-about-me": "O mně",
-    "text-about-age": "Jsem 21-letý student.",
-    "text-about-prof": "Studuji obor Softwarového inženýra.",
-    "text-about-objective": "Zaměřuji se primárně na tvorbu a design videoher.",
-    "text-about-interest": "Zajímám se o on-line soukromí a anonymitu.",
-    "text-about-polyperfect-main": "Pracuji pro firmu Polyperfect.",
-    "text-about-polyperfect-info": "Tvoříme herní assety a nově i vlastní videohry.",
-    "text-about-polyperfect-link": "<a class='text-normal-red underline' href='https://www.polyperfect.com/'>Polyperfect</a> je známý především tvorbou assetů pro ostatní vývojáře.",
+    "text-about-1": "Jsem 21-letý student, programátor.",
+    "text-about-2": "Zaměřuji se na tvorbu video her a videoherních assetů.",
+    "text-about-3": "Studuji bakalářský obor Softwarového inženýra na <a href='https://fai.utb.cz/' class='text-normal-red underline'>UTB</a>.\n",
+    "text-about-4": "Svou první hru jsem vytvořil v 6 letech v GameMakeru 8.",
+    "text-about-5": "Specializuji se na programování v jazyce C#.",
+    "text-about-6": "Disponuji vynikajícími komunikačními a týmovými schopnostmi.",
+    "text-about-7": "Dlouhodobě spolupracuji s firmou PolyPerfect, která je předním tvůrcem herních assetů.",
+    "text-about-8": "Jsem velmi flexibilní a snadno se přizpůsobuji novým situacím.",
+    "text-about-9": "Dobře zapadám do kolektivu a přispívám k pozitivní pracovní atmosféře.",
+    "text-about-10": "Jsem otevřený spolupráci a přijímám zakázky.",
     "text-my-projects": "Projekty,<br>na kterých<br>jsem pracoval",
     "project-morality-abyss": "Morality Abyss",
     "project-morality-abyss-description": "Projekt vznikl v roce 2020 jako úkol do školy. Jedná se o horrorovou 3D hru inspirovanou indie klasikou 'Slender: The Eight Pages'. Herní příběh má slabě komedický základ.",
@@ -83,8 +102,6 @@ const cz = {
     "project-starfighter-description": "Jeden z mých nejstarších projektu. Jedná se o moderní interpretaci herní klasiky 'Space Invaders'. Hra obsahuje vlastní obchod a nekonečný herní mód.",
     "project-hateful": "Hateful (Pozastavený vývoj)",
     "project-hateful-description": "Projekt byl odevzdán jako Maturitní práce. Projekt nebyl dokončen vzhledem k rozsahu původního plánu. Hra je na dobu neurčitou ve fázi pozdržení vývoje. Hra disponuje starší retro tématickou grafiku a hororovou atmosféru.",
-    "project-dotfiles": "Lukash Desktop (WM Konfigurace)",
-    "project-dotfiles-description": "Jedná se o archív změn a konfigurací samostatně fungujícího desktop prostředí BSPWM pro Linuxové systémy. Vhodné pro systémy nainstalované na USB flash discích čí jiné počítače se slabším hardwarem.",
     "project-steel-nemesis": "Steel Nemesis",
     "project-steel-nemesis-description": "Steel Nemesis je hra založena na mém starším projektu zvaném \"Starfighter\". Ve hře se ocitnete v kokpitu vesmírné lodě střílející skrze nekonečné vlny nepřátel. Hra má mít ve své plné verzi mnohem více obsahu. Hra je ve vývoji.",
     "project-scary-horror-game": "Strašidelná Horrorová Hra",
@@ -96,7 +113,7 @@ const cz = {
     "project-website": "Tento Web",
     "project-website-description": "Můžeš se podívat na zdrojový kód tohoto webu, pokud si přeješ - je dostupný na mém GitHubu.",
     "project-wallpapers": "Vlastní Tapety",
-    "project-wallpapers-description": "Můžete si prohlédnout některé tapety, které jsem vytvořil.",
+    "project-wallpapers-description": "Můžete si prohlédnout některé tapety, které jsem vytvořil. Není jich mnoho, ale mohou se někomu líbit.",
     "project-polylithic": "Polylithic",
     "project-polylithic-description": "Polylithic se odehrává v dobách pravěku a jde o crafting survival z pohledu třetí osoby s důrazem na správu kmene. Ve hře lovíte, stavíte, odemykáte nové vylepšení, ale zároveň se staráte i o potřeby a štěstí své pravěké rodiny.",
     "project-fff": "FFF",
@@ -105,12 +122,29 @@ const cz = {
     "project-dvzscm-description": "Hra Den v životě průměrného českého maníka vás vezme na cestu za běžnými radostmi a starostmi obyčejného chlapíka. Probuďte se do hospody, kde trávíte většinu času.",
     "project-chaloupka": "Mařenka a Jeníček",
     "project-chaloupka-description": "Hluboko v neprostupném lese, v hrozivém stínu perníkové chaloupky se ztratily dvě děti. Aby měly šanci se zachránit, je jejich jedinou nadějí se v bludišti lesních stezek a pěšinek znovu setkat. V šeru hvozdu však číhá spousta nebezpečí. Baba Jaga ve svém létajícím hmoždíři brázdí nebe nad lesem, zatímco její zlotřilí služebníci pročesávají každé lesní zákoutí. Podaří se Jeníčkovi a Mařence se znovu shledat?",
+    "project-low-poly-fantasy-pack": "Low Poly Animated Fantasy Creatures",
+    "project-low-poly-fantasy-pack-description": "Asset pack kvalitních low-poly animovaných bytostí připraven pro použití v Unity3D. Vytvořen společností Polyperfect.",
     "contact-title": "Kontakt",
-    "contact-other": "Na jiné formy kontaktu jsem schopen přistoupit po domluvě.",
-    "contact-mail": "Je možné mě kontaktovat skrze moji e-mailovou adresu <a onclick='show_notification(`E-Mail: <a href=mailto:lukas.urbann@seznam.cz>lukas.urbann@seznam.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>zde</a>.",
+    "contact-work": "Máte zájem? <a href='page/html/form.html' class='text-normal-red underline'>Pojďme spolupracovat!</a>",
+    "contact-mail": "Je možné mě kontaktovat skrze moji e-mailovou adresu <a onclick='show_notification(`E-Mail: <a href=mailto:kontakt@urban-lukas.cz>kontakt@urban-lukas.cz</a>`)' class='underline text-normal-red cursor-pointer text-sm md:text-xl'>zde</a>.",
     "text-thats-me": "To jsem já",
     "notification-close": "Zavřít",
     "warning-small-window": "Okno je příliš malé!",
+    "flag-tooltip-en": "Anglická verze",
+    "flag-tooltip-cz": "Česká verze",
+    "form-send": "Odeslat",
+    "form-header": "Kontaktní formulář",
+    "form-name": "&nbsp;Jméno",
+    "form-email": "&nbsp;E-Mail",
+    "form-message": "&nbsp;Zpráva",
+    "form-back": "&nbsp;Zpět na hlavní stránku",
+    "form-error-header": "Chybně vyplněný formulář!",
+    "form-error-name": "Jméno je neplatné.",
+    "form-error-email": "E-Mailová adresa je neplatná.",
+    "form-error-message": "Zpráva nesmí mít méně než 10 znaků.",
+    "form-error-back": "Zpět",
+    "form-error-general": "Nalezeny chybně vyplněné údaje.",
+    "form-error-text": "Prosím, opravte špatně zadané údaje a zašlete formulář znovu.",
 }
 
 const blank = {
@@ -121,14 +155,16 @@ const blank = {
     "text-portfolio": "",
     "text-intro-about": "",
     "text-creds": "",
-    "text-about-me": "",
-    "text-about-age": "",
-    "text-about-prof": "",
-    "text-about-objective": "",
-    "text-about-interest": "",
-    "text-about-polyperfect-main": "",
-    "text-about-polyperfect-info": "",
-    "text-about-polyperfect-link": "",
+    "text-about-1": "",
+    "text-about-2": "",
+    "text-about-3": "",
+    "text-about-4": "",
+    "text-about-5": "",
+    "text-about-6": "",
+    "text-about-7": "",
+    "text-about-8": "",
+    "text-about-9": "",
+    "text-about-10": "",
     "text-my-projects": "",
     "project-morality-abyss": "",
     "project-morality-abyss-description": "",
@@ -138,8 +174,6 @@ const blank = {
     "project-starfighter-description": "",
     "project-hateful": "",
     "project-hateful-description": "",
-    "project-dotfiles": "",
-    "project-dotfiles-description": "",
     "project-steel-nemesis": "",
     "project-steel-nemesis-description": "",
     "project-scary-horror-game": "",
@@ -160,60 +194,86 @@ const blank = {
     "project-dvzscm-description": "",
     "project-chaloupka": "",
     "project-chaloupka-description": "",
+    "project-low-poly-fantasy-pack": "",
+    "project-low-poly-fantasy-pack-description": "",
     "contact-title": "",
-    "contact-other": "",
+    "contact-work": "",
     "contact-mail": "",
     "text-thats-me": "",
     "notification-close": "",
     "warning-small-window": "",
+    "flag-tooltip-en": "",
+    "flag-tooltip-cz": "",
+    "form-send": "",
+    "form-header": "",
+    "form-name": "",
+    "form-email": "",
+    "form-message": "",
+    "form-back": "",
+    "form-error-header": "",
+    "form-error-name": "",
+    "form-error-email": "",
+    "form-error-message": "",
+    "form-error-back": "",
+    "form-error-general": "",
+    "form-error-text": "",
 }
 
-function changeLang (lang) {
-  switch (lang) {
-    case "en":
-        langHandler("en", en)
-        flag_cz.classList.remove("active-btn");
-        flag_en.classList.add("active-btn");
-      break;
-    case "cz":
-        langHandler("cz", cz);
-        flag_en.classList.remove("active-btn");
-        flag_cz.classList.add("active-btn");
-      break;
-    default:
-        langHandler("blank", blank);
-        flag_en.classList.remove("active-btn");
-        flag_cz.classList.remove("active-btn");
-      break;
-  }
+function changeLang(lang) {
+    switch (lang) {
+        case "en":
+            langHandler("en", en)
+            if (flag_cz === null || flag_en === null) {
+                return;
+            }
+            flag_cz.classList.remove("active-btn");
+            flag_en.classList.add("active-btn");
+            break;
+        case "cz":
+            langHandler("cz", cz);
+            if (flag_cz === null || flag_en === null) {
+                return;
+            }
+            flag_en.classList.remove("active-btn");
+            flag_cz.classList.add("active-btn");
+            break;
+        default:
+            langHandler("blank", blank);
+            if (flag_cz === null || flag_en === null) {
+                return;
+            }
+            flag_en.classList.remove("active-btn");
+            flag_cz.classList.remove("active-btn");
+            break;
+    }
 }
 
-function langHandler (lang, langOptions) {
-  setCookie("language", lang, 7)
-  
-  Object.keys(langOptions).forEach(x => {
-    writeLang(x).innerHTML = langOptions[x]
-  })
+function langHandler(lang, langOptions) {
+    setCookie("language", lang, 7)
+
+    Object.keys(langOptions).forEach(x => {
+        if (writeLang(x) === null) {
+            return;
+        }
+        writeLang(x).innerHTML = langOptions[x]
+    })
 }
 
-function writeLang(id)
-{
+function writeLang(id) {
     return document.getElementById(id);
 }
 
-window.onload = function()
-{
-    switch(getCookie("language"))
-    {
+window.onload = function () {
+    switch (getCookie("language")) {
         case "en":
             changeLang("en");
-        break;
+            break;
         case "cz":
             changeLang("cz");
-        break;
+            break;
         default:
             changeLang("en");
-        break;
+            break;
     }
 }
 
@@ -221,26 +281,23 @@ function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
 
-    for(let i = 0; i < ca.length; i++)
-    {
-      let c = ca[i];
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
 
-      while (c.charAt(0) == ' ')
-      {
-        c = c.substring(1);
-      }
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
 
-      if (c.indexOf(name) == 0)
-      {
-        return c.substring(name.length, c.length);
-      }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return "";
 }
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires;
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }

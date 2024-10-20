@@ -2,13 +2,13 @@
 <html lang="cs">
 
 <head>
-    <title>Lukáš Urban</title>
+    <title>Lukáš Urban - Main</title>
     <link href="page/css/tailwind.css" rel="stylesheet"/>
     <link href="page/css/addition.css" rel="stylesheet"/>
     <link href="page/img/favicon.webp" rel="icon" type="image/x-icon"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta charset="utf-8">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    <link href="page/fontawesome-free/css/all.css"
           rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
@@ -16,14 +16,11 @@
     Okno je příliš malé!
 </div>
 <nav class="c-navbar">
-    <div class="c-blur border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
-        p-2 left-0 right-0 fixed top-0 block unselectable
-        md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
-        md:top-2" id="nav-bar">
+    <div class="c-navbar-wrapper unselectable" id="nav-bar">
         <ul class="inline-block w-full">
             <li class="inline-block">
                 <p class="inline-block p-2 rounded-xl text-normal-white text-xl md:text-lg
-              md:py-1">Lukáš <span class="text-normal-red">Urban</span></p>
+              md:py-1">Lukáš <span class="text-normal-red font-black">Urban</span></p>
             </li>
 
             <li class="ml-auto md:hidden md:invisible inline-block float-right
@@ -36,47 +33,36 @@
         </ul>
     </div>
 
-    <div class="c-blur c-navmenu" id="nav-menu">
+    <div class="c-navmenu" id="nav-menu">
         <ul class="flex-wrap font-thin md:flex-nowrap
           md:list-none" id="nav-menu-list">
-            <li class="md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
-            md:rounded-xl md:-right-32 border-solid border-0 md:border border-black" id="nav-flags">
+            <li class="c-nav-flags" id="nav-flags">
                 <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
-                    <div class="transition-colors duration-150 py-1 rounded-lg
-                md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2" id="flag-cz">
-                        <div class="flag-btn w-8 h-8 mx-auto rounded-full border-2
-                  cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5" onclick="changeLang('cz');">
+                    <div class="c-flag-wrapper c-contains-reversed-tooltip" id="flag-cz">
+                        <span class="c-tooltip fancy-border" id="flag-tooltip-cz">Czech Language</span>
+                        <div class="c-flag flag-btn" onclick="changeLang('cz');">
                             <img alt="flag_cz" src="page/img/flag_cz.svg"/>
                         </div>
                     </div>
-                    <div class="transition-colors duration-150 py-1 rounded-lg
-                md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2" id="flag-en">
-                        <div class="flag-btn w-8 h-8 mx-auto rounded-full border-2
-                  cursor-pointer md:border-2 md:w-7 md:h-7 md:mt-0.5" onclick="changeLang('en');">
+                    <div class="c-flag-wrapper c-contains-reversed-tooltip" id="flag-en">
+                        <span class="c-tooltip fancy-border" id="flag-tooltip-en">English Language</span>
+                        <div class="c-flag flag-btn" onclick="changeLang('en');">
                             <img alt="flag_en" src="page/img/flag_en.svg"/>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-intro">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#" id="nav-btn-text-intro">Úvod</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-intro">
+                <a class="c-nav-btn-hyperlink" href="#" id="nav-btn-text-intro">Úvod</a>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-portfolio">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#portfolio" id="nav-btn-text-portfolio">Portfólio</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-portfolio">
+                <a class="c-nav-btn-hyperlink" href="#portfolio" id="nav-btn-text-portfolio">Portfólio</a>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-about">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#about-me" id="nav-btn-text-about">O mně</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-about">
+                <a class="c-nav-btn-hyperlink" href="#about-me" id="nav-btn-text-about">O mně</a>
             </li>
-            <li class="nav-li my-1 py-1 rounded-lg md:inline-block md:mx-1 px-3
-            duration-150 transition-colors" id="nav-btn-li-contact">
-                <a class="text-dark-white md:text-lg md:p-2
-              md:transition-colors md:duration-100" href="#contact" id="nav-btn-text-contact">Kontakt</a>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-contact">
+                <a class="c-nav-btn-hyperlink" href="#contact" id="nav-btn-text-contact">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -100,7 +86,7 @@
             w-full h-full">
                 <h1 class="transform-all
               duration-300 absoluteleft-0 right-0 m-auto" id="text-portfolio">
-                    </h1>
+                </h1>
                 <br>
             </div>
         </div>
@@ -136,6 +122,32 @@
                 </h1>
             </div>
 
+            <!-- Low Poly Fantasy Pack -->
+            <div class="c-project-cover"
+                 style="background-image: url(page/img/projects/low-poly-fantasy-pack.webp);">
+                <!-- Game Action Button Flexbox -->
+                <div class="c-project-buttons">
+                    <!-- Play Button -->
+                    <a class="c-project-button"
+                       href="https://assetstore.unity.com/packages/3d/animations/low-poly-animated-fantasy-creatures-292803"
+                       target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-unity c-project-button-icon"></i>
+                    </a>
+                    <!-- YouTube Button -->
+                    <a class="c-project-button" href="https://www.youtube.com/watch?v=tbipmL-vTEU"
+                       target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
+                    </a>
+                </div>
+                <!-- Game Text Section -->
+                <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                    <h1 class="font-black text-xl text-normal-red" id="project-low-poly-fantasy-pack">Low Poly Fantasy
+                        Pack</h1>
+                    <p class="text-lg" id="project-low-poly-fantasy-pack-description">Low Poly Fantasy Pack
+                        Description</p>
+                </div>
+            </div>
+
             <!-- Polylithic -->
             <div class="c-project-cover"
                  style="background-image: url(page/img/projects/polylithic.webp);">
@@ -154,7 +166,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-polylithic">Polylithic</h1>
                     <p class="text-lg" id="project-polylithic-description">Polylithic Description</p>
                 </div>
@@ -178,7 +190,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-fff">FFF</h1>
                     <p class="text-lg" id="project-fff-description">FFF Description</p>
                 </div>
@@ -207,7 +219,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-dvzscm">DVZSCM</h1>
                     <p class="text-lg" id="project-dvzscm-description">DVZSCM Description</p>
                 </div>
@@ -231,7 +243,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-chaloupka">Chaloupka</h1>
                     <p class="text-lg" id="project-chaloupka-description">Chaloupka Description</p>
                 </div>
@@ -255,7 +267,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-steel-nemesis">Steel Nemesis</h1>
                     <p class="text-lg" id="project-steel-nemesis-description">Steel Nemesis Description</p>
                 </div>
@@ -284,7 +296,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-scary-horror-game">Scary Horror Game</h1>
                     <p class="text-lg" id="project-scary-horror-game-description">Scary Horror Game Description</p>
                 </div>
@@ -308,7 +320,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-farm-escapade">Farm Escapade</h1>
                     <p class="text-lg" id="project-farm-escapade-description">Farm Escapade Description</p>
                 </div>
@@ -327,7 +339,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-hateful">Hateful</h1>
                     <p class="text-lg" id="project-hateful-description">Hateful Description</p>
                 </div>
@@ -346,7 +358,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-morality-abyss">Morality Abyss</h1>
                     <p class="text-lg" id="project-morality-abyss-description">Morality Abyss Description</p>
                 </div>
@@ -375,7 +387,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-pixel-pong">Pixel Pong</h1>
                     <p class="text-lg" id="project-pixel-pong-description">Pixel Pong Description</p>
                 </div>
@@ -387,15 +399,20 @@
                 <!-- Game Action Button Flexbox -->
                 <div class="c-project-buttons">
                     <!-- Play Button -->
-                    <a class="flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-              h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all" href="https://redhavoc12.itch.io/starfighter"
+                    <a class="c-project-button"
+                       href="https://redhavoc12.itch.io/starfighter"
                        target="_blank">
                         <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
+                    </a>
+                    <!-- GitHub Button -->
+                    <a class="c-project-button" href="https://github.com/lukas-urbann/space-invaders-clone"
+                       target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
                     </a>
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-starfighter">Starfighter</h1>
                     <p class="text-lg" id="project-starfighter-description">Starfighter Description</p>
                 </div>
@@ -419,28 +436,9 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-endless-driver">Endless Driver</h1>
                     <p class="text-lg" id="project-endless-driver-description">Endless Driver Description</p>
-                </div>
-            </div>
-
-            <!-- Dotfiles -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/lukashos.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/dotfiles"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description">
-                    <h1 class="font-black text-xl text-normal-red" id="project-dotfiles">Dotfiles</h1>
-                    <p class="text-lg" id="project-dotfiles-description">Dotfiles Description</p>
                 </div>
             </div>
 
@@ -457,7 +455,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-wallpapers">Wallpapers</h1>
                     <p class="text-lg" id="project-wallpapers-description">Wallpapers Description</p>
                 </div>
@@ -476,7 +474,7 @@
                 </div>
                 <!-- Game Text Section -->
                 <div
-                        class="c-project-description">
+                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
                     <h1 class="font-black text-xl text-normal-red" id="project-website">Website</h1>
                     <p class="text-lg" id="project-website-description">Website Description</p>
                 </div>
@@ -493,34 +491,37 @@
         <h1 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span>
             <span id="text-about-me">About me Title</span>
         </h1>
-        <div class="grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2
+        <div class="grid grid-cols-1 md:grid-cols-2
          ">
             <div class="w-full md:w-2/3 relative transition-all duration-500 border-2
-            border-normal-red bg-center my-4 md:m-8 rounded-lg bg-cover p-8" style="background-image: url(page/img/me.webp);aspect-ratio: 1 / 1;">
+            border-normal-red bg-center my-4 md:m-8 rounded-lg bg-cover p-8"
+                 style="background-image: url(page/img/me.webp);aspect-ratio: 1 / 1;">
                 <p class="p-2 bg-yellow-300 border-2 border-black rounded-xl absolute -left-4
-              -bottom-4 text-xl text-black" id="text-thats-me">That's me Text</p>
+              -bottom-4 text-xl text-black animate-bounce" id="text-thats-me">That's me Text</p>
             </div>
             <div class="my-auto">
                 <ul class="rounded-xl p-4 text-lg border border-black border-solid inner-border-gray bg-black bg-opacity-70">
-                    <li><i aria-hidden="true" class="fa fa-angles-right text-sm"></i> <span id="text-about-age"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i><span id="text-about-prof"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i><span id="text-about-objective"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-interest"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-1"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-2"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-3"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-4"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-5"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-6"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-7"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-8"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-9"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
+                            id="text-about-10"></span></li>
                 </ul>
-            </div>
-            <div class="my-auto">
-                <ul class="box-blur rounded-lg p-4 mt-12 text-lg border border-black border-solid inner-border-gray bg-black bg-opacity-70">
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-polyperfect-main"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-polyperfect-info"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm"></i> <span id="text-about-polyperfect-link"></span></li>
-                </ul>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/@redhavoc12">
-                    <div class="transition-all duration-500 bg-center rounded-lg lg:w-2/3 lg:mx-auto
-                bg-contain" style="background-image: url(page/img/polyperfect.webp);aspect-ratio: 1 / 1;">
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -542,13 +543,13 @@
                      id="contact-mail">
                     Email contact
                     <a class="underline text-normal-red cursor-pointer text-sm md:text-xl"
-                       onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')">zde</a>.
+                       onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">zde</a>.
                 </div>
             </div>
             <div class="relative bg-dark-black self-stretch rounded-xl ml-2 bg-cover box-shadow bg-top text-sm  md:text-lg border border-black border-solid"
                  style="background-image: url(page/img/contact.webp);">
                 <div class="m-0 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center p-2 w-3/4 rounded-lg bg-black bg-opacity-80 inner-border-gray border border-black border-solid"
-                     id="contact-other">
+                     id="contact-work">
                     Other contact
                 </div>
             </div>
@@ -557,48 +558,75 @@
 </section>
 
 <!-- Footer -->
-<footer class="transition-all duration-500 clear-both relative bottom-0
-      mx-auto container my-4 p-2">
-    <div class="w-auto bg-dark-black rounded-xl p-2 mx-1 border border-black border-solid">
+<footer class="c-footer">
+    <div class="c-footer-wrapper">
         <!-- Footer Decoration -->
         <div>
             <p class="font-black">#!/bin/bash</p>
-            <span class="text-sm text-normal-red">footer@lukas-urbann.github.io:~$</span>
+            <span class="text-sm text-normal-red">footer@urban-lukas.cz:~$</span>
         </div>
         <!-- Footer Icons -->
-        <div class="flex flex-wrap flex-row text-center hacker-font
-          justify-center mt-4 w-full">
+        <div class="c-footer-icons-layout">
             <!-- Github Icon -->
-            <div class="flex-initial mx-3">
-                <a class="hover:text-normal-red cursor-pointer text-2xl" href="https://github.com/lukas-urbann">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">GitHub</span>
+                <a class="c-footer-icon-hyperlink" href="https://github.com/lukas-urbann">
                     <i aria-hidden="true" class="fa-brands fa-github"></i>
                 </a>
             </div>
-            <!-- Youtube Icon -->
-            <div class="flex-initial mx-3">
-                <a class="hover:text-normal-red cursor-pointer text-2xl"
-                   href="https://www.youtube.com/@redhavoc12">
-                    <i aria-hidden="true" class="fa-brands fa-youtube"></i>
-                </a>
-            </div>
             <!-- Itch Icon -->
-            <div class="flex-initial mx-3">
-                <a class="hover:text-normal-red cursor-pointer text-2xl" href="https://redhavoc12.itch.io/">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Itch.io</span>
+                <a class="c-footer-icon-hyperlink" href="https://redhavoc12.itch.io/">
                     <i aria-hidden="true" class="fa-brands fa-itch-io"></i>
                 </a>
             </div>
+            <!-- YouTube Icon -->
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">YouTube</span>
+                <a class="c-footer-icon-hyperlink" href="https://www.youtube.com/@redhavoc12">
+                    <i aria-hidden="true" class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Instagram Icon -->
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Instagram</span>
+                <a class="c-footer-icon-hyperlink" href="https://www.instagram.com/lukas.urbann/">
+                    <i aria-hidden="true" class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
             <!-- Mail Icon -->
-            <div class="flex-initial mx-3">
-                <a class="hover:text-normal-red cursor-pointer text-2xl"
-                   onclick="show_notification('E-Mail: <a href='+'mailto:lukas.urbann@seznam.cz'+'>lukas.urbann@seznam.cz</a>')">
-                    <i aria-hidden="true" class="fa-solid fa-envelope-open-text"></i>
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">E-Mail</span>
+                <a class="c-footer-icon-hyperlink"
+                   onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">
+                    <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <!-- Form Icon -->
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Contact Form</span>
+                <a class="c-footer-icon-hyperlink" href="page/html/form.html">
+                    <i class="fa-solid fa-file-contract"></i>
+                </a>
+            </div>
+            <!-- Donate Icon -->
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Buy me a coffee</span>
+                <a class="c-footer-icon-hyperlink" href="https://buymeacoffee.com/lukasurban">
+                    <i aria-hidden="true" class="fa-solid fa-circle-dollar-to-slot"></i>
                 </a>
             </div>
         </div>
         <!-- Footer Text -->
         <div class="mt-4">
-            <p class="text-center mt-2"><span class="text-normal-red">&copy;2024</span>
-                Lukáš Urban</p>
+            <p class="text-center mt-2"><span class="text-normal-red">
+                <i style="font-size: 14px"
+                   class="fa-regular fa-copyright"></i>&nbsp;2025</span>&nbsp;<i
+                    class="fa-solid fa-angle-right" style="font-size: 12px;"></i><i
+                    class="fa-solid fa-angle-right" style="font-size: 12px;"></i>&nbsp;
+                <span style="font-size: 17px">Lukáš Urban</span>
+            </p>
             <p class="text-xs text-center" id="text-creds"></p>
         </div>
     </div>
@@ -608,6 +636,8 @@
 <script src="page/javascript/language.js"></script>
 <script src="page/javascript/section-selector.js"></script>
 <script src="page/javascript/overlay.js"></script>
+<script src="page/javascript/class-ops.js"></script>
+<script src="page/javascript/url-redirect.js"></script>
 </body>
 
 </html>
