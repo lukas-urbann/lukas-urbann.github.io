@@ -30,7 +30,7 @@ html {
 
 #nav-menu, #nav-bar {
     box-shadow: inset 0px 0px 0px 1px rgb(110, 110, 110);
-    background-color: rgba(26, 22, 22, 0.8);
+    background-color: rgb(15 17 25);
 }
 
 .inner-border-gray {
@@ -208,7 +208,7 @@ section {
 
     #nav-flags {
         box-shadow: inset 0px 0px 0px 1px rgb(110, 110, 110);
-        background-color: rgba(26, 22, 22, 0.8);
+        background-color: rgb(15 17 25);
     }
 }
 

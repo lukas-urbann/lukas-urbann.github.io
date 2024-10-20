@@ -21,7 +21,7 @@
 }
 
 .c-project-description {
-    @apply transition-colors shadow-lg shadow-black cursor-pointer h-max max-h-40 overflow-hidden p-4 text-dark-white bg-dark-black bg-opacity-80 absolute bottom-0 text-left rounded-lg mx-2 my-2 border border-black;
+    @apply transition-colors shadow-lg shadow-black cursor-pointer h-max max-h-40 overflow-hidden p-4 text-dark-white bg-dark-black bg-opacity-90 absolute bottom-0 text-left rounded-lg mx-2 my-2 border border-black;
 }
 
 .c-project-description:hover {
@@ -107,11 +107,11 @@
 }
 
 .c-contains-tooltip .c-tooltip {
-    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-normal-black text-normal-white text-center p-2 absolute mb-2 bottom-full left-1/2 transform -translate-x-1/2;
+    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-dark-black text-normal-white text-center p-2 absolute mb-2 bottom-full left-1/2 transform -translate-x-1/2;
 }
 
 .c-contains-reversed-tooltip .c-tooltip {
-    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-normal-black text-normal-white text-center p-2 absolute mb-2 top-full left-1/2 transform -translate-x-1/2;
+    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-dark-black text-normal-white text-center p-2 absolute mb-2 top-full left-1/2 transform -translate-x-1/2;
 }
 
 .c-tooltip {
