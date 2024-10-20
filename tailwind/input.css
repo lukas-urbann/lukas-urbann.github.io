@@ -125,3 +125,23 @@
 .c-contains-reversed-tooltip:hover .c-tooltip {
     @apply visible opacity-100 scale-100 ease-in-out translate-y-1;
 }
+
+.c-form {
+    @apply relative container mx-auto bg-dark-black p-12 rounded-xl md:mt-12 w-full md:w-2/3 xl:w-1/2;
+}
+
+.c-form input {
+    @apply w-full h-12 bg-dark-white text-normal-black border border-black rounded-xl mb-4 mt-2 p-2;
+}
+
+.c-form textarea {
+    @apply text-left w-full bg-dark-white text-normal-black border border-black rounded-xl mb-4 mt-2 p-2 resize-none;
+}
+
+.c-form label {
+    @apply text-normal-white;
+}
+
+.c-form h1 {
+    @apply text-5xl text-center text-dark-white mb-12;
+}

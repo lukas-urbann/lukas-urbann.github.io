@@ -56,6 +56,19 @@ const en = {
     "warning-small-window": "The window is too small!",
     "flag-tooltip-en": "English Version",
     "flag-tooltip-cz": "Czech Version",
+    "form-send": "Send",
+    "form-header": "Contact Form",
+    "form-name": "&nbsp;Name",
+    "form-email": "&nbsp;E-Mail",
+    "form-message": "&nbsp;Message",
+    "form-back": "&nbsp;Return to Main Page",
+    "form-error-header": "Incorrectly filled out form!",
+    "form-error-name": "The name is invalid.",
+    "form-error-email": "E-Mail address is invalid.",
+    "form-error-message": "The message must be no less than 10 characters.",
+    "form-error-back": "Back",
+    "form-error-general": "Incorrect data found.",
+    "form-error-text": "Please correct the incorrect information and resubmit the form.",
 }
 
 const cz = {
@@ -113,6 +126,19 @@ const cz = {
     "warning-small-window": "Okno je příliš malé!",
     "flag-tooltip-en": "Anglická verze",
     "flag-tooltip-cz": "Česká verze",
+    "form-send": "Odeslat",
+    "form-header": "Kontaktní formulář",
+    "form-name": "&nbsp;Jméno",
+    "form-email": "&nbsp;E-Mail",
+    "form-message": "&nbsp;Zpráva",
+    "form-back": "&nbsp;Zpět na hlavní stránku",
+    "form-error-header": "Chybně vyplněný formulář!",
+    "form-error-name": "Jméno je neplatné.",
+    "form-error-email": "E-Mailová adresa je neplatná.",
+    "form-error-message": "Zpráva nesmí mít méně než 10 znaků.",
+    "form-error-back": "Zpět",
+    "form-error-general": "Nalezeny chybně vyplněné údaje.",
+    "form-error-text": "Prosím, opravte špatně zadané údaje a zašlete formulář znovu.",
 }
 
 const blank = {
@@ -170,22 +196,44 @@ const blank = {
     "warning-small-window": "",
     "flag-tooltip-en": "",
     "flag-tooltip-cz": "",
+    "form-send": "",
+    "form-header": "",
+    "form-name": "",
+    "form-email": "",
+    "form-message": "",
+    "form-back": "",
+    "form-error-header": "",
+    "form-error-name": "",
+    "form-error-email": "",
+    "form-error-message": "",
+    "form-error-back": "",
+    "form-error-general": "",
+    "form-error-text": "",
 }
 
 function changeLang(lang) {
     switch (lang) {
         case "en":
             langHandler("en", en)
+            if (flag_cz === null || flag_en === null) {
+                return;
+            }
             flag_cz.classList.remove("active-btn");
             flag_en.classList.add("active-btn");
             break;
         case "cz":
             langHandler("cz", cz);
+            if (flag_cz === null || flag_en === null) {
+                return;
+            }
             flag_en.classList.remove("active-btn");
             flag_cz.classList.add("active-btn");
             break;
         default:
             langHandler("blank", blank);
+            if (flag_cz === null || flag_en === null) {
+                return;
+            }
             flag_en.classList.remove("active-btn");
             flag_cz.classList.remove("active-btn");
             break;
@@ -196,6 +244,9 @@ function langHandler(lang, langOptions) {
     setCookie("language", lang, 7)
 
     Object.keys(langOptions).forEach(x => {
+        if (writeLang(x) === null) {
+            return;
+        }
         writeLang(x).innerHTML = langOptions[x]
     })
 }
@@ -240,5 +291,5 @@ function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires;
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
