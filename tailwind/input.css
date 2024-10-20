@@ -3,22 +3,6 @@
 @tailwind utilities;
 @tailwind variants;
 
-@layer utilities {
-    /*
-      Chromium browsers don't render nested backdrop filters.
-      As a workaround, add 'before:' to the outer filter, along with 'before:backdrop-hack':
-  
-        <div class="before:backdrop-blur-md before:backdrop-hack>
-          <div class="backdrop-blur-md"></div>
-        </div>
-  
-      See https://stackoverflow.com/a/76207141.
-    */
-    .backdrop-hack {
-        @apply absolute inset-0 -z-10;
-    }
-}
-
 .c-project-cover {
     @apply text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black;
 }
@@ -28,8 +12,8 @@
 }
 
 .c-project-button {
-    @apply flex-initial text-white hover:text-normal-red cursor-pointer border-white border rounded-full bg-black bg-opacity-80 hover:border-normal-red mt-0
-    h-12 w-12 text-center relative mr-2 transform hover:scale-105 transition-all;
+    @apply flex-initial text-white hover:text-normal-red cursor-pointer border-white border-2 rounded-full bg-dark-black bg-opacity-80 hover:border-normal-red mt-0
+    h-12 w-12 text-center relative mr-2 transform hover:scale-110 transition-all
 }
 
 .c-project-button-icon {
@@ -37,18 +21,15 @@
 }
 
 .c-project-description {
-    @apply c-blur overflow-y-auto p-4 text-dark-white bg-black bg-opacity-40 h-1/2 absolute bottom-0 text-left rounded-lg mx-2 mb-2 border border-black;
+    @apply transition-colors shadow-lg shadow-black cursor-pointer h-max max-h-40 overflow-hidden p-4 text-dark-white bg-dark-black bg-opacity-80 absolute bottom-0 text-left rounded-lg mx-2 my-2 border border-black;
 }
 
-.c-blur {
-    backdrop-filter: blur(10px);
-    /* filter: blur(10px); */
-    /* -webkit-filter: blur(10px); */
+.c-project-description:hover {
+    @apply bg-opacity-100;
 }
 
-.c-blur-self {
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+.c-project-description-full {
+    @apply bg-opacity-100 h-full w-full border-none cursor-pointer m-0 max-h-full;
 }
 
 .c-navbar {
@@ -100,7 +81,7 @@
 }
 
 .c-navbar-wrapper {
-    @apply c-blur border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
+    @apply border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
     p-2 left-0 right-0 fixed top-0 block
     md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
     md:top-2;
