@@ -76,5 +76,5 @@ page(
     "<span id='form-success'>Formulář úspěšně odeslán!</span>",
     "<span id='form-success-text'>Děkuji za odeslání formuláře. Budu se snažit odpovědět co nejdříve.</span><br>",
     '',
-    "location.href = 'https://urban-lukas.cz';"
+    "location.href = '../../index.html';"
 );
