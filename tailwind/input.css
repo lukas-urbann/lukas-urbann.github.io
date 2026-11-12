@@ -3,129 +3,212 @@
 @tailwind utilities;
 @tailwind variants;
 
-.c-project-cover {
-    @apply text-normal-black self-stretch my-4 rounded-lg  max-h-96 overflow-hidden bg-center bg-cover relative text-4xl border border-solid border-black;
+/* ---------- Layout ---------- */
+.c-section {
+    @apply container mx-auto;
 }
 
-.c-project-buttons {
-    @apply flex flex-nowrap mt-2 ml-2;
-}
-
-.c-project-button {
-    @apply flex-initial text-white hover:text-normal-red cursor-pointer border-white border-2 rounded-full bg-dark-black bg-opacity-80 hover:border-normal-red mt-0
-    h-12 w-12 text-center relative mr-2 transform hover:scale-110 transition-all
-}
-
-.c-project-button-icon {
-    @apply text-xl absolute top-1/2 transform translate-x-0 -translate-y-1/2 left-0 right-0;
-}
-
-.c-project-description {
-    @apply transition-colors shadow-lg shadow-black cursor-pointer h-max max-h-40 overflow-hidden p-4 text-dark-white bg-dark-black bg-opacity-90 absolute bottom-0 text-left rounded-lg mx-2 my-2 border border-black;
-}
-
-.c-project-description:hover {
-    @apply bg-opacity-100;
-}
-
-.c-project-description-full {
-    @apply bg-opacity-100 h-full w-full border-none cursor-pointer m-0 max-h-full;
-}
-
+/* ---------- Navigation ---------- */
 .c-navbar {
-    @apply z-10 md:sticky md:top-0 rounded-none md:container md:mx-auto md:px-4 md:transition-all md:duration-500 container mx-auto;
-}
-
-.c-navmenu {
-    @apply z-10 transition-all duration-300 hidden w-1/2
-    rounded-xl border-solid border border-black text-center text-xl
-    p-4 mt-12 ml-auto fixed right-2 top-7 max-w-md md:inline-block
-    md:text-lg md:m-0 md:w-auto md:mx-auto md:rounded-xl
-    md:top-2 md:py-1 md:px-1 md:left-0 md:right-0 md:relative md:ml-3;
-}
-
-.c-section-base {
-    @apply container mx-auto h-full
-    transition-all duration-500;
-}
-
-.c-nav-btn {
-    @apply my-1 py-1 rounded-lg md:inline-block md:mx-1
-    duration-150 transition-colors;
-}
-
-.c-nav-btn-hyperlink {
-    @apply text-dark-white md:text-lg md:p-2
-    md:transition-colors md:duration-100;
-}
-
-.c-footer-icons-layout {
-    @apply flex flex-wrap flex-row text-center justify-center mt-4 w-full;
-}
-
-.c-footer-icon {
-    @apply flex-initial mx-3;
-}
-
-.c-footer-icon-hyperlink {
-    @apply hover:text-normal-red cursor-pointer text-2xl;
-}
-
-.c-footer {
-    @apply transition-all duration-500 clear-both relative bottom-0
-    mx-auto container my-4 p-2;
-}
-
-.c-footer-wrapper {
-    @apply w-auto bg-dark-black rounded-xl p-2 mx-1 border border-black border-solid;
+    @apply z-10 container mx-auto md:sticky md:top-0 md:px-4;
 }
 
 .c-navbar-wrapper {
-    @apply border-solid border border-black md:mx-1 z-10 transition-all rounded-lg m-2 duration-300
-    p-2 left-0 right-0 fixed top-0 block
-    md:relative md:mr-auto md:z-10 md:w-auto md:rounded-xl md:inline-block
-    md:top-2;
+    @apply fixed top-0 left-0 right-0 z-10 m-2 p-2 rounded-lg border border-black transition-all duration-300
+    md:relative md:top-2 md:inline-block md:w-auto md:mx-1 md:mr-auto md:rounded-xl;
 }
 
-.c-flag-wrapper {
-    @apply transition-colors duration-150 py-1 rounded-lg
-    md:rounded-full md:h-8 md:w-8 md:p-0 md:my-0.5 md:mx-2;
+.c-logo {
+    @apply inline-block p-2 text-xl text-normal-white md:py-1 md:text-lg;
 }
 
-.c-flag {
-    @apply w-8 h-8 mx-auto rounded-full
-    cursor-pointer md:w-7 md:h-7 md:mt-0.5 hover:scale-90 transition-all;
+.c-menu-button {
+    @apply px-3 py-2 rounded-xl text-xl text-normal-white cursor-pointer transition-colors duration-150;
+}
+
+.c-navmenu {
+    @apply hidden fixed top-7 right-2 z-10 w-1/2 max-w-md mt-12 ml-auto p-4 rounded-xl border border-black text-center text-xl transition-all duration-300
+    md:relative md:top-2 md:left-0 md:right-0 md:inline-block md:w-auto md:m-0 md:mr-auto md:ml-3 md:p-1 md:text-lg;
 }
 
 .c-nav-flags {
-    @apply md:inline-block md:bg-dark-black md:absolute md:p-2 md:top-0
-    md:rounded-xl md:-right-32 border-solid border-0 md:border border-black
+    @apply md:absolute md:top-0 md:-right-32 md:inline-block md:p-2 md:rounded-xl md:border border-black;
 }
 
+.c-flag-wrapper {
+    @apply py-1 rounded-lg transition-colors duration-150 md:size-8 md:p-0 md:my-0.5 md:mx-2 md:rounded-full;
+}
+
+.c-flag {
+    @apply size-8 mx-auto rounded-full cursor-pointer transition-all hover:scale-90 md:size-7 md:mt-0.5;
+}
+
+.c-nav-btn {
+    @apply my-1 py-1 rounded-lg transition-colors duration-150 md:inline-block md:mx-1;
+}
+
+.c-nav-btn a {
+    @apply text-dark-white md:p-2 md:text-lg md:transition-colors md:duration-100;
+}
+
+/* ---------- Tooltips ---------- */
 .c-contains-tooltip {
     @apply relative inline-block;
 }
 
+.c-contains-tooltip .c-tooltip,
+.c-contains-reversed-tooltip .c-tooltip {
+    @apply absolute left-1/2 w-max p-2 rounded-xl border border-black bg-dark-black text-center text-normal-white
+    invisible opacity-0 scale-0 -translate-x-1/2 translate-y-4 pointer-events-none transition-all ease-in-out;
+}
+
 .c-contains-tooltip .c-tooltip {
-    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-dark-black text-normal-white text-center p-2 absolute mb-2 bottom-full left-1/2 transform -translate-x-1/2;
+    @apply bottom-full mb-2;
 }
 
 .c-contains-reversed-tooltip .c-tooltip {
-    @apply transition-all invisible w-max rounded-xl border-solid border border-black bg-dark-black text-normal-white text-center p-2 absolute mb-2 top-full left-1/2 transform -translate-x-1/2;
-}
-
-.c-tooltip {
-    @apply opacity-0 transition-all scale-0 ease-in-out translate-y-4 pointer-events-none;
+    @apply top-full;
 }
 
 .c-contains-tooltip:hover .c-tooltip {
-    @apply visible opacity-100 scale-100 ease-in-out -translate-y-1;
+    @apply visible opacity-100 scale-100 -translate-y-1;
 }
 
 .c-contains-reversed-tooltip:hover .c-tooltip {
-    @apply visible opacity-100 scale-100 ease-in-out translate-y-1;
+    @apply visible opacity-100 scale-100 translate-y-1;
 }
 
+/* ---------- Introduction ---------- */
+.c-intro-grid {
+    @apply grid grid-flow-col grid-cols-1 grid-rows-2 h-3/4 md:mt-24 md:grid-flow-row md:grid-cols-2 md:grid-rows-1;
+}
+
+.c-intro-title {
+    @apply overflow-hidden p-4 rounded-t-lg border border-b-0 border-black bg-black
+    md:row-start-1 md:row-end-3 md:m-2 md:mr-0 md:rounded-r-none md:rounded-l-lg;
+}
+
+.c-intro-title > div {
+    @apply w-full h-full font-black text-7xl lg:text-8xl 2xl:text-9xl;
+}
+
+.c-intro-about {
+    @apply relative overflow-hidden p-4 rounded-b-lg border border-black bg-normal-red bg-cover font-semibold text-2xl
+    md:m-2 md:ml-0 md:rounded-l-none md:rounded-r-lg md:text-lg lg:text-3xl xl:text-4xl;
+}
+
+.c-intro-about p {
+    @apply absolute bottom-4;
+}
+
+/* ---------- Portfolio ---------- */
+.c-project-grid {
+    @apply grid grid-cols-1 auto-rows-fr gap-x-4 mx-2 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.c-project-intro {
+    @apply relative h-96 my-4 p-4 rounded-lg border border-black;
+}
+
+.c-project-intro h1 {
+    @apply absolute top-1/2 -translate-y-1/2 p-2 rounded-lg bg-black/40 font-black text-normal-white
+    text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl;
+}
+
+.c-project-cover {
+    @apply relative overflow-hidden max-h-96 my-4 rounded-lg border border-black bg-center bg-cover;
+}
+
+.c-project-buttons {
+    @apply flex mt-2 ml-2;
+}
+
+.c-project-buttons a {
+    @apply relative size-12 mr-2 rounded-full border-2 border-white bg-dark-black/80 text-center text-white transition-all
+    hover:scale-110 hover:border-normal-red hover:text-normal-red;
+}
+
+.c-project-buttons i {
+    @apply absolute top-1/2 left-0 right-0 -translate-y-1/2 text-xl;
+}
+
+.c-project-description {
+    @apply absolute bottom-0 h-max max-h-40 m-2 p-4 overflow-hidden rounded-lg border border-black bg-dark-black/90 text-dark-white
+    shadow-lg shadow-black cursor-pointer transition-colors hover:bg-dark-black;
+}
+
+.c-project-description h1 {
+    @apply font-black text-xl text-normal-red;
+}
+
+.c-project-description p {
+    @apply text-lg;
+}
+
+.c-project-description-full {
+    @apply w-full h-full max-h-full m-0 border-0 bg-dark-black;
+}
+
+/* ---------- About me ---------- */
+.c-about {
+    @apply mx-2 p-8 rounded-lg border border-black bg-cover;
+}
+
+.c-about-photo {
+    @apply relative aspect-square my-4 rounded-lg border-2 border-normal-red bg-center bg-cover md:w-2/3 md:m-8;
+}
+
+.c-about-badge {
+    @apply absolute -left-4 -bottom-4 p-2 rounded-xl border-2 border-black bg-yellow-300 text-xl text-black animate-bounce;
+}
+
+.c-about-list {
+    @apply p-4 rounded-xl border border-black bg-black/70 text-lg;
+}
+
+.c-about-list i {
+    @apply text-sm text-normal-red;
+}
+
+/* ---------- Contact ---------- */
+.c-contact-grid {
+    @apply grid grid-rows-2 grid-cols-2 mx-2;
+}
+
+.c-contact-title {
+    @apply col-span-2 my-4 px-4 py-12 rounded-xl border border-black bg-dark-black bg-cover bg-center text-center text-5xl;
+}
+
+.c-contact-card {
+    @apply relative rounded-xl border border-black bg-dark-black bg-cover text-sm md:text-lg;
+}
+
+.c-contact-card > div {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 p-2 rounded-lg border border-black bg-black/80 text-center;
+}
+
+/* ---------- Footer ---------- */
+.c-footer {
+    @apply relative clear-both container mx-auto my-4 p-2;
+}
+
+.c-footer-wrapper {
+    @apply mx-1 p-2 rounded-xl border border-black bg-dark-black;
+}
+
+.c-footer-icons {
+    @apply flex flex-wrap justify-center mt-4 text-center;
+}
+
+.c-footer-icon {
+    @apply mx-3;
+}
+
+.c-footer-icon a {
+    @apply text-2xl cursor-pointer hover:text-normal-red;
+}
+
+/* ---------- Contact form ---------- */
 .c-form {
     @apply relative container mx-auto bg-dark-black p-12 rounded-xl md:mt-12 w-full md:w-2/3 xl:w-1/2;
 }
@@ -135,7 +218,7 @@
 }
 
 .c-form textarea {
-    @apply text-left w-full bg-dark-white text-normal-black border border-black rounded-xl mb-4 mt-2 p-2 resize-none;
+    @apply w-full bg-dark-white text-normal-black border border-black rounded-xl mb-4 mt-2 p-2 resize-none;
 }
 
 .c-form label {
