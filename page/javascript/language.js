@@ -80,6 +80,7 @@ const en = {
     "form-error-back": "Back",
     "form-error-general": "Incorrect data found.",
     "form-error-text": "Please correct the incorrect information and resubmit the form.",
+    "form-error-send": "The message could not be sent, please try again later.",
 }
 
 const cz = {
@@ -161,6 +162,7 @@ const cz = {
     "form-error-back": "Zpět",
     "form-error-general": "Nalezeny chybně vyplněné údaje.",
     "form-error-text": "Prosím, opravte špatně zadané údaje a zašlete formulář znovu.",
+    "form-error-send": "Zprávu se nepodařilo odeslat, zkuste to prosím později.",
 }
 
 const blank = {
