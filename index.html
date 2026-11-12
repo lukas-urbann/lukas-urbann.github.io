@@ -2,68 +2,55 @@
 <html lang="cs">
 
 <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Lukáš Urban - Main</title>
+    <link href="page/img/favicon.webp" rel="icon" type="image/webp"/>
     <link href="page/css/tailwind.css" rel="stylesheet"/>
     <link href="page/css/addition.css" rel="stylesheet"/>
-    <link href="page/img/favicon.webp" rel="icon" type="image/x-icon"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta charset="utf-8">
-    <link href="page/fontawesome-free/css/all.css"
-          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body class="overflow-x-hidden">
-<div class="too-small-text" id="warning-small-window">
-    Okno je příliš malé!
-</div>
+<div class="too-small-text" id="warning-small-window">Okno je příliš malé!</div>
+
 <nav class="c-navbar">
     <div class="c-navbar-wrapper unselectable" id="nav-bar">
-        <ul class="inline-block w-full">
+        <ul>
             <li class="inline-block">
-                <p class="inline-block p-2 rounded-xl text-normal-white text-xl md:text-lg
-              md:py-1">Lukáš <span class="text-normal-red font-black">Urban</span></p>
+                <p class="c-logo">Lukáš <span class="text-normal-red font-black">Urban</span></p>
             </li>
-
-            <li class="ml-auto md:hidden md:invisible inline-block float-right
-            mr-2">
-                <div class="text-normal-white text-xl px-3 py-2 rounded-xl cursor-pointer
-              md:text-4xl md:py-4 transition-colors duration-150" id="nav-menu-button" onclick="toggleMenu();">
-                    <i aria-hidden="true" class="fa fa-bars"></i>
+            <li class="inline-block float-right mr-2 md:hidden">
+                <div class="c-menu-button" id="nav-menu-button" onclick="toggleMenu();">
+                    <i aria-hidden="true" class="fa-solid fa-bars"></i>
                 </div>
             </li>
         </ul>
     </div>
 
     <div class="c-navmenu" id="nav-menu">
-        <ul class="flex-wrap font-thin md:flex-nowrap
-          md:list-none" id="nav-menu-list">
+        <ul class="font-thin" id="nav-menu-list">
             <li class="c-nav-flags" id="nav-flags">
-                <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap">
+                <div class="grid grid-cols-2 md:flex">
                     <div class="c-flag-wrapper c-contains-reversed-tooltip" id="flag-cz">
                         <span class="c-tooltip fancy-border" id="flag-tooltip-cz">Czech Language</span>
-                        <div class="c-flag flag-btn" onclick="changeLang('cz');">
+                        <div class="c-flag" onclick="changeLang('cz');">
                             <img alt="flag_cz" src="page/img/flag_cz.svg"/>
                         </div>
                     </div>
                     <div class="c-flag-wrapper c-contains-reversed-tooltip" id="flag-en">
                         <span class="c-tooltip fancy-border" id="flag-tooltip-en">English Language</span>
-                        <div class="c-flag flag-btn" onclick="changeLang('en');">
+                        <div class="c-flag" onclick="changeLang('en');">
                             <img alt="flag_en" src="page/img/flag_en.svg"/>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="nav-li c-nav-btn" id="nav-btn-li-intro">
-                <a class="c-nav-btn-hyperlink" href="#" id="nav-btn-text-intro">Úvod</a>
-            </li>
-            <li class="nav-li c-nav-btn" id="nav-btn-li-portfolio">
-                <a class="c-nav-btn-hyperlink" href="#portfolio" id="nav-btn-text-portfolio">Portfólio</a>
-            </li>
-            <li class="nav-li c-nav-btn" id="nav-btn-li-about">
-                <a class="c-nav-btn-hyperlink" href="#about-me" id="nav-btn-text-about">O mně</a>
-            </li>
-            <li class="nav-li c-nav-btn" id="nav-btn-li-contact">
-                <a class="c-nav-btn-hyperlink" href="#contact" id="nav-btn-text-contact">Kontakt</a>
-            </li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-intro"><a href="#" id="nav-btn-text-intro">Úvod</a></li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-portfolio"><a href="#portfolio" id="nav-btn-text-portfolio">Portfólio</a></li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-about"><a href="#about-me" id="nav-btn-text-about">O mně</a></li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-contact"><a href="#contact" id="nav-btn-text-contact">Kontakt</a></li>
         </ul>
     </div>
 </nav>
@@ -75,585 +62,302 @@
     </div>
 </div>
 
-<section class="section-content container mx-auto h-full bg-normal-black
-      transition-all duration-500" id="introduction">
-    <div class="md:mt-24 grid grid-flow-col grid-cols-1 grid-rows-2
-        md:grid-flow-row md:grid-cols-2 md:grid-rows-1 h-3/4">
-        <div class="bg-black overflow-hidden relative rounded-t-lg
-          md:rounded-r-none md:rounded-l-lg p-4 m-0 md:m-2 md:mr-0
-          justify-self-stretch md:row-start-1 md:row-end-3 box-shadow border border-solid border-b-0 border-black">
-            <div class="font-black text-7xl md:text-7xl lg:text-8xl 2xl:text-9xl
-            w-full h-full">
-                <h1 class="transform-all
-              duration-300 absoluteleft-0 right-0 m-auto" id="text-portfolio">
-                </h1>
+<!-- Introduction -->
+<section class="section-content c-section bg-normal-black" id="introduction">
+    <div class="c-intro-grid">
+        <div class="c-intro-title box-shadow">
+            <div>
+                <h1 id="text-portfolio"></h1>
                 <br>
             </div>
         </div>
-        <div class="overflow-hidden box-shadow bg-normal-red rounded-b-lg
-          md:rounded-l-none md:rounded-r-lg justify-self-stretch p-4 md:m-2
-          md:ml-0 box-shadow-text font-semibold text-2xl
-          md:text-lg relative lg:text-3xl xl:text-4xl 2xl:text-4xl
-          border border-solid border-black" style="background-image: url(page/img/gaming.webp); background-size:
-          cover;">
-            <p class="absolute bottom-4
-            text-shadow-black" id="text-intro-about"></p>
+        <div class="c-intro-about box-shadow" style="background-image: url(page/img/gaming.webp);">
+            <p class="text-shadow-black" id="text-intro-about"></p>
         </div>
     </div>
 </section>
-<div class="text-4xl w-full text-center mt-12">
-    <a class="hover:text-normal-red" href="#portfolio">
-        <i aria-hidden="true" class="fa fa-arrow-down"></i>
-    </a>
+<div class="text-4xl text-center mt-12">
+    <a class="hover:text-normal-red" href="#portfolio"><i aria-hidden="true" class="fa-solid fa-arrow-down"></i></a>
 </div>
 
-<!-- Portfolio section -->
-<section class="section-content transition-all duration-500 h-full container mx-auto pt-24" id="portfolio">
-    <div class="rounded-lg h-full transition duration-500">
-        <!-- Portfolio section grid -->
-        <div class="mx-2 grid grid-cols-1 md:grid-cols-2 grid-flow-row lg:grid-cols-3 gap-x-4 auto-rows-fr">
-            <!-- First decorative grid item -->
-            <div class="fancy-background relative self-stretch my-4
-              rounded-lg box-shadow h-96 min-h-96 max-h-96 p-4 border border-solid border-black">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl
-                bg-black p-2 bg-opacity-40 rounded-lg font-black text-left
-                absolute m-auto top-1/2 transform -translate-y-1/2 text-normal-white">
-                    <span id="text-my-projects"></span>
-                </h1>
-            </div>
+<!-- Portfolio -->
+<section class="section-content c-section pt-24" id="portfolio">
+    <div class="c-project-grid">
+        <div class="c-project-intro fancy-background box-shadow">
+            <h1><span id="text-my-projects"></span></h1>
+        </div>
 
-            <!-- Vykolejen -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/vykolejen.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://gameutb.itch.io/train-game"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-vykolejen">Vykolejen</h1>
-                    <p class="text-lg" id="project-vykolejen-description">Vykolejen Description</p>
-                </div>
+        <!-- Vykolejen -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/vykolejen.webp);">
+            <div class="c-project-buttons">
+                <a href="https://gameutb.itch.io/train-game" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
             </div>
-
-            <!-- Baťové a Bačové -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/bab.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/batove-a-bacove"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/JiFpAxiybrE"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/batove-a-bacove/"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-bab">Batove a Bacove</h1>
-                    <p class="text-lg" id="project-bab-description">Batove a Bacove Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-vykolejen">Vykolejen</h1>
+                <p id="project-vykolejen-description">Vykolejen Description</p>
             </div>
+        </div>
 
-            <!-- Copycat -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/copycat.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/copycat"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/5nnqI2NQsyY"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-copycat">Copycat</h1>
-                    <p class="text-lg" id="project-copycat-description">Copycat Description</p>
-                </div>
+        <!-- Baťové a Bačové -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/bab.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/batove-a-bacove" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://youtu.be/JiFpAxiybrE" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/lukas-urbann/batove-a-bacove/" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
             </div>
-
-            <!-- This cant work -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/tcw.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/this-cant-work"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/2rvRYTdDgg4"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/game-jam-zlin-2025/"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-tcw">This Cant Work</h1>
-                    <p class="text-lg" id="project-tcw-description">This Cant Work Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-bab">Batove a Bacove</h1>
+                <p id="project-bab-description">Batove a Bacove Description</p>
             </div>
+        </div>
 
-            <!-- Low Poly Fantasy Pack -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/low-poly-fantasy-pack.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button"
-                       href="https://assetstore.unity.com/packages/3d/animations/low-poly-animated-fantasy-creatures-292803"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-unity c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://www.youtube.com/watch?v=tbipmL-vTEU"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-low-poly-fantasy-pack">Low Poly Fantasy
-                        Pack</h1>
-                    <p class="text-lg" id="project-low-poly-fantasy-pack-description">Low Poly Fantasy Pack
-                        Description</p>
-                </div>
+        <!-- Copycat -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/copycat.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/copycat" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://youtu.be/5nnqI2NQsyY" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
             </div>
-
-            <!-- Polylithic -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/polylithic.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://store.steampowered.com/app/1839060/Polylithic/"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-steam c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/jo-QV-BIK80"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-polylithic">Polylithic</h1>
-                    <p class="text-lg" id="project-polylithic-description">Polylithic Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-copycat">Copycat</h1>
+                <p id="project-copycat-description">Copycat Description</p>
             </div>
+        </div>
 
-            <!-- FFF -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/fff.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://store.steampowered.com/app/2139620/FFF/"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-steam c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/xz49tm-CVq8"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-fff">FFF</h1>
-                    <p class="text-lg" id="project-fff-description">FFF Description</p>
-                </div>
+        <!-- This Can't Work -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/tcw.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/this-cant-work" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://youtu.be/2rvRYTdDgg4" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/lukas-urbann/game-jam-zlin-2025/" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
             </div>
-
-            <!-- DVZSCM -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/DVZSCM.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/den-v-zivote-skutecneho-ceskeho-manika"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/AQBwflshCxg"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/game-jam-zlin-2024/"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-dvzscm">DVZSCM</h1>
-                    <p class="text-lg" id="project-dvzscm-description">DVZSCM Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-tcw">This Cant Work</h1>
+                <p id="project-tcw-description">This Cant Work Description</p>
             </div>
+        </div>
 
-            <!-- Chaloupka -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/chaloupka.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/marenka-a-jenicek"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/game-jam-zlin-2023/"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-chaloupka">Chaloupka</h1>
-                    <p class="text-lg" id="project-chaloupka-description">Chaloupka Description</p>
-                </div>
+        <!-- Low Poly Fantasy Pack -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/low-poly-fantasy-pack.webp);">
+            <div class="c-project-buttons">
+                <a href="https://assetstore.unity.com/packages/3d/animations/low-poly-animated-fantasy-creatures-292803" target="_blank"><i aria-hidden="true" class="fa-brands fa-unity"></i></a>
+                <a href="https://www.youtube.com/watch?v=tbipmL-vTEU" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
             </div>
-
-            <!-- Steel Nemesis -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/steel-nemesis.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/steel-nemesis"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/4jVQK7SO4B0"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-steel-nemesis">Steel Nemesis</h1>
-                    <p class="text-lg" id="project-steel-nemesis-description">Steel Nemesis Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-low-poly-fantasy-pack">Low Poly Fantasy Pack</h1>
+                <p id="project-low-poly-fantasy-pack-description">Low Poly Fantasy Pack Description</p>
             </div>
+        </div>
 
-            <!-- Scary Horror Game -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/scary-horror-game.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/scary-horror-game"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://www.youtube.com/watch?v=53bI3xmylfk"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/game-off-2022"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-scary-horror-game">Scary Horror Game</h1>
-                    <p class="text-lg" id="project-scary-horror-game-description">Scary Horror Game Description</p>
-                </div>
+        <!-- Polylithic -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/polylithic.webp);">
+            <div class="c-project-buttons">
+                <a href="https://store.steampowered.com/app/1839060/Polylithic/" target="_blank"><i aria-hidden="true" class="fa-brands fa-steam"></i></a>
+                <a href="https://youtu.be/jo-QV-BIK80" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
             </div>
-
-            <!-- Farm Escapade-->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/farm.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/farm-escapade"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/U2P3nn2IUcI"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-farm-escapade">Farm Escapade</h1>
-                    <p class="text-lg" id="project-farm-escapade-description">Farm Escapade Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-polylithic">Polylithic</h1>
+                <p id="project-polylithic-description">Polylithic Description</p>
             </div>
+        </div>
 
-            <!-- Hateful -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/hateful.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://youtu.be/hRecRIsvskA"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-hateful">Hateful</h1>
-                    <p class="text-lg" id="project-hateful-description">Hateful Description</p>
-                </div>
+        <!-- FFF -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/fff.webp);">
+            <div class="c-project-buttons">
+                <a href="https://store.steampowered.com/app/2139620/FFF/" target="_blank"><i aria-hidden="true" class="fa-brands fa-steam"></i></a>
+                <a href="https://youtu.be/xz49tm-CVq8" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
             </div>
-
-            <!-- Morality Abyss -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/morality-abyss.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/morality-abyss"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-morality-abyss">Morality Abyss</h1>
-                    <p class="text-lg" id="project-morality-abyss-description">Morality Abyss Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-fff">FFF</h1>
+                <p id="project-fff-description">FFF Description</p>
             </div>
+        </div>
 
-            <!-- Pixel Pong -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/pixel-pong.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/pixel-pong"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- YouTube Button -->
-                    <a class="c-project-button" href="https://www.youtube.com/watch?v=oL0a6PjGCY4"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-youtube c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/pixel-pong"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-pixel-pong">Pixel Pong</h1>
-                    <p class="text-lg" id="project-pixel-pong-description">Pixel Pong Description</p>
-                </div>
+        <!-- DVZSCM -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/DVZSCM.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/den-v-zivote-skutecneho-ceskeho-manika" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://youtu.be/AQBwflshCxg" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/lukas-urbann/game-jam-zlin-2024/" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
             </div>
-
-            <!-- Starfighter -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/starfighter.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button"
-                       href="https://redhavoc12.itch.io/starfighter"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/space-invaders-clone"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-starfighter">Starfighter</h1>
-                    <p class="text-lg" id="project-starfighter-description">Starfighter Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-dvzscm">DVZSCM</h1>
+                <p id="project-dvzscm-description">DVZSCM Description</p>
             </div>
+        </div>
 
-            <!-- Sample Driver -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/endless-driver.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- Play Button -->
-                    <a class="c-project-button" href="https://redhavoc12.itch.io/endless-driver"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-itch-io c-project-button-icon"></i>
-                    </a>
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/endless-driver"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-endless-driver">Endless Driver</h1>
-                    <p class="text-lg" id="project-endless-driver-description">Endless Driver Description</p>
-                </div>
+        <!-- Chaloupka -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/chaloupka.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/marenka-a-jenicek" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://github.com/lukas-urbann/game-jam-zlin-2023/" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
             </div>
-
-            <!-- Wallpapers -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/wallpaper.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/wallpapers"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-wallpapers">Wallpapers</h1>
-                    <p class="text-lg" id="project-wallpapers-description">Wallpapers Description</p>
-                </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-chaloupka">Chaloupka</h1>
+                <p id="project-chaloupka-description">Chaloupka Description</p>
             </div>
+        </div>
 
-            <!-- Website -->
-            <div class="c-project-cover"
-                 style="background-image: url(page/img/projects/website.webp);">
-                <!-- Game Action Button Flexbox -->
-                <div class="c-project-buttons">
-                    <!-- GitHub Button -->
-                    <a class="c-project-button" href="https://github.com/lukas-urbann/lukas-urbann.github.io"
-                       target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-github c-project-button-icon"></i>
-                    </a>
-                </div>
-                <!-- Game Text Section -->
-                <div
-                        class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-                    <h1 class="font-black text-xl text-normal-red" id="project-website">Website</h1>
-                    <p class="text-lg" id="project-website-description">Website Description</p>
-                </div>
+        <!-- Steel Nemesis -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/steel-nemesis.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/steel-nemesis" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://youtu.be/4jVQK7SO4B0" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
             </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-steel-nemesis">Steel Nemesis</h1>
+                <p id="project-steel-nemesis-description">Steel Nemesis Description</p>
+            </div>
+        </div>
 
+        <!-- Scary Horror Game -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/scary-horror-game.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/scary-horror-game" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.youtube.com/watch?v=53bI3xmylfk" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/lukas-urbann/game-off-2022" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-scary-horror-game">Scary Horror Game</h1>
+                <p id="project-scary-horror-game-description">Scary Horror Game Description</p>
+            </div>
+        </div>
+
+        <!-- Farm Escapade -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/farm.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/farm-escapade" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://youtu.be/U2P3nn2IUcI" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-farm-escapade">Farm Escapade</h1>
+                <p id="project-farm-escapade-description">Farm Escapade Description</p>
+            </div>
+        </div>
+
+        <!-- Hateful -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/hateful.webp);">
+            <div class="c-project-buttons">
+                <a href="https://youtu.be/hRecRIsvskA" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-hateful">Hateful</h1>
+                <p id="project-hateful-description">Hateful Description</p>
+            </div>
+        </div>
+
+        <!-- Morality Abyss -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/morality-abyss.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/morality-abyss" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-morality-abyss">Morality Abyss</h1>
+                <p id="project-morality-abyss-description">Morality Abyss Description</p>
+            </div>
+        </div>
+
+        <!-- Pixel Pong -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/pixel-pong.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/pixel-pong" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.youtube.com/watch?v=oL0a6PjGCY4" target="_blank"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/lukas-urbann/pixel-pong" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-pixel-pong">Pixel Pong</h1>
+                <p id="project-pixel-pong-description">Pixel Pong Description</p>
+            </div>
+        </div>
+
+        <!-- Starfighter -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/starfighter.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/starfighter" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://github.com/lukas-urbann/space-invaders-clone" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-starfighter">Starfighter</h1>
+                <p id="project-starfighter-description">Starfighter Description</p>
+            </div>
+        </div>
+
+        <!-- Endless Driver -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/endless-driver.webp);">
+            <div class="c-project-buttons">
+                <a href="https://redhavoc12.itch.io/endless-driver" target="_blank"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+                <a href="https://github.com/lukas-urbann/endless-driver" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-endless-driver">Endless Driver</h1>
+                <p id="project-endless-driver-description">Endless Driver Description</p>
+            </div>
+        </div>
+
+        <!-- Wallpapers -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/wallpaper.webp);">
+            <div class="c-project-buttons">
+                <a href="https://github.com/lukas-urbann/wallpapers" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-wallpapers">Wallpapers</h1>
+                <p id="project-wallpapers-description">Wallpapers Description</p>
+            </div>
+        </div>
+
+        <!-- Website -->
+        <div class="c-project-cover" style="background-image: url(page/img/projects/website.webp);">
+            <div class="c-project-buttons">
+                <a href="https://github.com/lukas-urbann/lukas-urbann.github.io" target="_blank"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+                <h1 id="project-website">Website</h1>
+                <p id="project-website-description">Website Description</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section-content duration-500 transition-all
-      container mx-auto pt-24 h-full" id="about-me">
-    <div class="relative rounded-lg bg-cover box-shadow-text box-shadow p-8 mx-2 border border-solid border-black"
-         style="background-image: url(page/img/keyboard.webp);">
+<!-- About me -->
+<section class="section-content c-section pt-24" id="about-me">
+    <div class="c-about box-shadow" style="background-image: url(page/img/keyboard.webp);">
         <h1 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span>
             <span id="text-about-me">About me Title</span>
         </h1>
-        <div class="grid grid-cols-1 md:grid-cols-2
-         ">
-            <div class="w-full md:w-2/3 relative transition-all duration-500 border-2
-            border-normal-red bg-center my-4 md:m-8 rounded-lg bg-cover p-8"
-                 style="background-image: url(page/img/me.webp);aspect-ratio: 1 / 1;">
-                <p class="p-2 bg-yellow-300 border-2 border-black rounded-xl absolute -left-4
-              -bottom-4 text-xl text-black animate-bounce" id="text-thats-me">That's me Text</p>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="c-about-photo" style="background-image: url(page/img/me.webp);">
+                <p class="c-about-badge" id="text-thats-me">That's me Text</p>
             </div>
             <div class="my-auto">
-                <ul class="rounded-xl p-4 text-lg border border-black border-solid inner-border-gray bg-black bg-opacity-70">
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-1"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-2"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-3"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-4"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-5"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-6"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-7"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-8"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-9"></span></li>
-                    <li><i aria-hidden="true" class="fa-solid fa-angles-right text-sm text-normal-red"></i>&nbsp;<span
-                            id="text-about-10"></span></li>
+                <ul class="c-about-list inner-border-gray">
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-1"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-2"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-3"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-4"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-5"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-6"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-7"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-8"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-9"></span></li>
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span id="text-about-10"></span></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section-content duration-500 transition-all container mx-auto font-black mb-32
-      pt-24" id="contact">
-    <div class="h-full mx-2">
-        <div class="grid grid-rows-2 grid-cols-2">
-            <div class="text-shadow-black bg-dark-black box-shadow self-stretch rounded-xl col-start-1 col-end-3 text-center font-black px-4 py-12 text-5xl my-4 bg-cover bg-center border border-black border-solid"
-                 id="contact-title"
-                 style="background-image: url(page/img/contact.webp);">
-                Kontakt
+<!-- Contact -->
+<section class="section-content c-section font-black mb-32 pt-24" id="contact">
+    <div class="c-contact-grid">
+        <div class="c-contact-title box-shadow text-shadow-black" id="contact-title"
+             style="background-image: url(page/img/contact.webp);">Kontakt</div>
+        <div class="c-contact-card box-shadow bg-left-bottom mr-2" style="background-image: url(page/img/contact.webp);">
+            <div class="inner-border-gray" id="contact-mail">
+                Email contact
+                <a class="underline text-normal-red cursor-pointer text-sm md:text-xl" onclick="show_notification('E-Mail: <a href=mailto:kontakt@urban-lukas.cz>kontakt@urban-lukas.cz</a>')">zde</a>.
             </div>
-            <div
-                    class="relative bg-dark-black self-stretch rounded-xl mr-2 box-shadow bg-cover bg-left-bottom text-sm md:text-lg border border-black border-solid"
-                    style="background-image: url(page/img/contact.webp);">
-                <div class="m-0 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center p-2 w-3/4 rounded-lg bg-black bg-opacity-80 inner-border-gray border border-black border-solid"
-                     id="contact-mail">
-                    Email contact
-                    <a class="underline text-normal-red cursor-pointer text-sm md:text-xl"
-                       onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">zde</a>.
-                </div>
-            </div>
-            <div class="relative bg-dark-black self-stretch rounded-xl ml-2 bg-cover box-shadow bg-top text-sm  md:text-lg border border-black border-solid"
-                 style="background-image: url(page/img/contact.webp);">
-                <div class="m-0 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center p-2 w-3/4 rounded-lg bg-black bg-opacity-80 inner-border-gray border border-black border-solid"
-                     id="contact-work">
-                    Other contact
-                </div>
-            </div>
+        </div>
+        <div class="c-contact-card box-shadow bg-top ml-2" style="background-image: url(page/img/contact.webp);">
+            <div class="inner-border-gray" id="contact-work">Other contact</div>
         </div>
     </div>
 </section>
@@ -661,64 +365,44 @@
 <!-- Footer -->
 <footer class="c-footer">
     <div class="c-footer-wrapper">
-        <!-- Footer Decoration -->
         <div>
             <p class="font-black">#!/bin/bash</p>
             <span class="text-sm text-normal-red">footer@urban-lukas.cz:~$</span>
         </div>
-        <!-- Footer Icons -->
-        <div class="c-footer-icons-layout">
-            <!-- Github Icon -->
+        <div class="c-footer-icons">
             <div class="c-footer-icon c-contains-tooltip">
                 <span class="c-tooltip fancy-border">GitHub</span>
-                <a class="c-footer-icon-hyperlink" href="https://github.com/lukas-urbann">
-                    <i aria-hidden="true" class="fa-brands fa-github"></i>
-                </a>
+                <a href="https://github.com/lukas-urbann"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
             </div>
-            <!-- Itch Icon -->
             <div class="c-footer-icon c-contains-tooltip">
                 <span class="c-tooltip fancy-border">Itch.io</span>
-                <a class="c-footer-icon-hyperlink" href="https://redhavoc12.itch.io/">
-                    <i aria-hidden="true" class="fa-brands fa-itch-io"></i>
-                </a>
+                <a href="https://redhavoc12.itch.io/"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
             </div>
-            <!-- YouTube Icon -->
             <div class="c-footer-icon c-contains-tooltip">
                 <span class="c-tooltip fancy-border">YouTube</span>
-                <a class="c-footer-icon-hyperlink" href="https://www.youtube.com/@redhavoc12">
-                    <i aria-hidden="true" class="fa-brands fa-youtube"></i>
-                </a>
+                <a href="https://www.youtube.com/@redhavoc12"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
             </div>
-            <!-- Mail Icon -->
             <div class="c-footer-icon c-contains-tooltip">
                 <span class="c-tooltip fancy-border">E-Mail</span>
-                <a class="c-footer-icon-hyperlink"
-                   onclick="show_notification('E-Mail: <a href='+'mailto:kontakt@urban-lukas.cz'+'>kontakt@urban-lukas.cz</a>')">
-                    <i aria-hidden="true" class="fa-solid fa-envelope"></i>
-                </a>
+                <a onclick="show_notification('E-Mail: <a href=mailto:kontakt@urban-lukas.cz>kontakt@urban-lukas.cz</a>')"><i aria-hidden="true" class="fa-solid fa-envelope"></i></a>
             </div>
-            <!-- CV Icon -->
             <div class="c-footer-icon c-contains-tooltip">
                 <span class="c-tooltip fancy-border">CV</span>
-                <a class="c-footer-icon-hyperlink" href="page/pdf/CV_Urban.pdf" target="_blank">
-                    <i class="fa-solid fa-file-alt"></i>
-                </a>
+                <a href="page/pdf/CV_Urban.pdf" target="_blank"><i aria-hidden="true" class="fa-solid fa-file-lines"></i></a>
             </div>
         </div>
-        <!-- Footer Text -->
         <div class="mt-4">
-            <p class="text-center mt-2"><span class="text-normal-red">
-                <i style="font-size: 14px"
-                   class="fa-regular fa-copyright"></i>&nbsp;2026</span>&nbsp;<i
-                    class="fa-solid fa-angle-right" style="font-size: 12px;"></i><i
-                    class="fa-solid fa-angle-right" style="font-size: 12px;"></i>&nbsp;
-                <span style="font-size: 17px">Lukáš Urban</span>
+            <p class="text-center mt-2">
+                <span class="text-normal-red"><i aria-hidden="true" class="fa-regular fa-copyright text-sm"></i>&nbsp;2026</span>&nbsp;<i
+                    aria-hidden="true" class="fa-solid fa-angle-right text-xs"></i><i
+                    aria-hidden="true" class="fa-solid fa-angle-right text-xs"></i>&nbsp;
+                <span class="text-[17px]">Lukáš Urban</span>
             </p>
             <p class="text-xs text-center" id="text-creds"></p>
         </div>
     </div>
 </footer>
-<!-- Additional Scripts -->
+
 <script src="page/javascript/hamburger-menu.js"></script>
 <script src="page/javascript/language.js"></script>
 <script src="page/javascript/section-selector.js"></script>
