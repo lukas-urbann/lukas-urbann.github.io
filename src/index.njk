@@ -1,0 +1,128 @@
+---
+# Generates one page per language listed in _data/site.yaml (/ and /cz/).
+pagination:
+  data: site.languages
+  size: 1
+  alias: lang
+permalink: "{{ lang.url }}index.html"
+pageTitle: Main
+---
+<!DOCTYPE html>
+<html lang="{{ lang.htmlLang }}">
+
+<head>
+    <script>
+        // Remember the chosen language; send returning Czech visitors from "/" to "/cz/".
+        // (try/catch: storage can be blocked, e.g. in some private windows - the page then just doesn't remember.)
+        function setLanguage(code) {
+            try { localStorage.setItem("language", code); } catch (e) {}
+        }
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem("language"); } catch (e) {}
+            {%- if lang.url == "/" %}
+            if (saved === "cz") { location.replace("/cz/" + location.hash); return; }
+            {%- endif %}
+            setLanguage("{{ lang.code }}");
+        })();
+    </script>
+{% set metaDescription = strings.meta.description | t(lang) %}
+{% include "partials/head.njk" %}
+    <!-- Link preview (Facebook, LinkedIn, Discord, X…) -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ site.title }} – Portfolio"/>
+    <meta property="og:description" content="{{ metaDescription }}"/>
+    <meta property="og:url" content="{{ site.url }}{{ lang.url }}"/>
+    <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}"/>
+    <meta property="og:locale" content="{{ 'cs_CZ' if lang.code == 'cz' else 'en_US' }}"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <link rel="canonical" href="{{ site.url }}{{ lang.url }}"/>
+    {%- for other in site.languages %}
+    <link rel="alternate" hreflang="{{ other.htmlLang }}" href="{{ site.url }}{{ other.url }}"/>
+    {%- endfor %}
+</head>
+<body class="overflow-x-hidden">
+{% include "partials/notification.njk" %}
+
+{% include "partials/nav.njk" %}
+
+<!-- Introduction -->
+<section class="section-content c-section bg-normal-black" id="introduction">
+    <div class="c-intro-grid">
+        <div class="c-intro-title box-shadow">
+            <div>
+                <h1 id="text-portfolio">{{ strings.intro.title | t(lang) }}</h1>
+                <br>
+            </div>
+        </div>
+        <div class="c-intro-about box-shadow" style="background-image: url(/page/img/gaming.webp);">
+            <p class="text-shadow-black" id="text-intro-about">{{ strings.intro.text | t(lang) }}</p>
+        </div>
+    </div>
+</section>
+<div class="text-4xl text-center mt-12">
+    <a class="hover:text-normal-red" href="#portfolio"><i aria-hidden="true" class="fa-solid fa-arrow-down"></i></a>
+</div>
+
+<!-- Portfolio (projects come from _data/projects.yaml) -->
+<section class="section-content c-section pt-24" id="portfolio">
+    <div class="c-project-grid">
+        <div class="c-project-intro fancy-background box-shadow">
+            <h1><span id="text-my-projects">{{ strings.projects.title | t(lang) }}</span></h1>
+        </div>
+        {% for project in projects %}
+        {% include "partials/project-card.njk" %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- About me -->
+<section class="section-content c-section pt-24" id="about-me">
+    <div class="c-about box-shadow" style="background-image: url(/page/img/keyboard.webp);">
+        <h1 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span>
+            <span id="text-about-me">{{ strings.about.title | t(lang) }}</span>
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="c-about-photo" style="background-image: url(/page/img/me.webp);">
+                <p class="c-about-badge" id="text-thats-me">{{ strings.about.thats_me | t(lang) }}</p>
+            </div>
+            <div class="my-auto">
+                <ul class="c-about-list inner-border-gray">
+                    {%- for item in strings.about.items %}
+                    <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span>{{ item | t(lang) }}</span></li>
+                    {%- endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="section-content c-section font-black mb-32 pt-24" id="contact">
+    <div class="c-contact-grid">
+        <div class="c-contact-title box-shadow text-shadow-black" id="contact-title"
+             style="background-image: url(/page/img/contact.webp);">{{ strings.contact.title | t(lang) }}</div>
+        <div class="c-contact-card box-shadow bg-left-bottom mr-2" style="background-image: url(/page/img/contact.webp);">
+            <div class="inner-border-gray" id="contact-mail">
+                {{ strings.contact.mail | t(lang) }}
+                <a class="underline text-normal-red cursor-pointer text-sm md:text-xl" href="mailto:{{ site.email }}" onclick="show_notification('E-Mail: <a href=mailto:{{ site.email }}>{{ site.email }}</a>'); return false;">{{ strings.contact.mail_link | t(lang) }}</a>.
+            </div>
+        </div>
+        <div class="c-contact-card box-shadow bg-top ml-2" style="background-image: url(/page/img/contact.webp);">
+            <div class="inner-border-gray" id="contact-work">
+                {{ strings.contact.work | t(lang) }}
+                <a href="{{ site.formUrl }}" class="text-normal-red underline">{{ strings.contact.work_link | t(lang) }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/footer.njk" %}
+
+<script src="/page/javascript/hamburger-menu.js"></script>
+<script src="/page/javascript/section-selector.js"></script>
+<script src="/page/javascript/overlay.js"></script>
+<script src="/page/javascript/class-ops.js"></script>
+</body>
+
+</html>

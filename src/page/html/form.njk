@@ -1,0 +1,52 @@
+---
+# The contact form and the PHP result pages are translated in the browser by language.js
+# (generated from the same _data/strings.yaml), because PHP pages can't be pre-built per language.
+permalink: /page/html/form.html
+pageTitle: Form
+---
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <script>
+        // GitHub Pages can't run PHP, so the form only works on urban-lukas.cz.
+        if (location.hostname.endsWith('github.io')) location.replace('{{ site.formUrl }}');
+    </script>
+{% set metaDescription = strings.meta.form_description | t("cz") %}
+{% include "partials/head.njk" %}
+</head>
+<body class="overflow-x-hidden">
+{% include "partials/notification.njk" %}
+
+<div class="c-form">
+    <a class="hover:text-normal-red underline" href="/"><i class="fa-solid fa-angles-left"></i>&nbsp;<span id="form-back">{{ strings.form.back | t("cz") }}</span></a>
+    <h1 id="form-header">{{ strings.form.header | t("cz") }}</h1>
+    <form action="../php/form-submit.php" method="POST" accept-charset="utf-8">
+        <label for="name"><i class="fa-solid fa-chevron-right text-normal-red"></i><i
+                class="fa-solid fa-chevron-right text-normal-red"></i>
+            &nbsp;<span id="form-name">{{ strings.form.name | t("cz") }}</span></label>
+        <br>
+        <input placeholder="..." class="fancy-border" type="text" id="name" name="name" maxlength="100" required/>
+        <br>
+        <label for="email"><i class="fa-solid fa-chevron-right text-normal-red"></i><i
+                class="fa-solid fa-chevron-right text-normal-red"></i>
+            &nbsp;<span id="form-email">{{ strings.form.email | t("cz") }}</span></label>
+        <br>
+        <input placeholder="..." class="fancy-border" type="email" id="email" name="email" required/>
+        <br>
+        <label for="message"><i class="fa-solid fa-chevron-right text-normal-red"></i><i
+                class="fa-solid fa-chevron-right text-normal-red"></i>
+            &nbsp;<span id="form-message">{{ strings.form.message | t("cz") }}</span></label>
+        <br>
+        <textarea placeholder="..." class="fancy-border" name="message" id="message" cols="30" rows="10" maxlength="5000"
+                  required></textarea>
+        <br>
+        <div class="text-center">
+            <button class="notification-btn" type="submit" name="submit" id="form-send">{{ strings.form.send | t("cz") }}</button>
+        </div>
+    </form>
+</div>
+
+<script src="/page/javascript/overlay.js"></script>
+<script src="/page/javascript/language.js"></script>
+</body>
+</html>

@@ -2,13 +2,20 @@
   "name": "lukas-urbann.github.io",
   "version": "2.0.0",
   "description": "Personal portfolio",
-  "main": "index.html",
   "scripts": {
-    "build": "tailwindcss -i tailwind/input.css -o page/css/tailwind.css --minify"
+    "build": "npm run build:html && npm run build:css",
+    "build:html": "eleventy",
+    "build:css": "tailwindcss -i tailwind/input.css -o _site/page/css/tailwind.css --minify",
+    "dev": "run-p dev:*",
+    "dev:html": "eleventy --serve",
+    "dev:css": "tailwindcss -i tailwind/input.css -o _site/page/css/tailwind.css --watch=always"
   },
   "author": "Lukáš Urban",
   "license": "MIT",
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "js-yaml": "^4.1.0",
+    "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.4.14"
   }
 }

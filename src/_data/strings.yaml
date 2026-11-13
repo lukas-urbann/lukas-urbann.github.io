@@ -1,0 +1,155 @@
+# Texty webu. Každý text má českou (cz) a anglickou (en) verzi.
+# HTML značky (<br>, <span ...>, <a ...>) jsou povolené.
+
+nav:
+  intro:
+    cz: Úvod
+    en: Intro
+  portfolio:
+    cz: Portfólio
+    en: Portfolio
+  about:
+    cz: O mně
+    en: About me
+  contact:
+    cz: Kontakt
+    en: Contact
+
+flags:
+  cz:
+    cz: Česká verze
+    en: Czech Version
+  en:
+    cz: Anglická verze
+    en: English Version
+
+intro:
+  title:
+    cz: Vítej na<br>mém portfóliu.
+    en: Welcome to my<br>portfolio.
+  text:
+    cz: <span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášeň,</span> kterou si pěstuji od svého dětství.
+    en: I am a <span class='text-normal-red'>video game designer</span> and developer. It's a <span class='text-normal-red'>passion of mine</span> that I've been cultivating since I was a kid.
+
+projects:
+  title:
+    cz: Projekty,<br>na kterých<br>jsem pracoval
+    en: Projects<br>I worked on
+
+about:
+  title:
+    cz: O mně
+    en: About me
+  thats_me:
+    cz: To jsem já
+    en: That's me
+  items:
+    - cz: Jsem {age}-letý student, programátor.
+      en: I'm a {age}-year-old student.
+    - cz: Zaměřuji se na tvorbu video her a videoherních assetů.
+      en: I focus on creating video games and video game assets.
+    - cz: Úspěšně jsem dokončil bakalářské studium softwarového inženýrství na <a href='https://fai.utb.cz/' class='text-normal-red underline'>UTB</a>.
+      en: I successfully completed my bachelor's degree in software engineering at <a href='https://fai.utb.cz/' class='text-normal-red underline'>TBU</a>.
+    - cz: Svou první hru jsem vytvořil v 6 letech v GameMakeru 8.
+      en: I created my first game at the age of 6 in GameMaker.
+    - cz: Specializuji se na programování v jazyce C#.
+      en: I specialize in C# programming.
+    - cz: Disponuji vynikajícími komunikačními a týmovými schopnostmi.
+      en: I have excellent communication and teamwork skills.
+    - cz: S různými společnostmi, jako je například Polyperfect, spolupracuji již dlouhou dobu.
+      en: I have been working with various companies, such as Polyperfect, for a long time.
+    - cz: Jsem velmi flexibilní a snadno se přizpůsobuji novým situacím.
+      en: I am very flexible and adapt easily to new situations.
+    - cz: Dobře zapadám do kolektivu a přispívám k pozitivní pracovní atmosféře.
+      en: I fit well into a team and contribute to a positive working atmosphere.
+    - cz: Jsem otevřený spolupráci a přijímám zakázky.
+      en: I am open to collaboration and accept commissions.
+
+contact:
+  title:
+    cz: Kontakt
+    en: Contact
+  mail:
+    cz: Je možné mě kontaktovat skrze moji e-mailovou adresu
+    en: I can be contacted via my email address
+  mail_link:
+    cz: zde
+    en: here
+  work:
+    cz: Máte zájem?
+    en: Interested?
+  work_link:
+    cz: Pojďme spolupracovat!
+    en: Let's work together!
+
+footer:
+  credits:
+    cz: Použité obrázky z webu <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. Kód webu je veřejně dostupný. Použité technologie webu jsou vypsané na repozitáři.
+    en: Used images are from <a class='text-normal-red' href='https://unsplash.com'>unsplash</a>. The code is publicly available. Web technologies used are listed on the repository.
+
+ui:
+  close:
+    cz: Zavřít
+    en: Close
+  window_too_small:
+    cz: Okno je příliš malé!
+    en: The window is too small!
+
+form:
+  header:
+    cz: Kontaktní formulář
+    en: Contact Form
+  name:
+    cz: Jméno
+    en: Name
+  email:
+    cz: E-Mail
+    en: E-Mail
+  message:
+    cz: Zpráva
+    en: Message
+  send:
+    cz: Odeslat
+    en: Send
+  back:
+    cz: Zpět na hlavní stránku
+    en: Return to Main Page
+  error_header:
+    cz: Chybně vyplněný formulář!
+    en: Incorrectly filled out form!
+  error_name:
+    cz: Jméno je neplatné.
+    en: The name is invalid.
+  error_email:
+    cz: E-Mailová adresa je neplatná.
+    en: E-Mail address is invalid.
+  error_message:
+    cz: Zpráva nesmí mít méně než 10 znaků.
+    en: The message must be no less than 10 characters.
+  error_general:
+    cz: Nalezeny chybně vyplněné údaje.
+    en: Incorrect data found.
+  error_text:
+    cz: Prosím, opravte špatně zadané údaje a zašlete formulář znovu.
+    en: Please correct the incorrect information and resubmit the form.
+  error_send:
+    cz: Zprávu se nepodařilo odeslat, zkuste to prosím později.
+    en: The message could not be sent, please try again later.
+  error_back:
+    cz: Zpět
+    en: Back
+  success:
+    cz: Formulář úspěšně odeslán!
+    en: Form submitted successfully!
+  success_text:
+    cz: Děkuji za odeslání formuláře. Budu se snažit odpovědět co nejdříve.
+    en: Thank you for your message. I will try to reply as soon as possible.
+
+# Popis stránky pro vyhledávače a náhled při sdílení odkazu (ideálně do 160 znaků).
+meta:
+  description:
+    cz: Portfolio Lukáše Urbana – herního designéra a vývojáře. Hry, herní assety a projekty z game jamů, vytvořené hlavně v Unity a C#.
+    en: Portfolio of Lukáš Urban – video game designer and developer. Games, game assets and game jam projects, made mostly with Unity and C#.
+  form_description:
+    cz: Kontaktní formulář – napište mi ohledně spolupráce nebo zakázky.
+    en: Contact form – get in touch about a collaboration or a commission.

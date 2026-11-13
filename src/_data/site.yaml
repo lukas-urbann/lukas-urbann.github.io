@@ -1,0 +1,28 @@
+# Obecné údaje o webu, používané na více místech.
+
+title: Lukáš Urban
+email: info@urban-lukas.cz
+url: https://urban-lukas.cz
+# Formulář funguje jen na vlastním hostingu (GitHub Pages neumí PHP), proto absolutní adresa.
+formUrl: https://urban-lukas.cz/page/html/form.html
+cv: /page/pdf/CV_Urban.pdf
+# Z data narození se při buildu počítá věk - v textech se píše {age}.
+birthDate: "2003-03-04"
+# Obrázek pro náhled odkazu (Facebook, LinkedIn, Discord…). Ideálně JPG/PNG 1200×630 px.
+ogImage: /page/img/me.webp
+
+social:
+  github: https://github.com/lukas-urbann
+  itch: https://redhavoc12.itch.io/
+  youtube: https://www.youtube.com/@redhavoc12
+
+# Jazykové verze hlavní stránky. První v seznamu je výchozí (adresa "/").
+languages:
+  - code: en
+    htmlLang: en
+    url: /
+    flag: /page/img/flag_en.svg
+  - code: cz
+    htmlLang: cs
+    url: /cz/
+    flag: /page/img/flag_cz.svg

@@ -1,0 +1,212 @@
+# Projekty v pořadí, v jakém se zobrazí na webu.
+# image: soubor ve složce page/img/projects/
+# links: libovolná kombinace itch / youtube / github / unity / steam (pořadí = pořadí ikon)
+
+- image: vykolejen.webp
+  links:
+    itch: https://gameutb.itch.io/train-game
+  cz:
+    title: Vykolejen
+    description: Tento projekt vznikl v rámci Bohemia GameJam 2026. V této návykové hře budete muset opravit svůj vlak dříve, než vás v tom zastaví sabotér, a zároveň se pokusit dovézt vlak do cílové stanice co nejrychleji. Druhý hráč naopak musí způsobit dostatečné škody, aby vlak nedorazil do stanice včas.
+  en:
+    title: Vykolejen
+    description: This is a project created for Bohemia GameJam 2026. In this addictive game, you’ll have to repair your train before the saboteur can stop you, all while trying to get the train to the destination station as quickly as possible. The second player, on the other hand, must cause enough damage to prevent the train from reaching the station on time.
+
+- image: bab.webp
+  links:
+    itch: https://redhavoc12.itch.io/batove-a-bacove
+    youtube: https://youtu.be/JiFpAxiybrE
+    github: https://github.com/lukas-urbann/batove-a-bacove/
+  cz:
+    title: Baťové a Bačové
+    description: Projekt vytvořen pro Game Jam Zlín 2026 s tématem 'Robota'. Ve hře se ocitáte v roli soudce v jeho repetetivní práci, kde hráč rozhoduje o trestech obviněných lidí. Je potřeba řešit spory mezi chudými a bohatými a starat se, aby Vás obě strany snášely. Zároveň je potřeba jednou za čas vzít úplatek, protože ze svého platu těžko zaplatíte vlastní pohledávky. Dialogy v této hře jsou náhodně generované z vybrané kolekce slov a vět.
+  en:
+    title: Baťové a Bačové
+    description: A project created for Game Jam Zlín 2026 with the theme 'Hard Work'. In the game, you find yourself in the role of a judge in his repetitive work, where the player decides on the punishments of accused people. You need to resolve disputes between the poor and the rich and make sure that both sides tolerate you. At the same time, you need to take bribes from time to time, because it is difficult to pay your own debts from your salary. The dialogues in this game are randomly generated from a selected collection of words and sentences.
+
+- image: copycat.webp
+  links:
+    itch: https://redhavoc12.itch.io/copycat
+    youtube: https://youtu.be/5nnqI2NQsyY
+  cz:
+    title: Copycat
+    description: Jedná se o mou bakalářskou práci v rámci studia softwarového inženýrství na UTB. Je to hra vytvořená v Unity pomocí 3D generativní umělé inteligence. Obsahuje různé hádanky, které musí hráč vyřešit.
+  en:
+    title: Copycat
+    description: This is my bachelor's thesis for my software engineering degree at UTB. It is a game created in Unity using 3D generative artificial intelligence. Contains various puzzles for the player to solve.
+
+- image: tcw.webp
+  links:
+    itch: https://redhavoc12.itch.io/this-cant-work
+    youtube: https://youtu.be/2rvRYTdDgg4
+    github: https://github.com/lukas-urbann/game-jam-zlin-2025/
+  cz:
+    title: Tohle Nemůže Fungovat!
+    description: Zapomeň na tvorbu vlastního projektu! Tvým jediným cílem je sabotovat práci soupeře jakýmikoliv prostředky. Mlácení do klávesnice? Špinavé triky? Neúprosná sabotáž? Rozhodně! A když slehne prach, kdo ví, jestli někdo svou hru skutečně dokončí?
+  en:
+    title: This Can't Work!
+    description: Forget polishing your own project! Your only goal is to sabotage your opponent's work by any means necessary. Keyboard slamming? Dirty tricks? Relentless sabotage? Absolutely! And when the dust settles, who knows if anyone will actually finish their game?
+
+- image: low-poly-fantasy-pack.webp
+  links:
+    unity: https://assetstore.unity.com/packages/3d/animations/low-poly-animated-fantasy-creatures-292803
+    youtube: https://www.youtube.com/watch?v=tbipmL-vTEU
+  cz:
+    title: Low Poly Animated Fantasy Creatures
+    description: Asset pack kvalitních low-poly animovaných bytostí připraven pro použití v Unity3D. Vytvořen společností Polyperfect.
+  en:
+    title: Low Poly Animated Fantasy Creatures
+    description: Asset pack of high quality low-poly animated creatures ready for use in Unity3D. Created by Polyperfect
+
+- image: polylithic.webp
+  links:
+    steam: https://store.steampowered.com/app/1839060/Polylithic/
+    youtube: https://youtu.be/jo-QV-BIK80
+  cz:
+    title: Polylithic
+    description: Polylithic se odehrává v dobách pravěku a jde o crafting survival z pohledu třetí osoby s důrazem na správu kmene. Ve hře lovíte, stavíte, odemykáte nové vylepšení, ale zároveň se staráte i o potřeby a štěstí své pravěké rodiny.
+  en:
+    title: Polylithic
+    description: The Polylithic is an atmospheric 3rd person crafting survival set in the Paleolithic/Neolithic era where the player crafts items, unlocks technology, discovers the world, builds bases, and can either grow the tribe and command the settlement or play the game solo.
+
+- image: fff.webp
+  links:
+    steam: https://store.steampowered.com/app/2139620/FFF/
+    youtube: https://youtu.be/xz49tm-CVq8
+  cz:
+    title: FFF
+    description: FFF je zábavná příběhová idle hra, kde hodně mačkáte klávesu F! Lepší název nás bohužel nenapadl. Jste nově zvolený vesmírný císař a vaším cílem je, aby se každý stal vaším přítelem. A to i v případě, že o to nestojí. Budete cestovat rozlehlým vesmírem a šířit svou laskavost ke každému.
+  en:
+    title: FFF
+    description: "Friends Friends Friends or FFF for short is a funny game about friendship, family, and fun. You are a newly elected space emperor, and your goal is to make everyone your friend. Even if they don't want to be. You will travel through the vast expanse of space, spreading your kindness to anyone. "
+
+- image: DVZSCM.webp
+  links:
+    itch: https://redhavoc12.itch.io/den-v-zivote-skutecneho-ceskeho-manika
+    youtube: https://youtu.be/AQBwflshCxg
+    github: https://github.com/lukas-urbann/game-jam-zlin-2024/
+  cz:
+    title: Den v životě skutečného českého maníka
+    description: Hra Den v životě průměrného českého maníka vás vezme na cestu za běžnými radostmi a starostmi obyčejného chlapíka. Probuďte se do hospody, kde trávíte většinu času.
+  en:
+    title: A day in the life of a real Czech man
+    description: A Day in the Life of an Average Czech Guy takes you on a journey through the ordinary joys and worries of an ordinary guy. Wake up in the pub where you spend most of your time.
+
+- image: chaloupka.webp
+  links:
+    itch: https://redhavoc12.itch.io/marenka-a-jenicek
+    github: https://github.com/lukas-urbann/game-jam-zlin-2023/
+  cz:
+    title: Mařenka a Jeníček
+    description: Hluboko v neprostupném lese, v hrozivém stínu perníkové chaloupky se ztratily dvě děti. Aby měly šanci se zachránit, je jejich jedinou nadějí se v bludišti lesních stezek a pěšinek znovu setkat. V šeru hvozdu však číhá spousta nebezpečí. Baba Jaga ve svém létajícím hmoždíři brázdí nebe nad lesem, zatímco její zlotřilí služebníci pročesávají každé lesní zákoutí. Podaří se Jeníčkovi a Mařence se znovu shledat?
+  en:
+    title: Gretel and Hansel
+    description: Deep in the impenetrable forest, in the eerie shadow of a gingerbread house, two children were lost. To have a chance to save themselves, their only hope is to reunite in the maze of forest paths and trails. But there are many dangers lurking in the gloom of the forest. In her flying mortar, Baba Yaga traverses the skies above the forest, while her wicked servants scour every nook and cranny. Will Hansel and Gretel be reunited?
+
+- image: steel-nemesis.webp
+  links:
+    itch: https://redhavoc12.itch.io/steel-nemesis
+    youtube: https://youtu.be/4jVQK7SO4B0
+  cz:
+    title: Steel Nemesis
+    description: Steel Nemesis je hra založena na mém starším projektu zvaném "Starfighter". Ve hře se ocitnete v kokpitu vesmírné lodě střílející skrze nekonečné vlny nepřátel. Hra má mít ve své plné verzi mnohem více obsahu. Hra je ve vývoji.
+  en:
+    title: Steel Nemesis
+    description: Steel Nemesis is a game based on an earlier project of mine called "Starfighter". In the game you find yourself in the cockpit of a spaceship shooting through endless waves of enemies. The game is supposed to have a lot more content in its full version. The game is in development.
+
+- image: scary-horror-game.webp
+  links:
+    itch: https://redhavoc12.itch.io/scary-horror-game
+    youtube: https://www.youtube.com/watch?v=53bI3xmylfk
+    github: https://github.com/lukas-urbann/game-off-2022
+  cz:
+    title: Strašidelná Horrorová Hra
+    description: Hra byla vytvořena jako měsíční projekt pro GitHub Game-Jam zvaný 'Game Off 2022', jehož téma bylo cli-ché. Práce je skupinová a její kód je open-source. Repozitář projektu se nachází na mém GitHubu. Ve hře se ocitnete v kůži studenta pracujícího na domácích úkolech, když v tom - všichni z vašeho domu zmizí.
+  en:
+    title: Scary Horror Game
+    description: The game was created as a monthly project for GitHub Game-Jam called 'Game Off 2022', the theme of which was cli-ché. The work is a group project and the code is open-source. The project repository is located on my GitHub. In the game, you put yourself in the shoes of a student working on homework when - in it - everyone from your house disappears.
+
+- image: farm.webp
+  links:
+    itch: https://redhavoc12.itch.io/farm-escapade
+    youtube: https://youtu.be/U2P3nn2IUcI
+  cz:
+    title: Farmářská eskapáda
+    description: Jedna z mých nejoblíbenějších her. Hráč se ocitne v roli farmáře na potrhlé farmě, kde musí za doprovodu časového omezení stihnout vydělat co nejvíce peněz a zasadit co nejvíc rostlin.
+  en:
+    title: Farm Escapade
+    description: One of my favorite games. The player finds himself in the role of a farmer on a wacky farm, where he must manage to make as much money and plant as many plants as possible while under time constraints.
+
+- image: hateful.webp
+  links:
+    youtube: https://youtu.be/hRecRIsvskA
+  cz:
+    title: Hateful (Pozastavený vývoj)
+    description: Projekt byl odevzdán jako Maturitní práce. Projekt nebyl dokončen vzhledem k rozsahu původního plánu. Hra je na dobu neurčitou ve fázi pozdržení vývoje. Hra disponuje starší retro tématickou grafiku a hororovou atmosféru.
+  en:
+    title: Hateful (Project on hold)
+    description: The project has been submitted as a Graduation game project. The project was not completed due to the scope of the original plan. The game is on indefinite hold for development. The game features older retro themed graphics and a horror atmosphere.
+
+- image: morality-abyss.webp
+  links:
+    itch: https://redhavoc12.itch.io/morality-abyss
+  cz:
+    title: Morality Abyss
+    description: "Projekt vznikl v roce 2020 jako úkol do školy. Jedná se o horrorovou 3D hru inspirovanou indie klasikou 'Slender: The Eight Pages'. Herní příběh má slabě komedický základ."
+  en:
+    title: Morality Abyss
+    description: "The project was created in 2020 as a school assignment. It is a 3D horror game inspired by the indie classic 'Slender: The Eight Pages'. The game's story has a faintly comedic basis."
+
+- image: pixel-pong.webp
+  links:
+    itch: https://redhavoc12.itch.io/pixel-pong
+    youtube: https://www.youtube.com/watch?v=oL0a6PjGCY4
+    github: https://github.com/lukas-urbann/pixel-pong
+  cz:
+    title: Pixel Pong
+    description: Starý projekt, který jsem vytvořil okolo roku 2017 na přijímací řízení mé střední školy. Hra je vytvořena v enginu GameMaker Studio. Hra je lehce modifikovatelná rekreace herního konceptu zvaného 'Pong'. Zdrojový kód tohoto projektu jsem zveřejnil na svém GitHubu.
+  en:
+    title: Pixel Pong
+    description: An old project I created around 2017 for my high school admissions. The game is created in GameMaker Studio engine. The game is an easily modifiable recreation of a game concept called 'Pong'. I have posted the source code of this project on my GitHub.
+
+- image: starfighter.webp
+  links:
+    itch: https://redhavoc12.itch.io/starfighter
+    github: https://github.com/lukas-urbann/space-invaders-clone
+  cz:
+    title: Starfighter
+    description: Jeden z mých nejstarších projektu. Jedná se o moderní interpretaci herní klasiky 'Space Invaders'. Hra obsahuje vlastní obchod a nekonečný herní mód.
+  en:
+    title: Starfighter
+    description: One of my oldest projects. This is a modern interpretation of the game classic 'Space Invaders'. The game features a custom shop and an endless game mode.
+
+- image: endless-driver.webp
+  links:
+    itch: https://redhavoc12.itch.io/endless-driver
+    github: https://github.com/lukas-urbann/endless-driver
+  cz:
+    title: Endless Driver
+    description: Hra, kterou jsem vytvořil jako projekt do školy. Hra má velmi jednoduché pojetí a má velmi malý počet skriptů. Dá se přirovnat k dinousaří hře od Googlu. Ve hře ovládáte auto, snažíte se dojet co nejdále a nestrefit při tom překážku.
+  en:
+    title: Endless Driver
+    description: A game I created as a school project. The game is very simple in concept and has a very small number of scripts. It can be compared to Google's dinosaur game. In the game, you control a car, trying to drive as far as possible without hitting an obstacle.
+
+- image: wallpaper.webp
+  links:
+    github: https://github.com/lukas-urbann/wallpapers
+  cz:
+    title: Vlastní Tapety
+    description: Můžete si prohlédnout některé tapety, které jsem vytvořil. Není jich mnoho, ale mohou se někomu líbit.
+  en:
+    title: Custom Wallpapers
+    description: You can view some wallpapers that are of my creation. There are not many, but some may like them.
+
+- image: website.webp
+  links:
+    github: https://github.com/lukas-urbann/lukas-urbann.github.io
+  cz:
+    title: Tento Web
+    description: Můžeš se podívat na zdrojový kód tohoto webu, pokud si přeješ - je dostupný na mém GitHubu.
+  en:
+    title: This Website
+    description: You can view this website's source-code if you wish to - it is available on my GitHub.

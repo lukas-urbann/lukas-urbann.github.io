@@ -1,0 +1,39 @@
+<footer class="c-footer">
+    <div class="c-footer-wrapper">
+        <div>
+            <p class="font-black">#!/bin/bash</p>
+            <span class="text-sm text-normal-red">footer@urban-lukas.cz:~$</span>
+        </div>
+        <div class="c-footer-icons">
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">GitHub</span>
+                <a href="{{ site.social.github }}" aria-label="GitHub"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">Itch.io</span>
+                <a href="{{ site.social.itch }}" aria-label="Itch.io"><i aria-hidden="true" class="fa-brands fa-itch-io"></i></a>
+            </div>
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">YouTube</span>
+                <a href="{{ site.social.youtube }}" aria-label="YouTube"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">E-Mail</span>
+                <a href="mailto:{{ site.email }}" aria-label="E-Mail" onclick="show_notification('E-Mail: <a href=mailto:{{ site.email }}>{{ site.email }}</a>'); return false;"><i aria-hidden="true" class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="c-footer-icon c-contains-tooltip">
+                <span class="c-tooltip fancy-border">CV</span>
+                <a href="{{ site.cv }}" target="_blank" aria-label="CV (PDF)"><i aria-hidden="true" class="fa-solid fa-file-lines"></i></a>
+            </div>
+        </div>
+        <div class="mt-4">
+            <p class="text-center mt-2">
+                <span class="text-normal-red"><i aria-hidden="true" class="fa-regular fa-copyright text-sm"></i>&nbsp;{{ build.year }}</span>&nbsp;<i
+                    aria-hidden="true" class="fa-solid fa-angle-right text-xs"></i><i
+                    aria-hidden="true" class="fa-solid fa-angle-right text-xs"></i>&nbsp;
+                <span class="text-[17px]">Lukáš Urban</span>
+            </p>
+            <p class="text-xs text-center" id="text-creds">{{ strings.footer.credits | t(lang) }}</p>
+        </div>
+    </div>
+</footer>

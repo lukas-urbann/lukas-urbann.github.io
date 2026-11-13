@@ -1,0 +1,15 @@
+{# One portfolio card. Expects "project" (an entry from _data/projects.yaml) and "lang". #}
+{% set icons = { itch: "fa-itch-io", youtube: "fa-youtube", github: "fa-github", unity: "fa-unity", steam: "fa-steam" } %}
+{% set labels = { itch: "Itch.io", youtube: "YouTube", github: "GitHub", unity: "Unity Asset Store", steam: "Steam" } %}
+{% set title = project[lang.code].title %}
+<div class="c-project-cover" style="background-image: url(/page/img/projects/{{ project.image }});">
+    <div class="c-project-buttons">
+        {%- for type, url in project.links %}
+        <a href="{{ url }}" target="_blank" aria-label="{{ title }} – {{ labels[type] }}"><i aria-hidden="true" class="fa-brands {{ icons[type] }}"></i></a>
+        {%- endfor %}
+    </div>
+    <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
+        <h1>{{ title }}</h1>
+        <p>{{ project[lang.code].description }}</p>
+    </div>
+</div>

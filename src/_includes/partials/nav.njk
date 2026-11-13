@@ -1,0 +1,36 @@
+<nav class="c-navbar">
+    <div class="c-navbar-wrapper unselectable" id="nav-bar">
+        <ul>
+            <li class="inline-block">
+                <p class="c-logo">Lukáš <span class="text-normal-red font-black">Urban</span></p>
+            </li>
+            <li class="inline-block float-right mr-2 md:hidden">
+                <div class="c-menu-button" id="nav-menu-button" onclick="toggleMenu();">
+                    <i aria-hidden="true" class="fa-solid fa-bars"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="c-navmenu" id="nav-menu">
+        <ul class="font-thin" id="nav-menu-list">
+            <li class="c-nav-flags" id="nav-flags">
+                <div class="grid grid-cols-2 md:flex">
+                    {# Czech flag first, as on the original site. #}
+                    {% for other in site.languages | reverse %}
+                    <div class="c-flag-wrapper c-contains-reversed-tooltip{% if other.code == lang.code %} active-btn{% endif %}" id="flag-{{ other.code }}">
+                        <span class="c-tooltip fancy-border">{{ strings.flags[other.code] | t(lang) }}</span>
+                        <a class="c-flag block" href="{{ other.url }}" hreflang="{{ other.htmlLang }}" onclick="setLanguage('{{ other.code }}')">
+                            <img alt="{{ strings.flags[other.code] | t(lang) }}" src="{{ other.flag }}"/>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-intro"><a href="#">{{ strings.nav.intro | t(lang) }}</a></li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-portfolio"><a href="#portfolio">{{ strings.nav.portfolio | t(lang) }}</a></li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-about"><a href="#about-me">{{ strings.nav.about | t(lang) }}</a></li>
+            <li class="nav-li c-nav-btn" id="nav-btn-li-contact"><a href="#contact">{{ strings.nav.contact | t(lang) }}</a></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,10 @@
+{# "lang" is set on the main pages; elsewhere the default text is Czech and language.js swaps it at runtime. #}
+{% set uiLang = lang.code if lang else "cz" %}
+<div class="too-small-text" id="warning-small-window">{{ strings.ui.window_too_small | t(uiLang) }}</div>
+
+<div class="notification" id="notification">
+    <div class="notification-content">
+        <p id="notification-text">Text</p><br>
+        <div class="notification-btn" id="notification-close">{{ strings.ui.close | t(uiLang) }}</div>
+    </div>
+</div>

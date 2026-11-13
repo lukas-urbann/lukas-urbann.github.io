@@ -132,9 +132,23 @@
     @apply absolute top-1/2 left-0 right-0 -translate-y-1/2 text-xl;
 }
 
+/*
+ * Collapsed: a panel at the bottom of the card, at most 10rem tall.
+ * Expanded (.c-project-description-full, toggled on click): covers the whole card.
+ * "height: auto -> 100%" can't be animated, so the panel grows via min/max-height and its insets instead.
+ */
 .c-project-description {
-    @apply absolute bottom-0 h-max max-h-40 m-2 p-4 overflow-hidden rounded-lg border border-black bg-dark-black/90 text-dark-white
-    shadow-lg shadow-black cursor-pointer transition-colors hover:bg-dark-black;
+    @apply absolute inset-x-2 bottom-2 min-h-0 max-h-40 p-4 overflow-hidden rounded-lg border border-black bg-dark-black/90
+    text-dark-white shadow-lg shadow-black cursor-pointer
+    transition-[left,right,bottom,min-height,max-height,background-color,border-color,box-shadow] duration-500 ease-in-out
+    hover:bg-dark-black motion-reduce:transition-none;
+}
+
+/* Fade at the bottom hints that the text continues. */
+.c-project-description::after {
+    content: '';
+    @apply pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-dark-black to-transparent
+    transition-opacity duration-300;
 }
 
 .c-project-description h1 {
@@ -146,7 +160,11 @@
 }
 
 .c-project-description-full {
-    @apply w-full h-full max-h-full m-0 border-0 bg-dark-black;
+    @apply inset-x-0 bottom-0 min-h-full max-h-full overflow-y-auto border-transparent bg-dark-black shadow-none;
+}
+
+.c-project-description-full::after {
+    @apply opacity-0;
 }
 
 /* ---------- About me ---------- */
