@@ -1,10 +1,6 @@
 name: Deploy to urban-lukas.cz (FTP)
 
 # Builds the site and uploads _site/ to the web hosting over FTP.
-# Setup (repository Settings -> Secrets and variables -> Actions):
-#   Secrets:   FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
-#   Variables: FTP_SERVER_DIR (folder of the website on the server, ending with "/")
-#              FTP_PROTOCOL   (optional, "ftps" by default; set to "ftp" if the hosting has no FTPS)
 
 on:
   push:
