@@ -190,23 +190,3 @@
   en:
     title: Endless Driver
     description: A game I created as a school project. The game is very simple in concept and has a very small number of scripts. It can be compared to Google's dinosaur game. In the game, you control a car, trying to drive as far as possible without hitting an obstacle.
-
-- image: wallpaper.webp
-  links:
-    github: https://github.com/lukas-urbann/wallpapers
-  cz:
-    title: Vlastní Tapety
-    description: Můžete si prohlédnout některé tapety, které jsem vytvořil. Není jich mnoho, ale mohou se někomu líbit.
-  en:
-    title: Custom Wallpapers
-    description: You can view some wallpapers that are of my creation. There are not many, but some may like them.
-
-- image: website.webp
-  links:
-    github: https://github.com/lukas-urbann/lukas-urbann.github.io
-  cz:
-    title: Tento Web
-    description: Můžeš se podívat na zdrojový kód tohoto webu, pokud si přeješ - je dostupný na mém GitHubu.
-  en:
-    title: This Website
-    description: You can view this website's source-code if you wish to - it is available on my GitHub.
