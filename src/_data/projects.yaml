@@ -2,6 +2,50 @@
 # image: soubor ve složce page/img/projects/
 # links: libovolná kombinace itch / youtube / github / unity / steam (pořadí = pořadí ikon)
 
+- image: polylithic.webp
+  links:
+    steam: https://store.steampowered.com/app/1839060/Polylithic/
+    youtube: https://youtu.be/jo-QV-BIK80
+  cz:
+    title: Polylithic
+    description: Polylithic se odehrává v dobách pravěku a jde o crafting survival z pohledu třetí osoby s důrazem na správu kmene. Ve hře lovíte, stavíte, odemykáte nové vylepšení, ale zároveň se staráte i o potřeby a štěstí své pravěké rodiny.
+  en:
+    title: Polylithic
+    description: The Polylithic is an atmospheric 3rd person crafting survival set in the Paleolithic/Neolithic era where the player crafts items, unlocks technology, discovers the world, builds bases, and can either grow the tribe and command the settlement or play the game solo.
+
+- image: fff.webp
+  links:
+    steam: https://store.steampowered.com/app/2139620/FFF/
+    youtube: https://youtu.be/xz49tm-CVq8
+  cz:
+    title: FFF
+    description: FFF je zábavná příběhová idle hra, kde hodně mačkáte klávesu F! Lepší název nás bohužel nenapadl. Jste nově zvolený vesmírný císař a vaším cílem je, aby se každý stal vaším přítelem. A to i v případě, že o to nestojí. Budete cestovat rozlehlým vesmírem a šířit svou laskavost ke každému.
+  en:
+    title: FFF
+    description: "Friends Friends Friends or FFF for short is a funny game about friendship, family, and fun. You are a newly elected space emperor, and your goal is to make everyone your friend. Even if they don't want to be. You will travel through the vast expanse of space, spreading your kindness to anyone. "
+
+- image: copycat.webp
+  links:
+    itch: https://redhavoc12.itch.io/copycat
+    youtube: https://youtu.be/5nnqI2NQsyY
+  cz:
+    title: Copycat
+    description: Jedná se o mou bakalářskou práci v rámci studia softwarového inženýrství na UTB. Je to hra vytvořená v Unity pomocí 3D generativní umělé inteligence. Obsahuje různé hádanky, které musí hráč vyřešit.
+  en:
+    title: Copycat
+    description: This is my bachelor's thesis for my software engineering degree at UTB. It is a game created in Unity using 3D generative artificial intelligence. Contains various puzzles for the player to solve.
+
+- image: low-poly-fantasy-pack.webp
+  links:
+    unity: https://assetstore.unity.com/packages/3d/animations/low-poly-animated-fantasy-creatures-292803
+    youtube: https://www.youtube.com/watch?v=tbipmL-vTEU
+  cz:
+    title: Low Poly Animated Fantasy Creatures
+    description: Asset pack kvalitních low-poly animovaných bytostí připraven pro použití v Unity3D. Vytvořen společností Polyperfect.
+  en:
+    title: Low Poly Animated Fantasy Creatures
+    description: Asset pack of high quality low-poly animated creatures ready for use in Unity3D. Created by Polyperfect
+
 - image: vykolejen.webp
   links:
     itch: https://gameutb.itch.io/train-game
@@ -24,17 +68,6 @@
     title: Baťové a Bačové
     description: A project created for Game Jam Zlín 2026 with the theme 'Hard Work'. In the game, you find yourself in the role of a judge in his repetitive work, where the player decides on the punishments of accused people. You need to resolve disputes between the poor and the rich and make sure that both sides tolerate you. At the same time, you need to take bribes from time to time, because it is difficult to pay your own debts from your salary. The dialogues in this game are randomly generated from a selected collection of words and sentences.
 
-- image: copycat.webp
-  links:
-    itch: https://redhavoc12.itch.io/copycat
-    youtube: https://youtu.be/5nnqI2NQsyY
-  cz:
-    title: Copycat
-    description: Jedná se o mou bakalářskou práci v rámci studia softwarového inženýrství na UTB. Je to hra vytvořená v Unity pomocí 3D generativní umělé inteligence. Obsahuje různé hádanky, které musí hráč vyřešit.
-  en:
-    title: Copycat
-    description: This is my bachelor's thesis for my software engineering degree at UTB. It is a game created in Unity using 3D generative artificial intelligence. Contains various puzzles for the player to solve.
-
 - image: tcw.webp
   links:
     itch: https://redhavoc12.itch.io/this-cant-work
@@ -47,38 +80,27 @@
     title: This Can't Work!
     description: Forget polishing your own project! Your only goal is to sabotage your opponent's work by any means necessary. Keyboard slamming? Dirty tricks? Relentless sabotage? Absolutely! And when the dust settles, who knows if anyone will actually finish their game?
 
-- image: low-poly-fantasy-pack.webp
+- image: steel-nemesis.webp
   links:
-    unity: https://assetstore.unity.com/packages/3d/animations/low-poly-animated-fantasy-creatures-292803
-    youtube: https://www.youtube.com/watch?v=tbipmL-vTEU
+    itch: https://redhavoc12.itch.io/steel-nemesis
+    youtube: https://youtu.be/4jVQK7SO4B0
   cz:
-    title: Low Poly Animated Fantasy Creatures
-    description: Asset pack kvalitních low-poly animovaných bytostí připraven pro použití v Unity3D. Vytvořen společností Polyperfect.
+    title: Steel Nemesis
+    description: Steel Nemesis je hra založena na mém starším projektu zvaném "Starfighter". Ve hře se ocitnete v kokpitu vesmírné lodě střílející skrze nekonečné vlny nepřátel. Hra má mít ve své plné verzi mnohem více obsahu. Hra je ve vývoji.
   en:
-    title: Low Poly Animated Fantasy Creatures
-    description: Asset pack of high quality low-poly animated creatures ready for use in Unity3D. Created by Polyperfect
+    title: Steel Nemesis
+    description: Steel Nemesis is a game based on an earlier project of mine called "Starfighter". In the game you find yourself in the cockpit of a spaceship shooting through endless waves of enemies. The game is supposed to have a lot more content in its full version. The game is in development.
 
-- image: polylithic.webp
+- image: farm.webp
   links:
-    steam: https://store.steampowered.com/app/1839060/Polylithic/
-    youtube: https://youtu.be/jo-QV-BIK80
+    itch: https://redhavoc12.itch.io/farm-escapade
+    youtube: https://youtu.be/U2P3nn2IUcI
   cz:
-    title: Polylithic
-    description: Polylithic se odehrává v dobách pravěku a jde o crafting survival z pohledu třetí osoby s důrazem na správu kmene. Ve hře lovíte, stavíte, odemykáte nové vylepšení, ale zároveň se staráte i o potřeby a štěstí své pravěké rodiny.
+    title: Farmářská eskapáda
+    description: Jedna z mých nejoblíbenějších her. Hráč se ocitne v roli farmáře na potrhlé farmě, kde musí za doprovodu časového omezení stihnout vydělat co nejvíce peněz a zasadit co nejvíc rostlin.
   en:
-    title: Polylithic
-    description: The Polylithic is an atmospheric 3rd person crafting survival set in the Paleolithic/Neolithic era where the player crafts items, unlocks technology, discovers the world, builds bases, and can either grow the tribe and command the settlement or play the game solo.
-
-- image: fff.webp
-  links:
-    steam: https://store.steampowered.com/app/2139620/FFF/
-    youtube: https://youtu.be/xz49tm-CVq8
-  cz:
-    title: FFF
-    description: FFF je zábavná příběhová idle hra, kde hodně mačkáte klávesu F! Lepší název nás bohužel nenapadl. Jste nově zvolený vesmírný císař a vaším cílem je, aby se každý stal vaším přítelem. A to i v případě, že o to nestojí. Budete cestovat rozlehlým vesmírem a šířit svou laskavost ke každému.
-  en:
-    title: FFF
-    description: "Friends Friends Friends or FFF for short is a funny game about friendship, family, and fun. You are a newly elected space emperor, and your goal is to make everyone your friend. Even if they don't want to be. You will travel through the vast expanse of space, spreading your kindness to anyone. "
+    title: Farm Escapade
+    description: One of my favorite games. The player finds himself in the role of a farmer on a wacky farm, where he must manage to make as much money and plant as many plants as possible while under time constraints.
 
 - image: DVZSCM.webp
   links:
@@ -103,17 +125,6 @@
     title: Gretel and Hansel
     description: Deep in the impenetrable forest, in the eerie shadow of a gingerbread house, two children were lost. To have a chance to save themselves, their only hope is to reunite in the maze of forest paths and trails. But there are many dangers lurking in the gloom of the forest. In her flying mortar, Baba Yaga traverses the skies above the forest, while her wicked servants scour every nook and cranny. Will Hansel and Gretel be reunited?
 
-- image: steel-nemesis.webp
-  links:
-    itch: https://redhavoc12.itch.io/steel-nemesis
-    youtube: https://youtu.be/4jVQK7SO4B0
-  cz:
-    title: Steel Nemesis
-    description: Steel Nemesis je hra založena na mém starším projektu zvaném "Starfighter". Ve hře se ocitnete v kokpitu vesmírné lodě střílející skrze nekonečné vlny nepřátel. Hra má mít ve své plné verzi mnohem více obsahu. Hra je ve vývoji.
-  en:
-    title: Steel Nemesis
-    description: Steel Nemesis is a game based on an earlier project of mine called "Starfighter". In the game you find yourself in the cockpit of a spaceship shooting through endless waves of enemies. The game is supposed to have a lot more content in its full version. The game is in development.
-
 - image: scary-horror-game.webp
   links:
     itch: https://redhavoc12.itch.io/scary-horror-game
@@ -125,17 +136,6 @@
   en:
     title: Scary Horror Game
     description: The game was created as a monthly project for GitHub Game-Jam called 'Game Off 2022', the theme of which was cli-ché. The work is a group project and the code is open-source. The project repository is located on my GitHub. In the game, you put yourself in the shoes of a student working on homework when - in it - everyone from your house disappears.
-
-- image: farm.webp
-  links:
-    itch: https://redhavoc12.itch.io/farm-escapade
-    youtube: https://youtu.be/U2P3nn2IUcI
-  cz:
-    title: Farmářská eskapáda
-    description: Jedna z mých nejoblíbenějších her. Hráč se ocitne v roli farmáře na potrhlé farmě, kde musí za doprovodu časového omezení stihnout vydělat co nejvíce peněz a zasadit co nejvíc rostlin.
-  en:
-    title: Farm Escapade
-    description: One of my favorite games. The player finds himself in the role of a farmer on a wacky farm, where he must manage to make as much money and plant as many plants as possible while under time constraints.
 
 - image: hateful.webp
   links:
