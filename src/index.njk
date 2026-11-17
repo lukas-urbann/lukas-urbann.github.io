@@ -27,10 +27,11 @@ pageTitle: Main
         })();
     </script>
 {% set metaDescription = strings.meta.description | t(lang) %}
+{% set fullTitle = strings.meta.title | t(lang) %}
 {% include "partials/head.njk" %}
     <!-- Link preview (Facebook, LinkedIn, Discord, X…) -->
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="{{ site.title }} – Portfolio"/>
+    <meta property="og:title" content="{{ fullTitle }}"/>
     <meta property="og:description" content="{{ metaDescription }}"/>
     <meta property="og:url" content="{{ site.url }}{{ lang.url }}"/>
     <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}"/>
@@ -68,20 +69,34 @@ pageTitle: Main
 <section class="section-content c-section pt-24" id="portfolio">
     <div class="c-project-grid">
         <div class="c-project-intro fancy-background box-shadow">
-            <h1><span id="text-my-projects">{{ strings.projects.title | t(lang) }}</span></h1>
+            <h2><span id="text-my-projects">{{ strings.projects.title | t(lang) }}</span></h2>
         </div>
-        {% for project in projects %}
+        {% for project in projects %}{% if loop.index <= site.projectsShown %}
         {% include "partials/project-card.njk" %}
-        {% endfor %}
+        {% endif %}{% endfor %}
     </div>
+    {% if projects.length > site.projectsShown %}
+    <details class="c-project-more">
+        <summary>
+            <span class="c-project-more-closed">{{ strings.projects.older | t(lang) }}</span>
+            <span class="c-project-more-open">{{ strings.projects.older_hide | t(lang) }}</span>
+            <i aria-hidden="true" class="fa-solid fa-chevron-down"></i>
+        </summary>
+        <div class="c-project-grid">
+            {% for project in projects %}{% if loop.index > site.projectsShown %}
+            {% include "partials/project-card.njk" %}
+            {% endif %}{% endfor %}
+        </div>
+    </details>
+    {% endif %}
 </section>
 
 <!-- About me -->
 <section class="section-content c-section pt-24" id="about-me">
     <div class="c-about box-shadow" style="background-image: url(/page/img/keyboard.webp);">
-        <h1 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span>
+        <h2 class="text-4xl text-shadow-black"><span class="text-normal-red">//</span>
             <span id="text-about-me">{{ strings.about.title | t(lang) }}</span>
-        </h1>
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="c-about-photo" style="background-image: url(/page/img/me.webp);">
                 <p class="c-about-badge" id="text-thats-me">{{ strings.about.thats_me | t(lang) }}</p>
@@ -92,6 +107,11 @@ pageTitle: Main
                     <li><i aria-hidden="true" class="fa-solid fa-angles-right"></i>&nbsp;<span>{{ item | t(lang) }}</span></li>
                     {%- endfor %}
                 </ul>
+                <ul class="c-skills">
+                    {%- for skill in strings.about.skills %}
+                    <li>{{ skill | t(lang) }}</li>
+                    {%- endfor %}
+                </ul>
             </div>
         </div>
     </div>
@@ -100,12 +120,12 @@ pageTitle: Main
 <!-- Contact -->
 <section class="section-content c-section font-black mb-32 pt-24" id="contact">
     <div class="c-contact-grid">
-        <div class="c-contact-title box-shadow text-shadow-black" id="contact-title"
-             style="background-image: url(/page/img/contact.webp);">{{ strings.contact.title | t(lang) }}</div>
+        <h2 class="c-contact-title box-shadow text-shadow-black" id="contact-title"
+             style="background-image: url(/page/img/contact.webp);">{{ strings.contact.title | t(lang) }}</h2>
         <div class="c-contact-card box-shadow bg-left-bottom mr-2" style="background-image: url(/page/img/contact.webp);">
-            <div class="inner-border-gray" id="contact-mail">
-                {{ strings.contact.mail | t(lang) }}
-                <a class="underline text-normal-red cursor-pointer text-sm md:text-xl" href="mailto:{{ site.email }}" onclick="show_notification('E-Mail: <a href=mailto:{{ site.email }}>{{ site.email }}</a>'); return false;">{{ strings.contact.mail_link | t(lang) }}</a>.
+            <div class="inner-border-gray !w-11/12 md:!w-3/4" id="contact-mail">
+                <p>{{ strings.contact.mail | t(lang) }}</p>
+                <a class="c-contact-mail" href="mailto:{{ site.email }}"><i aria-hidden="true" class="fa-solid fa-envelope"></i> {{ site.email | replace("@", "<wbr>@") }}</a>
             </div>
         </div>
         <div class="c-contact-card box-shadow bg-top ml-2" style="background-image: url(/page/img/contact.webp);">

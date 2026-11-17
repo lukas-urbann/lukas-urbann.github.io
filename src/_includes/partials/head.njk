@@ -1,6 +1,6 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>{{ site.title }} - {{ pageTitle }}</title>
+    <title>{{ fullTitle or (site.title + ' – ' + pageTitle) }}</title>
     {%- if metaDescription %}
     <meta name="description" content="{{ metaDescription }}"/>
     {%- endif %}

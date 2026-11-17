@@ -29,12 +29,18 @@ intro:
     en: Welcome to my<br>portfolio.
   text:
     cz: <span class='text-normal-red'>Věnuji se tvorbě videoher</span> a videohernímu designu. <span class='text-normal-red'>Je to má vášeň,</span> kterou si pěstuji od svého dětství.
-    en: I am a <span class='text-normal-red'>video game designer</span> and developer. It's a <span class='text-normal-red'>passion of mine</span> that I've been cultivating since I was a kid.
+    en: <span class='text-normal-red'>I create video games</span> and work in game design. <span class='text-normal-red'>It's my passion,</span> which I've been cultivating since childhood.
 
 projects:
   title:
     cz: Projekty,<br>na kterých<br>jsem pracoval
     en: Projects<br>I worked on
+  older:
+    cz: Zobrazit starší projekty
+    en: Show older projects
+  older_hide:
+    cz: Skrýt starší projekty
+    en: Hide older projects
 
 about:
   title:
@@ -44,37 +50,47 @@ about:
     cz: To jsem já
     en: That's me
   items:
-    - cz: Jsem {age}-letý student, programátor.
-      en: I'm a {age}-year-old student.
-    - cz: Zaměřuji se na tvorbu video her a videoherních assetů.
-      en: I focus on creating video games and video game assets.
-    - cz: Úspěšně jsem dokončil bakalářské studium softwarového inženýrství na <a href='https://fai.utb.cz/' class='text-normal-red underline'>UTB</a>.
-      en: I successfully completed my bachelor's degree in software engineering at <a href='https://fai.utb.cz/' class='text-normal-red underline'>TBU</a>.
-    - cz: Svou první hru jsem vytvořil v 6 letech v GameMakeru 8.
-      en: I created my first game at the age of 6 in GameMaker.
-    - cz: Specializuji se na programování v jazyce C#.
-      en: I specialize in C# programming.
-    - cz: Disponuji vynikajícími komunikačními a týmovými schopnostmi.
-      en: I have excellent communication and teamwork skills.
-    - cz: S různými společnostmi, jako je například Polyperfect, spolupracuji již dlouhou dobu.
-      en: I have been working with various companies, such as Polyperfect, for a long time.
-    - cz: Jsem velmi flexibilní a snadno se přizpůsobuji novým situacím.
-      en: I am very flexible and adapt easily to new situations.
-    - cz: Dobře zapadám do kolektivu a přispívám k pozitivní pracovní atmosféře.
-      en: I fit well into a team and contribute to a positive working atmosphere.
+    - cz: Jsem {age}letý programátor a vývojář her.
+      en: I'm a {age}-year-old programmer and game developer.
+    - cz: Bakalářské studium softwarového inženýrství na <a href='https://fai.utb.cz/' class='text-normal-red underline'>UTB</a> jsem úspěšně dokončil, magisterské dokončím v roce 2028.
+      en: I successfully completed my bachelor's degree in software engineering at <a href='https://fai.utb.cz/' class='text-normal-red underline'>TBU</a>, and I will finish my master's degree in 2028.
+    - cz: Programuji od dětství – svou první hru jsem vytvořil v 6 letech v GameMakeru – a vývoji se věnuji profesionálně.
+      en: I've been programming since childhood – I made my first game at 6 in GameMaker – and I work as a professional developer.
+    - cz: Ve společnosti Polyperfect jsem pracoval jako programátor v Unity a podílel jsem se na hrách Polylithic a FFF i na asset packu Low Poly Animated Fantasy Creatures.
+      en: At Polyperfect I worked as a Unity programmer and contributed to the games Polylithic and FFF as well as the Low Poly Animated Fantasy Creatures asset pack.
+    - cz: Nejvíce jsem se věnoval singleplayerovým herním mechanikám, lokalizačnímu systému a questovému systému.
+      en: I mostly worked on singleplayer game mechanics, a localization system and a quest system.
+    - cz: Mám zkušenosti i s umělou inteligencí ve vývoji her – například s generativními 3D modely v mé bakalářské práci.
+      en: I also have experience with artificial intelligence in game development – for example generative 3D models in my bachelor's thesis.
+    - cz: Rád pracuji v týmu, programuji a navrhuji hry.
+      en: I enjoy working in a team, programming and designing games.
     - cz: Jsem otevřený spolupráci a přijímám zakázky.
       en: I am open to collaboration and accept commissions.
+  skills:
+    - cz: Unity
+      en: Unity
+    - cz: C#
+      en: C#
+    - cz: GameMaker
+      en: GameMaker
+    - cz: Herní mechaniky
+      en: Gameplay mechanics
+    - cz: Lokalizační systémy
+      en: Localization systems
+    - cz: Questové systémy
+      en: Quest systems
+    - cz: Game design
+      en: Game design
+    - cz: Umělá inteligence
+      en: Artificial intelligence
 
 contact:
   title:
     cz: Kontakt
     en: Contact
   mail:
-    cz: Je možné mě kontaktovat skrze moji e-mailovou adresu
-    en: I can be contacted via my email address
-  mail_link:
-    cz: zde
-    en: here
+    cz: Napište mi e-mail
+    en: Send me an email
   work:
     cz: Máte zájem?
     en: Interested?
@@ -147,6 +163,9 @@ form:
 
 # Popis stránky pro vyhledávače a náhled při sdílení odkazu (ideálně do 160 znaků).
 meta:
+  title:
+    cz: Lukáš Urban – Portfolio herního vývojáře
+    en: Lukáš Urban – Game Developer Portfolio
   description:
     cz: Portfolio Lukáše Urbana – herního designéra a vývojáře. Hry, herní assety a projekty z game jamů, vytvořené hlavně v Unity a C#.
     en: Portfolio of Lukáš Urban – video game designer and developer. Games, game assets and game jam projects, made mostly with Unity and C#.

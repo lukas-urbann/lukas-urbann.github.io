@@ -15,6 +15,11 @@ social:
   github: https://github.com/lukas-urbann
   itch: https://redhavoc12.itch.io/
   youtube: https://www.youtube.com/@redhavoc12
+  linkedin: https://www.linkedin.com/in/lukas-urbann/
+
+# Kolik projektů je vidět hned; zbytek je pod tlačítkem "Zobrazit starší projekty".
+# S kartou nadpisu to dává plné řádky při 1, 2 i 3 sloupcích, když je číslo o 1 menší než násobek 6 (5, 11, 17).
+projectsShown: 11
 
 # Jazykové verze hlavní stránky. První v seznamu je výchozí (adresa "/").
 languages:

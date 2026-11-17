@@ -8,8 +8,8 @@
         <a href="{{ url }}" target="_blank" aria-label="{{ title }} – {{ labels[type] }}"><i aria-hidden="true" class="fa-brands {{ icons[type] }}"></i></a>
         {%- endfor %}
     </div>
-    <div class="c-project-description" onclick="toggleClass(this, 'c-project-description-full')">
-        <h1>{{ title }}</h1>
+    <div class="c-project-description" onclick="toggleDescription(this)">
+        <h3><button type="button" aria-expanded="false">{{ title }}</button></h3>
         <p>{{ project[lang.code].description }}</p>
     </div>
 </div>
