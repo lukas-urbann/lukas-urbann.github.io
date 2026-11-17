@@ -46,6 +46,16 @@
     title: Low Poly Animated Fantasy Creatures
     description: Asset pack of high quality low-poly animated creatures ready for use in Unity3D. Created by Polyperfect
 
+- image: red-noon.webp
+  links:
+    github: https://github.com/lukas-urbann/red-noon
+  cz:
+    title: Red Noon
+    description: Barevný theme pro VS Code s červenými akcenty a kontrastními barvami syntaxe. Má tmavou a světlou variantu (Red Noon a Red Noon Light). Theme jsem vytvořil před zhruba šesti lety pro vlastní potřebu a nyní jsem ho oživil a vyladil za pomoci umělé inteligence.
+  en:
+    title: Red Noon
+    description: A VS Code theme with red accents and high-contrast syntax colors. It comes in a dark and a light variant (Red Noon and Red Noon Light). I made it about six years ago for my own use, and have now revived and polished it with the help of AI.
+
 - image: vykolejen.webp
   links:
     itch: https://gameutb.itch.io/train-game
